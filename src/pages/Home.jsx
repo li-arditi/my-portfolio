@@ -148,7 +148,7 @@ export default function Portfolio() {
 		<section id="contact" className="max-w-5xl mx-auto px-6 py-20">
 			<h2 className="text-3xl font-semibold mb-6">My Goals</h2>
 			<p className="text-neutral-600 max-w-xl mb-10">
-				As I'm entering the medical device industry from the construction industry, I am looking to further my exposure to all aspects of medical device development. One of my favorite aspects of biomedical engineering is the multidisciplinary nature of it.  
+				As I'm entering the medical device industry from the construction industry, I am looking to further my exposure to all aspects of medical device development. One of my favorite aspects of biomedical engineering is the multidisciplinary nature of it. I look forward to using my diverse background while continuously learning and making a positive impact on the world.
 			</p>
 			
 		</section>
