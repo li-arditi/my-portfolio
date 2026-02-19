@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx"
 import Project from "./pages/Project.jsx"
 import AboutMe from "./pages/AboutMe.jsx"
 import AllProjects from "./pages/AllProjects.jsx"
+import Contact from "./pages/Contact.jsx"
 import Navbar from "./components/Navbar";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/projects/:slug" element={<Project />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/allprojects" element={<AllProjects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
     

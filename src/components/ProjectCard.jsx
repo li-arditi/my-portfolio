@@ -7,7 +7,7 @@ export default function ProjectCard({ project }) {
       to={`/projects/${project.slug}`}
       className="group rounded-3xl border border-neutral-200 overflow-hidden hover:border-neutral-900 transition"
     >
-      <div className="aspect-[16/10] bg-neutral-100 overflow-hidden">
+      <div className="aspect-[12/10] bg-neutral-100 overflow-hidden">
         <img
           src={project.thumbnail}
           alt={project.title}
@@ -21,6 +21,18 @@ export default function ProjectCard({ project }) {
           <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition" />
         </h3>
         <p className="mt-2 text-neutral-600">{project.summary}</p>
+      </div>
+
+      <div className="p-6">
+        <div className="flex flex-wrap gap-1">
+                    {project.keywords.map(
+                      (keyword) => (
+                        <span key={keyword} className="keyword">
+                        {keyword}
+                        </span>
+                      )
+                    )}
+                  </div>
       </div>
     </Link>
   )
