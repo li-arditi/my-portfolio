@@ -1,13 +1,28 @@
 import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
+// DATA
 import { projects } from "../data/projects"
 import { skills } from "../data/skills"
+
+// COMPONENTS
 import ProjectCard from "../components/ProjectCard.jsx"
 import HomeImg from "../assets/personal/LiArditiHeadshotSquare.jpeg"
-import { useState } from 'react';
+
+// REACT
+import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Portfolio() {
-    const [selectedSkill, setSelectedSkill] = useState(null); // state for skill selection and details
-    const [quickViewProject, setQuickViewProject] = useState(null); // state for project quick view selection
+	// scroll to top when home page is opened
+		useEffect(() => {
+			window.scrollTo(0, 0);
+		}, []); // Empty dependency array ensures it runs only once on mount
+	
+	// handle skill selection and details
+    const [selectedSkill, setSelectedSkill] = useState(null); 
+
+	// handle project quick view selection
+    const [quickViewProject, setQuickViewProject] = useState(null); 
 
 	// handle copying email
 	const [contactCount, setContactCount] = useState(0);
@@ -19,8 +34,18 @@ export default function Portfolio() {
 			setContactCount(contactCount + 1);
 			setTimeout(() => setCopied(false), 2000);
 		}
-		
 	};
+
+	// handle navigating to project page
+	const navigate = useNavigate();
+	const handleNaviagte = (slug) => {
+		navigate(`/project/${slug}`, {
+			state: { scrollY: window.scrollY }
+		});
+	};
+
+	
+
 
   	return (
     <div className="min-h-screen text-neutral-900 font-sans">
@@ -70,8 +95,8 @@ export default function Portfolio() {
 		{/* Showcased Projects */}
 		<section id="showcase" className="max-w-5xl mx-auto px-6 py-5">
 			<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
-			<p className="text-sm text-neutral-600 mb-5 pl-1"> 
-				These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on the <span className="font-bold"> All Projects</span> page.
+			<p className="text-md text-neutral-600 mb-5 pl-1"> 
+				These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on my <span className="font-bold"> All Projects</span> page.
 			</p>
 			{/* Provide page for all projects */}
 			<a href="#allprojects"
@@ -82,7 +107,8 @@ export default function Portfolio() {
 			<div className="grid gap-8 md:grid-cols-3 mt-6">
 				{projects.map((p) => (
 					p.showcased && ( // only show showcased projects
-						<ProjectCard key={p.slug} project={p} />
+						<ProjectCard key={p.slug} project={p} 
+						onClick={() => handleClick(p.slug)}/>
 					)
 				))}
 			</div>

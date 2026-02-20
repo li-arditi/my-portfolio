@@ -22,7 +22,7 @@ export default function MultiTypeContent({ content }) {
 				{/* Text Block */}
 				if (section.type === "text") {
 					return (
-					<p key={"goal-" + index} className="text-neutral-700 leading-relaxed whitespace-pre-line">
+					<p key={"goal-" + index} className="text-neutral-700 whitespace-pre-line">
 						{section.content}
 					</p>
 					);
@@ -44,14 +44,31 @@ export default function MultiTypeContent({ content }) {
 					);
 				}
 
-				{/* Comparison */}
-				if (section.type === "comparison") {
+				{/* Quote */}
+				if (section.type === "quote") {
 					return (
-						<div className="grid gap-8 md:grid-cols-2 mt-6 text-gray-700">
-						{/* {section.item1.map((item, i) => (
-							<div>{item.problem}  {item.solution} </div>
+						<div className="mx-15 my-5 font-light">
+							<div className="italic leading-6">
+								"{section.content}"
+							</div>
+							{section.includeBy ? <div className="text-sm flex justify-end">- {section.by}</div>: <div></div>}
+						</div>
+					
+					);
+				}
+
+				{/* Bullet */}
+				if (section.type === "bullet") {
+					return (
+						<div className="flex gap-2 leading-6">
+							{/* bullet and bold title */}
+							• <div className="text-neutral-700 font-bold">{section.title}</div>: 
 							
-						))} */}
+							{/* content of bullet */}
+							<div  className="text-neutral-700 whitespace-pre-line">
+								{section.content}
+							</div>
+							
 						</div>
 					
 					);

@@ -5,7 +5,7 @@ export default function ProjectCard({ project }) {
   return (
     <Link
       to={`/projects/${project.slug}`}
-      className="group rounded-3xl border border-neutral-200 overflow-hidden hover:border-neutral-900 transition"
+      className="group rounded-3xl border border-neutral-200 overflow-hidden hover:border-neutral-900 transition bg-neutral-50"
     >
       <div className="aspect-[12/10] bg-neutral-100 overflow-hidden">
         <img
@@ -25,14 +25,20 @@ export default function ProjectCard({ project }) {
 
       <div className="p-6">
         <div className="flex flex-wrap gap-1">
-                    {project.keywords.map(
-                      (keyword) => (
-                        <span key={keyword} className="keyword">
-                        {keyword}
-                        </span>
-                      )
-                    )}
-                  </div>
+          {project.keywords.map(
+            (keyword, i) => {
+				if (i < 6){
+					return (<span key={keyword} className="keyword">
+					{keyword}
+					</span>)
+				}
+				else if (i == 6){
+					return (<span key="dots" className="">...</span>)
+				}
+				
+			}
+          )}
+        </div>
       </div>
     </Link>
   )

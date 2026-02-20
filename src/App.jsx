@@ -7,7 +7,7 @@ import Contact from "./pages/Contact.jsx"
 import Navbar from "./components/Navbar";
 
 export default function App() {
-  return (
+  return ( //[#f7f5f2] [#f7f5f2] neutral-50
     <div className="bg-neutral-50 text-neutral-900 font-sans">
       <Navbar />
       <Routes>

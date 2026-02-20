@@ -1,8 +1,85 @@
 export const projects = [
-    {
+    /** Data Object Structure
+        {
+            slug: "masters-project",
+            title: "Title",
+            summary: "Project summary",
+            thumbnail: import.meta.env.BASE_URL + "projects/[project]/[filename]",
+            images: [
+                import.meta.env.BASE_URL + "projects/[project]/[filename]",
+                import.meta.env.BASE_URL + "projects/[project]/[filename]",
+            ],
+            showcased: false,
+            start: "Sept 2025",
+            end : "[May 2026]",
+            active: false,
+            type: "Master's Program",
+            teamsize: "4",
+            keywords: ["Product Development", ...],
+            context: 
+                `Context content `,
+            goal: [
+                {
+                    type: "text",
+                    content: 
+                        `Goal content`
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/[project]/[filename]",
+                    alt: "Alt text",
+                    caption: "Caption",
+                    aspect: "16/9"
+                },
+            ],
+            conclusion: [ // summary of conclusion/solution/results
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/[project]/[filename]",
+                    alt: "Alt text",
+                    caption: "Caption",
+                    aspect: "16/9"
+                },
+            ],
+            components: [
+                {
+                    title: "Method title",
+                    objective: "",
+                    methods: [
+                        {
+                            type: "text",
+                            content: 
+                                ``
+                        },
+                    ],
+                    results: [
+                        {
+                            type: "text",
+                            content: 
+                                ``
+                        },
+                    ],
+                    documents: [
+                        {
+                            title: "DocTitle",
+                            document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                        },
+                    ],
+                },
+                ...
+            ],
+            
+        }
+    */
+    { // traction
     slug: "masters-project",
     title: "Skeletal Traction for Femoral Shaft Fractures",
-    summary: "A hands-on experience developing an orthopedic medical device from concept to manufacturing",
+    summary: "A hands-on experience developing an orthopedic medical device through the full product lifecycle",
     thumbnail: import.meta.env.BASE_URL + "projects/traction/01_thumbnail.png",
     // images: [
     //     {
@@ -32,9 +109,10 @@ export const projects = [
     showcased: true,
     start: "Sept 2025",
     end : "[May 2026]",
+    active: true,
     type: "Master's Program",
     teamsize: "4",
-    keywords: ["Product Development", "Clinical", "OR observations", "FMEA", "User Needs", "Documentation", "Validation and Verifcation","3D Modeling"],
+    keywords: ["Product Development", "OR/Clinical observations", "User Needs", "Documentation", "RTM", "Value Proposition", "Human Factors Analysis", "FMEA", "Prototyping", "Testing", "Validation and Verifcation","3D Modeling", "Design for Manufacturing","FDA and Regulatory Pathway"],
     context: 
         `Through the Biomedical Engineering Master of Engineering program at Boston University, I am gaining hands-on experience in medical device product design and development. 
         
@@ -80,128 +158,191 @@ export const projects = [
         },
 
     ],
-    responsibilities: [
-        "Conducted 50+ hours of clinical observations to interview clinicians and identify unmet user needs",
-        "Translated user needs into design inputs and outputs, recording them in a Requirements Traceability Matrix (RTM)",
-        "Design, model (OnShape), and build prototypes using various electric saws, drill press, and NC Mill",
-        "Design, document, and conduct validation and verification protocols",
-        "Produce design for manufacturing (DFM) plan and documentation"
-    ],
-    challenges: [
+    components: [
         {
-            problem: "Identifying unmet user needs that are achievable given time and budget restrictions", 
-            details: "The MEng program provides the unique opportunity to observe orthopedic surgeries for a semester. However, this only leaves one semester -- 4 months -- to learn about design and development processes and then design, prototype, and test our own medical device",
-            solution: "Through over 50 hours of OR observations and medical staff interviews, "
-        },
-        {
-            problem: "Phrasing need statements, design requirements, and design specifications according to medical device standards", 
-            details: " ",
-            // solution: [
-            //     {
-            //         type: "text",
-            //         content: `I consulted with professors, industry mentors, and clinical mentors in design reviews to reach a clearly defined needs statement. `
-            //     },
-            //     {
-            //         type: "comparison",
-            //         item1: [{
-            //             type: "text",
-            //             content: "A way to stabilize high-impact trauma femur fractures in young patients that doesn’t require direct force on healthy bone."
-            //         }],
-            //         item2: [{
-            //             type: "text",
-            //             content: "Orthopedic surgeons need a way to apply skeletal traction to adult patients with femoral shaft fractures that maintains correct femur length throughout treatment despite changes in patient position to prevent femur displacement that can cause further damage."
-            //         }]
-            //     }
-            // ]
-            solution: `I consulted with professors, industry mentors, and clinical mentors in design reviews to reach a clearly defined needs statement.
-            
-            The needs statement started as: A way to stabilize high-impact trauma femur fractures in young patients that doesn’t require direct force on healthy bone.
-            
-            And it was finalized as: Orthopedic surgeons need a way to apply skeletal traction to adult patients with femoral shaft fractures that maintains correct femur length throughout treatment despite changes in patient position to prevent femur displacement that can cause further damage.`
-        },
-    ],
-    documents: [
-        {
-            title: "Requirements Traceability Matrix (RTM)",
-            document: import.meta.env.BASE_URL + "projects/traction/RTM.pdf"
-        }
-    ]
-    },
-    {
-    slug: "stangl-lab",
-    title: "Software Hardware Integration for Clinical Neurophysiology Research",
-    summary: "Integrating data collection hardware with software workflows to align multimodal data with millisecond precision",
-    thumbnail: import.meta.env.BASE_URL + "projects/stangl/01_thumbnail.png",
-    images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/stangl/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        }
-    ],
-    showcased: true,
-    start: "May 2025",
-    end : "Sept 2025",
-    type: "Research Assistant",
-    teamsize: "2-5",
-    keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino"],
-    context: 
-        `Develop a medical device from user need identification through __`,
-    goal: [
-        {
-            type: "text",
-            content: 
-                ``
-        },
-        {
-            type: "image",
-            src: import.meta.env.BASE_URL + "projects/[project]/[image].png",
-            alt: "Alt",
-            caption: "Caption",
-            aspect: "16/9"
-        },
-        {
-            type: "text",
-            content: 
-                `More information about the Stangl Lab can be found at https://www.stangl-lab.com`
-        },
-    ],
-    conclusion: [
+            title: "Discovery: Problem identification and design requirements",
+            objective: "The goal of the discovery phase was to identify technology-related clinical challenges and unmet user needs, leading to the selection of a clearly defined project focus and user needs.",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        `I conducted 50+ hours of clinical observations throughout a semester, documenting workflow, technology use, and potential problems or opportunities for improvement. Direct observation was critical because as Hentry Ford said,`
+                },
+                {
+                    type: "quote",
+                    by: "Henry Ford",
+                    includeBy: false,
+                    content: 
+                        `If I asked my customers what they wanted, they would have said a faster horse.`
+                },
+                {
+                    type: "text",
+                    content: 
+                        `Similarly, as it relates to medical device development, `
+                },
+                {
+                    type: "quote",
+                    by: "Thomas Fogarty, MD; Founder, Fogarty Institute for Innovation",
+                    includeBy: true,
+                    content: 
+                        `When you talk to physicians youʼve got to learn the difference between what they say, what they want, what theyʼll pay for, and what they actually do.`
+                },
+                {
+                    type: "text",
+                    content: 
+                        `With this in mind, I conducted interviews with clinical staff to understand the Voice of Costumer, identifying pain points and root causes. My team and I also consulted with dedicated industry mentors, who offered insight and challenged us as they would in industry settings.`
+                },
 
-    ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        `With a combined total of 200 observation hours by the team, we identified an unmet need for skeletal traction. The problem and needs statement, along with clinical needs and device requirements for a minimum viable product are outlined below:
+                        `
+                },
+            ],
+            documents: [
+                {
+                    title: "User Needs",
+                    document: import.meta.env.BASE_URL + "projects/traction/RTM.pdf"
+                },
+
+            ]
+
+        },
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Design: Solution strategy",
+            objective: "The goal of the design phase was to propose an optimized solution strategy by exploring and comparing alternative design strategies in the context of Competitive Analysis, IP strategies, preliminary market trends, and economic variables.",
+            methods: [
+                {
+                    type: "bullet",
+                    title: "Human Factors Analysis",
+                    content: 
+                        `Human Factors Analysis`
+                },
+                {
+                    type: "bullet",
+                    title: "Value Proposition",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Design Strategy Development",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Market Research",
+                    content: 
+                        ``
+                },
+
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        `Translated user needs into design inputs and outputs, recording them in a Requirements Traceability Matrix (RTM)`
+                },
+            ],
+            documents: [
+                {
+                    title: "Requirements Traceability Matrix (RTM)",
+                    document: import.meta.env.BASE_URL + "projects/traction/RTM.pdf"
+                },
+            ] 
+        },
+        {
+            title: "Development: Specifications and Design Realization",
+            objective: "",
+            methods: [
+                {
+                    type: "bullet",
+                    title: "Requirements Traceability Matrix (RTM)",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Prototyping",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Verification and Validation Testing",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Failure Modes and Effects Analysis (FMEA)",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Design for Manufacturing (DFM)",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Deployment: Business model and IP feasibility",
+            objective: "The goal of the deployment phase is to develop a full business model canvas for our device. The business model analysis will also include evaluating reimbursement and intellectual property feasibility, packaging, labeling, and sterilization considerations.",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
     ],
-    documents: [
-        {
-            title: "Offboarding Report",
-            document: import.meta.env.BASE_URL + "projects/stangl/offboarding_report.pdf"
-        }
-    ]
     },
-    {
+    { // pressmate
     slug: "coffee-press",
     title: "The PressMate Coffee Press",
     summary: "A full cycle product realization project to develop a mass production plan for a coffee press",
     thumbnail: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        }
+        import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
     ],
     showcased: true,
     start: "Jan 2026",
     end : "May 2026",
+    active: false,
     type: "Product Realization Master's Course",
     teamsize: "4",
     keywords: ["Manufacturing", "EDM", "EVT", "DVT", "Documentation", "Machining"],
@@ -229,39 +370,233 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Project Proposal",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: [
         {
-            title: "Enterprise Data Management (EDM) Plan",
-            document: import.meta.env.BASE_URL + "projects/pressmate/EDM.pdf"
-        }
+            title: "Concept",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Engineering Validation Testing",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Design Validation Testing",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Production Validation Testing",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Mass Production",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
     ]
     },
-    {
+    { // stangl
+    slug: "stangl-lab",
+    title: "Software Hardware Integration for Clinical Neurophysiology Research",
+    summary: "Integrating data collection hardware with software workflows to align multimodal data with millisecond precision",
+    thumbnail: import.meta.env.BASE_URL + "projects/stangl/01_thumbnail.png",
+    images: [
+                import.meta.env.BASE_URL + "projects/stangl/01_thumbnail.png",
+            ],
+    showcased: true,
+    start: "May 2025",
+    end : "Sept 2025",
+    active: false,
+    type: "Research Assistant",
+    teamsize: "2-5",
+    keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino"],
+    context: 
+        `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior, using multimodal neuroimaging techniques. 
+        
+        More details can be found at {<a href="https://www.linkedin.com/in/li-arditi/">https://www.linkedin.com/in/li-arditi/</a>}`,
+    goal: [
+        {
+            type: "text",
+            content: 
+                ``
+        },
+        {
+            type: "image",
+            src: import.meta.env.BASE_URL + "projects/[project]/[image].png",
+            alt: "Alt",
+            caption: "Caption",
+            aspect: "16/9"
+        },
+        {
+            type: "text",
+            content: 
+                `More information about the Stangl Lab can be found at https://www.stangl-lab.com`
+        },
+    ],
+    conclusion: [
+
+    ],
+    components: [
+        {
+            title: "Unity",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+    ]
+    },
+    { // endoscope
     slug: "endoscope-stabilization",
     title: "Endoscope Stabilization Sleeve",
     summary: "A mock NIH grant application proposal for an endoscope sleeve that provides distal tip stabilization",
     thumbnail: import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        }
+        import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
     ],
     showcased: true,
     start: "Jan 2024",
     end : "May 2025",
+    active: false,
     type: "Medical Robotics Master's Course",
     teamsize: "4",
     keywords: ["NIH grant materials", "Pneumatic Actuation", "Arduino"],
@@ -289,22 +624,31 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Pneumatic Actuation",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: [
-        {
-            title: "Mock NIH Grant Proposal",
-            document: import.meta.env.BASE_URL + "projects/endoscope/mock_grant_proposal.pdf"
-        }
     ]
     },
     {
@@ -313,20 +657,13 @@ export const projects = [
     summary: "A project planning job for the interior fit-out of a MakerSpace lab, including HVAC, plumbing, and electrical systems",
     thumbnail: import.meta.env.BASE_URL + "projects/vdcEngineer/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/vdcEngineer/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
-        {
-            src: import.meta.env.BASE_URL + "projects/vdcEngineer/02_showcase.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
+        import.meta.env.BASE_URL + "projects/vdcEngineer/01_thumbnail.png",
+        import.meta.env.BASE_URL + "projects/vdcEngineer/02_showcase.png",
     ],
     showcased: true,
     start: "Oct 2023",
     end : "February 2024",
+    active: false,
     type: "Industry",
     teamsize: "5-10",
     keywords: ["Project Management", "HVAC Systems", "Communication", "Detail-oriented", "Documentation", "Cross-functional Teamwork"],
@@ -355,18 +692,32 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Contract and Document Standards",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: []
+    ]
     },
     {
     slug: "software-engineer",
@@ -374,20 +725,13 @@ export const projects = [
     summary: "Develop web applications for project management",
     thumbnail: import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
-        {
-            src: import.meta.env.BASE_URL + "projects/softwareEngineer/02_images.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
+        import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.png",
+        import.meta.env.BASE_URL + "projects/softwareEngineer/02_images.png",
     ],
     showcased: false,
     start: "Aug 2021",
     end : "June 2024",
+    active: false,
     type: "Lead Software Engineer",
     teamsize: "1-5",
     keywords: ["KPI Dashboards", "UI", "Full-Stack", "PHP", "Python", "Javascript", "Unity"],
@@ -415,18 +759,32 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Full-Stack Software Developent",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: []
+    ]
     },
     {
     slug: "truss",
@@ -434,20 +792,13 @@ export const projects = [
     summary: "Design a simple truss with given requirements and calculate member loads, critical load, etc.",
     thumbnail: import.meta.env.BASE_URL + "projects/truss/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/truss/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
-        {
-            src: import.meta.env.BASE_URL + "projects/truss/02_showcase.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
+        import.meta.env.BASE_URL + "projects/truss/01_thumbnail.png",
+        import.meta.env.BASE_URL + "projects/truss/02_showcase.png",
     ],
     showcased: false,
     start: "Sept 2024",
     end : "Dec 2024",
+    active: false,
     type: "Static Mechanics Course Project",
     teamsize: "4",
     keywords: ["MATLAB", "Simulation", "Force Analysis"],
@@ -475,22 +826,31 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "MATLAB Simulations",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: [
-        {
-            title: "Final Report",
-            document: import.meta.env.BASE_URL + "projects/truss/final_report.pdf"
-        }
     ]
     },
     {
@@ -499,20 +859,13 @@ export const projects = [
     summary: "Summary",
     thumbnail: import.meta.env.BASE_URL + "projects/dysmenorrhea/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/dysmenorrhea/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
-        {
-            src: import.meta.env.BASE_URL + "projects/dysmenorrhea/02_showcase.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
+        import.meta.env.BASE_URL + "projects/dysmenorrhea/01_thumbnail.png",
+        import.meta.env.BASE_URL + "projects/dysmenorrhea/02_showcase.png",
     ],
     showcased: false,
     start: "September 2025",
     end : "December 2025",
+    active: false,
     type: "Engineering Women's Health Course Project",
     teamsize: "2",
     keywords: ["Keywords",],
@@ -540,22 +893,31 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Research Methods",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: [
-        {
-            title: "Title",
-            document: import.meta.env.BASE_URL + "projects/[project]]/[doctile].pdf"
-        }
     ]
     },
     {
@@ -564,20 +926,13 @@ export const projects = [
     summary: "Summary",
     thumbnail: import.meta.env.BASE_URL + "projects/[project]/01_thumbnail.png",
     images: [
-        {
-            src: import.meta.env.BASE_URL + "projects/[project]/01_thumbnail.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
-        {
-            src: import.meta.env.BASE_URL + "projects/[project]/02_showcase.png",
-            alt: "Project Thumbnail",
-            caption: "The final project prototype"
-        },
+        import.meta.env.BASE_URL + "projects/[project]/01_thumbnail.png",
+        import.meta.env.BASE_URL + "projects/[project]/02_showcase.png",
     ],
     showcased: false,
     start: "month 20yy",
     end : "month 20yy",
+    active: false,
     type: "Industry",
     teamsize: "4",
     keywords: ["Keywords",],
@@ -605,22 +960,31 @@ export const projects = [
     conclusion: [
 
     ],
-    responsibilities: [
-        "Design",
-        "Test",
-    ],
-    challenges: [
+    components: [
         {
-            problem: "", 
-            details: "",
-            solution: ""
+            title: "Component Title",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
         },
-    ],
-    documents: [
-        {
-            title: "Title",
-            document: import.meta.env.BASE_URL + "projects/[project]]/[doctile].pdf"
-        }
     ]
     },
   
