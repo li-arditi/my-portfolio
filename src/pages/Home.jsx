@@ -104,7 +104,7 @@ export default function Portfolio() {
 				All Projects <ArrowUpRight size={16} />
 			</a>
 
-			<div className="grid gap-8 md:grid-cols-3 mt-6">
+			<div className="grid gap-8 sm:grid-cols-3 mt-6">
 				{projects.map((p) => (
 					p.showcased && ( // only show showcased projects
 						<ProjectCard key={p.slug} project={p} 

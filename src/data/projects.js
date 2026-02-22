@@ -49,6 +49,7 @@ export const projects = [
             components: [
                 {
                     title: "Method title",
+                    subtitle: "",
                     objective: "",
                     methods: [
                         {
@@ -127,7 +128,7 @@ export const projects = [
         },
         {
             type: "image",
-            src: import.meta.env.BASE_URL + "projects/traction/02_traction.png",
+            src: import.meta.env.BASE_URL + "projects/traction/03_currentTraction.png",
             alt: "Standard Skeletal Traction Frame",
             caption: "One of the standard skeletal traction setups",
             aspect: "16/9"
@@ -160,13 +161,53 @@ export const projects = [
     ],
     components: [
         {
-            title: "DISCOVERY: Problem identification and design requirements",
-            objective: "The goal of the discovery phase was to identify technology-related clinical challenges and unmet user needs, leading to the selection of a clearly defined project focus and user needs.",
+            title: "DISCOVERY:",
+            subtitle: "Unmet user needs, stakeholder analysis, and value proposition",
+            objective: "Identify technology-related clinical challenges and unmet user needs to select a project focus and clearly defined user needs, supported by stakeholder analysis and a value proposition.",
             methods: [
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Clinical Observations",
+                    content: 
+                        `Conduct clinical observations at Boston Medical Center (BMC) with the support of a clinical advisor. Observe interactions, technology use, and workflows, identifying potential problems or opportunities for improvement that can be translated into unmet user needs.`
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Stakeholder Analysis",
+                    content: 
+                        `Understand the process and identify categories of stakeholders and their interests including the initiator, influencer, gatekeeper, decider, purchaser, user, and saboteur. `
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Voice of Customer (VOC)",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Value Proposition and Customer Segmentation",
+                    content: 
+                        `Create a Value Proposition Canvas to map the customers' jobs, pains, and gains to our product. Identify who the customer is and what they need to accomplish to construct a value proposition that demonstrates what our product can offer and how it is better (or different!)`
+                },
+                
+
+
+            ],
+            results: [
                 {
                     type: "text",
                     content: 
-                        `I conducted 50+ hours of clinical observations throughout a semester, documenting workflow, technology use, and potential problems or opportunities for improvement. Direct observation was critical because as Hentry Ford said,`
+                        `I conducted 50+ hours of clinical observations throughout a semester, demonstrating comfort with operating room (OR) protocols and confidence in talking to surgeons.  
+                        
+                        Direct observation was critical because as Hentry Ford said,`
                 },
                 {
                     type: "quote",
@@ -178,7 +219,7 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        `Similarly, as it relates to medical device development, `
+                        `However, challenges arose because as it relates to medical device development, `
                 },
                 {
                     type: "quote",
@@ -190,22 +231,28 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        `With this in mind, I conducted interviews with clinical staff to understand the Voice of Costumer, identifying pain points and root causes. My team and I also consulted with dedicated industry mentors, who offered insight and challenged us as they would in industry settings.`
+                        `With this in mind, I recorded detailed notes and conducted interviews with diverse medical stakeholders (surgeons, nurses, residents, and device representatives) to understand the Voice of Costumer, identifying pain points and root causes. My team and I also consulted with dedicated industry mentors, who offered insight and challenged us as they would in industry settings.
+                        
+                        With a combined total of 200 observation hours by the team, the problem and needs statement, along with clinical needs and device requirements for a minimum viable product are outlined below:
+                        `
                 },
-
-
-            ],
-            results: [
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/discoveryResults.png",
+                    alt: "Problem and needs statement; clinical requirements",
+                    caption: "",
+                    aspect: "16/9"
+                },
                 {
                     type: "text",
                     content: 
-                        `With a combined total of 200 observation hours by the team, we identified an unmet need for skeletal traction. The problem and needs statement, along with clinical needs and device requirements for a minimum viable product are outlined below:
+                        `Stakeholder analysis and value proposition are linked below in Relevant Documents.
                         `
                 },
             ],
             documents: [
                 {
-                    title: "User Needs",
+                    title: "Stakeholder Analysis",
                     document: import.meta.env.BASE_URL + "projects/traction/RTM.pdf"
                 },
 
@@ -213,40 +260,64 @@ export const projects = [
 
         },
         {
-            title: "DESIGN: Solution strategy",
-            objective: "The goal of the design phase was to propose an optimized solution strategy by exploring and comparing alternative design strategies in the context of Competitive Analysis, IP strategies, preliminary market trends, and economic variables.",
+            title: "DESIGN:",
+            subtitle: "Design Strategy Development",
+            objective: "Propose an optimized solution strategy by exploring and comparing alternative design strategies in the context of Competitive Analysis, IP strategies, preliminary market trends, and economic variables.",
             methods: [
                 {
                     type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Idea Generation",
+                    content: 
+                        `Mophological Analysis and SCAMPER design alternatives techniques were conducted to transition from identifying problems into exploring solutions for users.`
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Design Requirements",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
                     title: "Human Factors Analysis",
                     content: 
-                        `Human Factors Analysis`
+                        `Usability and human factors (HF) analysis was conducted to consider device users, use environments, and user interfaces according to FDA regulations`
                 },
                 {
                     type: "bullet",
-                    title: "Value Proposition",
-                    content: 
-                        ``
-                },
-                {
-                    type: "bullet",
-                    title: "Design Strategy Development",
-                    content: 
-                        ``
-                },
-                {
-                    type: "bullet",
+                    style: "",
+                    border: "border-r",
                     title: "Market Research",
                     content: 
                         ``
                 },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Agile Workflow",
+                    content: 
+                        ``
+                },
+                
 
             ],
             results: [
                 {
                     type: "text",
                     content: 
-                        ``
+                        `In order to ensure device safety, effectiveness, and usability according to FDA regulations, we conducted a user analysis to identify different user groups, their needs, and potential use errors, along with a risk management plan to address these factors.
+                        
+                        The user interface of the device was designed to consider displays, controls, and labeling, evaluating the design using usability principles.
+                        
+                        A usability test plan will be developed and conducted for human factors validation and usability testing. This includes test objective, participant criteria, test scenarios, and data collection methods. 
+                        
+                        Related documents can be found below.`
                 },
             ],
             documents: [
@@ -257,60 +328,72 @@ export const projects = [
             ] 
         },
         {
-            title: "DEVELOPMENT: Specifications and Design Realization",
-            objective: "",
+            title: "DEVELOPMENT:",
+            subtitle: "Engineering Specifications and Design Realization",
+            objective: "Establish engineering specifications, build working prototypes of key components of the engineering solution, incorporate Design for Manufacturing considerations, and develop risk mitigation strategies. Validation testing will be used to evaluate design feasibility.",
             methods: [
                 {
                     type: "text",
-                    title: "Design Requirements",
+                    title: "Engineering Requirements",
                     content: 
                         ``
                 },
                 {
                     type: "bullet",
+                    style: "",
+                    border: "border-r",
                     title: "Prototyping",
                     content: 
                         ``
                 },
                 {
                     type: "bullet",
-                    title: "Testing",
+                    style: "",
+                    border: "border-r",
+                    title: "Validation, Verification, and Testing",
                     content: 
                         ``
                 },
                 {
                     type: "bullet",
-                    title: "Agile Workflow",
-                    content: 
-                        ``
-                },
-
-                
-            ],
-            results: [
-                {
-                    type: "bullet",
-                    title: "Requirements Traceability Matrix (RTM)",
-                    content: 
-                        ``
-                },
-                {
-                    type: "Verification and Validation Protocols",
-                    content: 
-                        ``
-                },
-                {
-                    type: "bullet",
+                    style: "",
+                    border: "border-r",
                     title: "Failure Modes and Effects Analysis (FMEA)",
                     content: 
                         ``
                 },
                 {
                     type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Quality Management Systems (QMS)",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
                     title: "Design for Manufacturing (DFM)",
                     content: 
                         ``
                 },
+                
+
+                
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        `In progress`
+                },
+                {
+                    type: "header",
+                    content: "Works-Like Prototype"
+                },
+                
+                
             ],
             documents: [
                 {
@@ -320,8 +403,9 @@ export const projects = [
             ],
         },
         {
-            title: "DEPLOYMENT: Business model and IP feasibility",
-            objective: "The goal of the deployment phase is to develop a full business model canvas for our device. The business model analysis will also include evaluating reimbursement and intellectual property feasibility, packaging, labeling, and sterilization considerations.",
+            title: "DEPLOYMENT:",
+            subtitle: "Business model, regulatory strategy, and IP feasibility",
+            objective: "Create a full business model canvas for the device and evaluate reimbursement and intellectual property feasibility. The business model analysis will also include manufacturing and E2E supply chain with packaging, labeling, and sterilization considerations.",
             methods: [
                 {
                     type: "text",
@@ -334,6 +418,10 @@ export const projects = [
                     type: "text",
                     content: 
                         `In progress`
+                },
+                {
+                    type: "header",
+                    content: "Is-Like Prototype"
                 },
             ],
             documents: [
@@ -348,15 +436,15 @@ export const projects = [
     { // pressmate
     slug: "coffee-press",
     title: "The PressMate Coffee Press",
-    summary: "A full cycle product realization project to develop a mass production plan for a coffee press",
+    summary: "A full cycle product realization project to develop a mass production plan for a single-serving metal coffee press",
     thumbnail: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
     images: [
         import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
     ],
     showcased: true,
     start: "Jan 2026",
-    end : "May 2026",
-    active: false,
+    end : "[May 2026]",
+    active: true,
     type: "Product Realization Master's Course",
     teamsize: "4",
     keywords: ["Manufacturing", "EDM", "EVT", "DVT", "Documentation", "Machining"],
@@ -391,6 +479,40 @@ export const projects = [
                     "Use at most one (1) purchased part",
                     "Cannot use additive manufacturing for final parts (patterns/fixtures ok)"
                 ]
+        },
+        {
+            type: "header",
+            content: "Coffee Presses"
+        },
+        {
+            type: "text",
+            content: 
+                `I personally don't drink coffee, however, in order to design a coffee press I needed to do some research about brewing coffee and what makes a good cup of coffee.
+
+                For you non-coffee drinking comrades, coffee is "brewed" by combining ground coffee beans and hot water. After the grounds have been given time to releasing their flavor, they are filtered out creating the revered cup of coffee. The flavor and quality of the cup of coffee can vary based on bean quality, grind size, brewing method, and steep time. The PressMate coffee press uses a "French-press" brewing method, where hot water and grinds are combined, steeped, then separated using a filter that is pressed through the mixture.
+                `
+        },
+        {
+            type: "image",
+            src: import.meta.env.BASE_URL + "projects/pressmate/frenchpress.png",
+            alt: "Steps for the French Press",
+            caption: "Steps for brewing coffee with the French Press method. Source: https://voltagecoffee.com/how-to-french-press/",
+            aspect: "16/9"
+        },
+
+    ],
+    conclusion: [
+        {
+            type: "text",
+            content: 
+                `My team "Bob the Builders" present The PressMate.  `
+        },
+        {
+            type: "image",
+            src: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
+            alt: "Project final result",
+            caption: "The final prototype for our single-serve coffee press -- PressMate",
+            aspect: "16/9"
         },
         {
             type: "header",
@@ -431,22 +553,7 @@ export const projects = [
         {
             type: "text",
             content: 
-                `Note on document ownership: All team members remained informed about each document. The Project Manager (PM) for each assignment rotated and therefore the name of the Document Approver rotated (and may not be mine).`
-        },
-
-    ],
-    conclusion: [
-        {
-            type: "text",
-            content: 
-                `My team "Bob the Builders" present The PressMate.  `
-        },
-        {
-            type: "image",
-            src: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
-            alt: "Project final result",
-            caption: "The final prototype for our single-serve coffee press -- PressMate",
-            aspect: "16/9"
+                `Note on document ownership: All team members remained informed about each document. The Project Manager (PM) for each assignment rotated and therefore the name of the Document Approver rotated (and may not be mine). I will highlight my major contributions below but can speak to all aspects of the project.`
         },
 
     ],
@@ -693,73 +800,7 @@ export const projects = [
         },
     ]
     },
-    { // endoscope
-    slug: "endoscope-stabilization",
-    title: "Endoscope Stabilization Sleeve",
-    summary: "A mock NIH grant application proposal for an endoscope sleeve that provides distal tip stabilization",
-    thumbnail: import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
-    images: [
-        import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
-    ],
-    showcased: true,
-    start: "Jan 2024",
-    end : "May 2025",
-    active: false,
-    type: "Medical Robotics Master's Course",
-    teamsize: "4",
-    keywords: ["NIH grant materials", "Pneumatic Actuation", "Arduino"],
-    context: 
-        `Context`,
-    background: [
-        {
-            type: "text",
-            content: 
-                ``
-        },
-        {
-            type: "image",
-            src: import.meta.env.BASE_URL + "projects/[project]/[image].png",
-            alt: "Alt",
-            caption: "Caption",
-            aspect: "16/9"
-        },
-        {
-            type: "text",
-            content: 
-                ``
-        },
-    ],
-    conclusion: [
-
-    ],
-    components: [
-        {
-            title: "Pneumatic Actuation",
-            objective: "",
-            methods: [
-                {
-                    type: "text",
-                    content: 
-                        ``
-                },
-            ],
-            results: [
-                {
-                    type: "text",
-                    content: 
-                        ``
-                },
-            ],
-            documents: [
-                {
-                    title: "DocTitle",
-                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
-                },
-            ],
-        },
-    ]
-    },
-    {
+     { // vdcEngineer
     slug: "vdc-engineer",
     title: "Virtual Design and Construction (VDC) Maker Space Interior Fit-Out",
     summary: "A project planning job for the interior fit-out of a MakerSpace lab, including HVAC, plumbing, and electrical systems",
@@ -827,7 +868,73 @@ export const projects = [
         },
     ]
     },
-    {
+    { // endoscope
+    slug: "endoscope-stabilization",
+    title: "Endoscope Stabilization Sleeve",
+    summary: "A mock NIH grant application proposal for an endoscope sleeve that provides distal tip stabilization",
+    thumbnail: import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
+    images: [
+        import.meta.env.BASE_URL + "projects/endoscope/01_thumbnail.png",
+    ],
+    showcased: true,
+    start: "Jan 2024",
+    end : "May 2025",
+    active: false,
+    type: "Medical Robotics Master's Course",
+    teamsize: "4",
+    keywords: ["NIH grant materials", "Pneumatic Actuation", "Arduino"],
+    context: 
+        `Context`,
+    background: [
+        {
+            type: "text",
+            content: 
+                ``
+        },
+        {
+            type: "image",
+            src: import.meta.env.BASE_URL + "projects/[project]/[image].png",
+            alt: "Alt",
+            caption: "Caption",
+            aspect: "16/9"
+        },
+        {
+            type: "text",
+            content: 
+                ``
+        },
+    ],
+    conclusion: [
+
+    ],
+    components: [
+        {
+            title: "Pneumatic Actuation",
+            objective: "",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+    ]
+    },
+    { // softwareEngineer
     slug: "software-engineer",
     title: "Software Engineer",
     summary: "Develop web applications for project management",

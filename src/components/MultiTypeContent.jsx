@@ -31,7 +31,7 @@ export default function MultiTypeContent({ content }) {
 				{/* Image */}
 				if (section.type === "image") {
 					return (
-					<figure key={"goal-"+index} className="my-8 text-center">
+					<figure key={section.src} className="my-8 text-center">
 						<img
 							src={section.src}
 							alt={section.alt}
@@ -47,7 +47,7 @@ export default function MultiTypeContent({ content }) {
 				{/* Quote */}
 				if (section.type === "quote") {
 					return (
-						<div className="mx-15 my-5 font-light">
+						<div key={section.by + index} className="mx-15 my-5 font-light">
 							<div className="italic leading-6">
 								"{section.content}"
 							</div>
@@ -60,9 +60,11 @@ export default function MultiTypeContent({ content }) {
 				{/* Bullet */}
 				if (section.type === "bullet") {
 					return (
-						<div className="flex gap-2 leading-6">
+						<div key={section.title + index} className="flex gap-2 leading-6 mb-4">
 							{/* bullet and bold title */}
-							• <div className="text-neutral-700 font-bold">{section.title}</div>: 
+							<div className="mr-1"> {section.style ? section.style : "•"}</div>
+							<div className={section.title? "flex-none w-40 text-neutral-700 font-bold": ""}>{section.title}</div>
+							<div className={section.border ? section.border : ""}> {section.border ? "" : ":"}</div>
 							
 							{/* content of bullet */}
 							<div  className="text-neutral-700 whitespace-pre-line">

@@ -118,7 +118,7 @@ export default function Project() {
 
 				{/* Context */}
 				<CollapsibleSection 
-					title={<h4 className="text-md font-semibold ml-3">Context</h4>}
+					title="Context"
 					children={
 						<div className="whitespace-pre-line px-6 mb-5 text-neutral-700 leading-5">
 							{project.context}
@@ -127,7 +127,7 @@ export default function Project() {
 				
 				{/* Problem Statement/Goal */}
 				<CollapsibleSection 
-					title={<h4 className="text-md font-semibold ml-3">Technical Background</h4>}
+					title="Technical Background"
 					children={
 						<div className="whitespace-pre-line px-6 mb-5 text-neutral-700 leading-5">
 							<MultiTypeContent content={project.background} />
@@ -137,7 +137,7 @@ export default function Project() {
 				
 				{/* Conclusion */}
 				<CollapsibleSection 
-					title={<h4 className="text-md font-semibold ml-3">Conclusion</h4>}
+					title="Conclusion"
 					children={
 						<div className="whitespace-pre-line px-6 mb-5 text-neutral-700 leading-5">
 							<MultiTypeContent content={project.conclusion} />
@@ -150,11 +150,13 @@ export default function Project() {
 			{/* Components */}
 			<section className="mb-12 leading-5">
 				<h2 className="text-xl font-semibold mb-3">Components</h2>
-				<ol className="list-decimal list-inside list-[font-semibold]">
+				<ol className="list-decimal list-inside">
 				{project.components.map((component, i) => (
 					<li key={"component-"+i} className="font-semibold">
 						<CollapsibleSection 
-							title={<h4 className="text-md ml-3">{component.title}</h4>}
+							title={component.title}
+							// title={<h4 className="text-md font-semibold ml-3">{component.title}</h4>}
+							subtitle={component.subtitle}
 							children={
 								<div className="whitespace-pre-line px-6 mb-5">
 									{/* Componenet content */}
@@ -200,31 +202,7 @@ export default function Project() {
 
 			</section>
 
-			{/* Results */}
-			{/* <section>
-				<h2 className="text-xl font-semibold mb-3">Results</h2>
-				<ol className="list-decimal list-inside">
-				{project.results.map((step, i) => (
-					
-						<li key={"method-"+i}>
-							<CollapsibleSection 
-						title={<h4 className="text-md font-semibold ml-3">{step.title}</h4>}
-						children={
-							<div className="whitespace-pre-line px-6 mb-5 text-gray-700 ">
-								<MultiTypeContent content={step.content} />
-							</div>
-						}
-					/>
-						</li>
-
-					
-					
-						
-				))}
-				</ol>
-				
-				
-			</section> */}
+			
 
 		</div>
 
