@@ -33,7 +33,7 @@ export default function Project() {
 
 
   return (
-    <article className="max-w-4xl mx-auto py-15">
+    <article className="max-w-4xl mx-auto py-15 px-5">
 		<button onClick={handleBack} 
 			className="pb-4 cursor-pointer text-gray-500 hover:text-blue-400">
 			← Back
@@ -45,6 +45,9 @@ export default function Project() {
 		</div>
 		<div className="text-sm text-gray-500">
 				Team of {project.teamsize}
+		</div>
+		<div className="text-md text-neutral-700 pt-5 px-5">
+			{project.summary}
 		</div>
 
 		{/* Images */}
@@ -89,10 +92,9 @@ export default function Project() {
 
 		</div>
        */}
-	   <div >
-			<img src={project.thumbnail} className="rounded-2xl my-10 w-md mx-auto">
-			
-			</img>
+	   <div className="grid grid-flow-col grid-rows-1 gap-4 ">
+			<img src={project.images[0]} className=" row-span-2 rounded-2xl my-10 w-full aspect-auto"></img>
+			<img src={project.images[1]} className=" row-span-1 rounded-2xl my-10 w-full aspect-auto"></img>
 	   </div>
 
 
@@ -128,7 +130,7 @@ export default function Project() {
 					title={<h4 className="text-md font-semibold ml-3">Technical Background</h4>}
 					children={
 						<div className="whitespace-pre-line px-6 mb-5 text-neutral-700 leading-5">
-							<MultiTypeContent content={project.goal} />
+							<MultiTypeContent content={project.background} />
 						</div>
 					}
 				/>

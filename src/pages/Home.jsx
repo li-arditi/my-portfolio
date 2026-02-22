@@ -62,7 +62,7 @@ export default function Portfolio() {
 					I'm excited to leverage my neuroscience, computer science, and biomedical engineering experience to solve biomedical challenges and help people live healthier and happier lives.        
 				</p>
 				<div className="flex gap-4 mt-8">
-					<a href= {import.meta.env.BASE_URL + "src/assets/personal/LA_resume.pdf"}
+					<a href= "./src/assets/personal/LA_resume.pdf"
   						target="_blank"
   						rel="noopener noreferrer"
 						className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-neutral-50 px-6 py-3 text-sm hover:bg-neutral-800 transition">

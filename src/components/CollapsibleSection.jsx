@@ -14,7 +14,7 @@ export default function CollapsibleSection({ title, children, state=false }) {
       </button>
 
       {open && (
-        <div className="mt-4 text-neutral-700">
+        <div className="mt-4 mb-6 text-neutral-700">
           {children}
         </div>
       )}

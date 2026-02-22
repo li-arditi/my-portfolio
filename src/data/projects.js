@@ -18,11 +18,11 @@ export const projects = [
             keywords: ["Product Development", ...],
             context: 
                 `Context content `,
-            goal: [
+            background: [
                 {
                     type: "text",
                     content: 
-                        `Goal content`
+                        `background content`
                 },
                 {
                     type: "image",
@@ -103,8 +103,8 @@ export const projects = [
     // ],
     images: [
         import.meta.env.BASE_URL + "projects/traction/01_thumbnail.png",
-        import.meta.env.BASE_URL + "projects/traction/02_traction.png",
-        import.meta.env.BASE_URL + "projects/traction/02_traction2.png",
+        import.meta.env.BASE_URL + "projects/traction/02_initialWorksLike.jpeg",
+        import.meta.env.BASE_URL + "projects/traction/03_currentTraction.jpeg",
     ],
     showcased: true,
     start: "Sept 2025",
@@ -117,7 +117,7 @@ export const projects = [
         `Through the Biomedical Engineering Master of Engineering program at Boston University, I am gaining hands-on experience in medical device product design and development. 
         
         The one-year program consists of a semester of operating room (OR) observations at Boston Medical Center (BMC) to identify unmet user needs and translate them into product design requirements and specifications. The second semester (current) will involve designing, building, and testing prototypes, verifying design inputs are met and validating that user needs are met. `,
-    goal: [
+    background: [
         {
             type: "text",
             content: 
@@ -160,7 +160,7 @@ export const projects = [
     ],
     components: [
         {
-            title: "Discovery: Problem identification and design requirements",
+            title: "DISCOVERY: Problem identification and design requirements",
             objective: "The goal of the discovery phase was to identify technology-related clinical challenges and unmet user needs, leading to the selection of a clearly defined project focus and user needs.",
             methods: [
                 {
@@ -213,7 +213,7 @@ export const projects = [
 
         },
         {
-            title: "Design: Solution strategy",
+            title: "DESIGN: Solution strategy",
             objective: "The goal of the design phase was to propose an optimized solution strategy by exploring and comparing alternative design strategies in the context of Competitive Analysis, IP strategies, preliminary market trends, and economic variables.",
             methods: [
                 {
@@ -246,7 +246,7 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        `Translated user needs into design inputs and outputs, recording them in a Requirements Traceability Matrix (RTM)`
+                        ``
                 },
             ],
             documents: [
@@ -257,12 +257,12 @@ export const projects = [
             ] 
         },
         {
-            title: "Development: Specifications and Design Realization",
+            title: "DEVELOPMENT: Specifications and Design Realization",
             objective: "",
             methods: [
                 {
-                    type: "bullet",
-                    title: "Requirements Traceability Matrix (RTM)",
+                    type: "text",
+                    title: "Design Requirements",
                     content: 
                         ``
                 },
@@ -274,7 +274,28 @@ export const projects = [
                 },
                 {
                     type: "bullet",
-                    title: "Verification and Validation Testing",
+                    title: "Testing",
+                    content: 
+                        ``
+                },
+                {
+                    type: "bullet",
+                    title: "Agile Workflow",
+                    content: 
+                        ``
+                },
+
+                
+            ],
+            results: [
+                {
+                    type: "bullet",
+                    title: "Requirements Traceability Matrix (RTM)",
+                    content: 
+                        ``
+                },
+                {
+                    type: "Verification and Validation Protocols",
                     content: 
                         ``
                 },
@@ -291,13 +312,6 @@ export const projects = [
                         ``
                 },
             ],
-            results: [
-                {
-                    type: "text",
-                    content: 
-                        ``
-                },
-            ],
             documents: [
                 {
                     title: "DocTitle",
@@ -306,20 +320,20 @@ export const projects = [
             ],
         },
         {
-            title: "Deployment: Business model and IP feasibility",
+            title: "DEPLOYMENT: Business model and IP feasibility",
             objective: "The goal of the deployment phase is to develop a full business model canvas for our device. The business model analysis will also include evaluating reimbursement and intellectual property feasibility, packaging, labeling, and sterilization considerations.",
             methods: [
                 {
                     type: "text",
                     content: 
-                        ``
+                        `In progress`
                 },
             ],
             results: [
                 {
                     type: "text",
                     content: 
-                        ``
+                        `In progress`
                 },
             ],
             documents: [
@@ -347,33 +361,99 @@ export const projects = [
     teamsize: "4",
     keywords: ["Manufacturing", "EDM", "EVT", "DVT", "Documentation", "Machining"],
     context: 
-        `Context`,
-    goal: [
+        `The Product Realization Master's course at BU (ME537) focuses on the essential and challenging process of getting a design from the drawing board into the hands of the customer. 
+        
+        A semester long project to build and prototype a small production system includes hands-on experience, covering topics such as Design for Manufacturing, validation testing, cash flow modeling, in-house vs outsourcing, setting up a factory, selecting supplier partners, distribution, and ongoing product support.
+        
+        By the end of the semester, each team will have documented, efficient and consistent production of the final 10 units and a mass production plan.
+        `,
+    background: [
+        {
+            type: "header",
+            content: "Project Requirements"
+        },
         {
             type: "text",
             content: 
-                ``
+                `The product must meet the following project requirements:
+                `
+        },
+        {
+            type: "list",
+            name: "requirements",
+            content: 
+                [
+                    "Consist of three (3) or more parts made from two (2) or more manufacturing processes",
+                    "Require dimensional fit between parts",
+                    "Require tool and/or fixture to make or assemble (ex. mold, machining tool, etc.)",
+                    "Be small enough to keep parts for 10+ units in 1 x 1.5 x 2 ft container",
+                    "<$10 per unit to product all mockups, models, and prototypes",
+                    "Use at most one (1) purchased part",
+                    "Cannot use additive manufacturing for final parts (patterns/fixtures ok)"
+                ]
+        },
+        {
+            type: "header",
+            content: "Documents"
+        },
+        {
+            type: "text",
+            content: 
+                `Throughout the life of the project, the following documents will be created:
+                `
+        },
+        {
+            type: "list",
+            name: "documents",
+            content: 
+                [
+                    "DOC01 - Project Requirements",
+                    "DOC02 - CAD Drawings",
+                    "DOC03 - Enterprise Data Management (EDM)",
+                    "DOC04 - Schedule",
+                    "DOC05 - RASCI",
+                    "DOC06 - Risk Management",
+                    "DOC07 - Specifications Document",
+                    "DOC08 - Bill of Materials (BOM)",
+                    "DOC09 - Cost Model",
+                    "DOC010 - Tooling",
+                    "DOC011 - Quality Test Plan (QTP)",
+                    "DOC012 - Design Failure Modes and Effects Analysis (DFMEA)",
+                    "DOC013 - Process Plan",
+                    "DOC014 - Control Plan",
+                    "DOC015 - Schedule of Parts (SOP)",
+                    "DOC016 - Packaging",
+                    "DOC017 - Flexism",
+                    "DOC018 - Cashflow",
+                    "DOC019 - Apriori",
+                ]
+        },
+        {
+            type: "text",
+            content: 
+                `Note on document ownership: All team members remained informed about each document. The Project Manager (PM) for each assignment rotated and therefore the name of the Document Approver rotated (and may not be mine).`
+        },
+
+    ],
+    conclusion: [
+        {
+            type: "text",
+            content: 
+                `My team "Bob the Builders" present The PressMate.  `
         },
         {
             type: "image",
-            src: import.meta.env.BASE_URL + "projects/[project]/[image].png",
-            alt: "Alt",
-            caption: "Caption",
+            src: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
+            alt: "Project final result",
+            caption: "The final prototype for our single-serve coffee press -- PressMate",
             aspect: "16/9"
         },
-        {
-            type: "text",
-            content: 
-                ``
-        },
-    ],
-    conclusion: [
 
     ],
     components: [
         {
             title: "Project Proposal",
-            objective: "",
+            objective: "Generate ideas for projects, propose three (3) ideas with elevator pitches, and downselect to a final project focus. Elevator pitches must include a description of the product, rough sketch and dimensions, possible manufacturing strategy and materials, list of key risks.",
             methods: [
                 {
                     type: "text",
@@ -385,7 +465,9 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        ``
+                        `The coffee press idea was decided by a class vote, after which a formal project proposal and project rationale was documented.
+                        
+                        The elevator pitches, project proposal, and project rationale can be found below in Relevant Documents.`
                 },
             ],
             documents: [
@@ -396,8 +478,34 @@ export const projects = [
             ],
         },
         {
-            title: "Concept",
-            objective: "",
+            title: "Project Launch and Concept Refinement",
+            objective: "Finalize approach, refine product concept, and set up the project management infrastructure. ",
+            methods: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        `Documents DOC01 - DOC06 were created (see below).
+                        
+                        `
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Prototyping",
+            objective: "Build one (1) prototype with non-production intent processes.",
             methods: [
                 {
                     type: "text",
@@ -421,7 +529,7 @@ export const projects = [
         },
         {
             title: "Engineering Validation Testing",
-            objective: "",
+            objective: "Build one (1) product with production intent and tooling plans.",
             methods: [
                 {
                     type: "text",
@@ -445,7 +553,7 @@ export const projects = [
         },
         {
             title: "Design Validation Testing",
-            objective: "",
+            objective: "Build three (3) products with all production intent processes and test tooling and fixtures.",
             methods: [
                 {
                     type: "text",
@@ -469,7 +577,7 @@ export const projects = [
         },
         {
             title: "Production Validation Testing",
-            objective: "",
+            objective: "Build ten (10) product will all production intent processes, fixtures, and tools. ",
             methods: [
                 {
                     type: "text",
@@ -493,7 +601,7 @@ export const projects = [
         },
         {
             title: "Mass Production",
-            objective: "",
+            objective: "Produce a mass production plan with forecast, packaging, cost down targets, and production plan.",
             methods: [
                 {
                     type: "text",
@@ -536,7 +644,7 @@ export const projects = [
         `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior, using multimodal neuroimaging techniques. 
         
         More details can be found at {<a href="https://www.linkedin.com/in/li-arditi/">https://www.linkedin.com/in/li-arditi/</a>}`,
-    goal: [
+    background: [
         {
             type: "text",
             content: 
@@ -602,7 +710,7 @@ export const projects = [
     keywords: ["NIH grant materials", "Pneumatic Actuation", "Arduino"],
     context: 
         `Context`,
-    goal: [
+    background: [
         {
             type: "text",
             content: 
@@ -669,7 +777,7 @@ export const projects = [
     keywords: ["Project Management", "HVAC Systems", "Communication", "Detail-oriented", "Documentation", "Cross-functional Teamwork"],
     context: 
         `Context`,
-    goal: [
+    background: [
         {
             type: "text",
             content: `
@@ -737,7 +845,7 @@ export const projects = [
     keywords: ["KPI Dashboards", "UI", "Full-Stack", "PHP", "Python", "Javascript", "Unity"],
     context: 
         `Context`,
-    goal: [
+    background: [
         {
             type: "text",
             content: 
@@ -804,7 +912,7 @@ export const projects = [
     keywords: ["MATLAB", "Simulation", "Force Analysis"],
     context: 
         `Context`,
-    goal: [
+    background: [
         {
             type: "text",
             content: 
@@ -871,7 +979,7 @@ export const projects = [
     keywords: ["Keywords",],
     context: 
         `Context`,
-    goal: [
+    background: [
         {
             type: "text",
             content: 
@@ -938,7 +1046,7 @@ export const projects = [
     keywords: ["Keywords",],
     context: 
         `Context`,
-    goal: [
+    background: [
         {
             type: "text",
             content: 

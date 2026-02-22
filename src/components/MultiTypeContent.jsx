@@ -73,6 +73,30 @@ export default function MultiTypeContent({ content }) {
 					
 					);
 				}
+
+				{/* List */}
+				if (section.type === "list") {
+					return (
+						<ol className="mx-10 mt-3 mb-5 font-light list-decimal">
+							{section.content.map((item, index) => {
+								return (
+									<li key={section.name + index} className="pl-3 mb-1 leading-5">
+										{item}
+									</li>)
+							})}
+							
+						</ol>
+					);
+				}
+
+				{/* Header */}
+				if (section.type === "header") {
+					return (
+					<h4 className="text-md mt-3 font-bold">
+						{section.content}
+					</h4>
+					);
+				}
 				
 				{/* Other */}
 				return null;
