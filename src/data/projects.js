@@ -124,13 +124,13 @@ export const projects = [
             content: 
                 `As part of the Orthopedics team, my team and I decided to focus on improving skeletal traction for femoral shaft fractures. 
                 
-                Skeletal traction is an important damage control procedure used as temporary treatment until definitive treatment can be implemented. The goal is to counteract the shortening effects of muscle contractions by applying a pulling force to bring the femur back to length. The current standard of care includes a specialized traction bed and a system of pulleys and weights to apply the force (example shown below).`
+                Skeletal traction is an important damage control procedure used as temporary treatment until definitive treatment can be implemented. The goal is to counteract the shortening effects of muscle contractions by applying a pulling force to bring the fractured bone (in this case the femur) back to length. The current standard of care includes a specialized traction bed and a system of pulleys and weights to apply the force (example shown below).`
         },
         {
             type: "image",
             src: import.meta.env.BASE_URL + "projects/traction/03_currentTraction.png",
             alt: "Standard Skeletal Traction Frame",
-            caption: "One of the standard skeletal traction setups",
+            caption: "One of the standard skeletal traction setups for femur fractures",
             aspect: "16/9"
         },
         {
@@ -155,7 +155,29 @@ export const projects = [
         {
             type: "text",
             content: 
-                ``
+                `Throughout the product lifecyle, a binder with the following sections are being created to document the design process:`
+        },
+        {
+            type: "list",
+            name: "bindersections",
+            content: 
+                [
+                    "Clinical Challenges and User Needs",
+                    "Device Requirements",
+                    "Human Factors Analysis",
+                    "Engineering Specifications",
+                    "Design Strategy Development",
+                    "Design Realization",
+                    "Verification Testing",
+                    "Validation Testing",
+                    "Design for Manufacturing",
+                    "Hazards and Harms",
+                    "Failure Modes and Effects Analysis (FMEA)",
+                    "Regulatory Pathway and Plan",
+                    "IP and Competitive Analysis",
+                    "Commercialization Strategies",
+                    "Business Model Canvas Design",
+                ]
         },
 
     ],
@@ -169,9 +191,9 @@ export const projects = [
                     type: "bullet",
                     style: "",
                     border: "border-r",
-                    title: "Clinical Observations",
+                    title: "Clinical Observations and Voice of Customer (VOC)",
                     content: 
-                        `Conduct clinical observations at Boston Medical Center (BMC) with the support of a clinical advisor. Observe interactions, technology use, and workflows, identifying potential problems or opportunities for improvement that can be translated into unmet user needs.`
+                        `Conduct clinical observations at Boston Medical Center (BMC) with the support of a clinical advisor to understand voice of customer (VOC). Observe interactions, technology use, and workflows, identifying potential problems or opportunities for improvement that can be translated into unmet user needs. `
                 },
                 {
                     type: "bullet",
@@ -185,20 +207,10 @@ export const projects = [
                     type: "bullet",
                     style: "",
                     border: "border-r",
-                    title: "Voice of Customer (VOC)",
-                    content: 
-                        ``
-                },
-                {
-                    type: "bullet",
-                    style: "",
-                    border: "border-r",
                     title: "Value Proposition and Customer Segmentation",
                     content: 
                         `Create a Value Proposition Canvas to map the customers' jobs, pains, and gains to our product. Identify who the customer is and what they need to accomplish to construct a value proposition that demonstrates what our product can offer and how it is better (or different!)`
                 },
-                
-
 
             ],
             results: [
@@ -238,22 +250,23 @@ export const projects = [
                 },
                 {
                     type: "image",
-                    src: import.meta.env.BASE_URL + "projects/traction/discoveryResults.png",
+                    src: import.meta.env.BASE_URL + "projects/traction/discoveryResults.pdf",
                     alt: "Problem and needs statement; clinical requirements",
                     caption: "",
-                    aspect: "16/9"
+                    aspect: "auto",
+                    width: "w-xl"
                 },
                 {
                     type: "text",
                     content: 
-                        `Stakeholder analysis and value proposition are linked below in Relevant Documents.
+                        `Formal binder documents are in progress.
                         `
                 },
             ],
             documents: [
                 {
-                    title: "Stakeholder Analysis",
-                    document: import.meta.env.BASE_URL + "projects/traction/RTM.pdf"
+                    title: "Initial Observations Presentation",
+                    document: import.meta.env.BASE_URL + "projects/traction/initialObservationsPresentation.pdf"
                 },
 
             ]
@@ -276,9 +289,17 @@ export const projects = [
                     type: "bullet",
                     style: "",
                     border: "border-r",
-                    title: "Design Requirements",
+                    title: "Design Inputs (Device Requirements)",
                     content: 
-                        ``
+                        `Conduct research and consult physicians to identify design inputs, including form, fit, and function. Clearly define what the solution needs to achieve and how well it needs to be done i.e. what is an objective measurable requirement to meet the clinical requirement.`
+                },
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Design Outputs (Device Specifications)",
+                    content: 
+                        `Based on the design inputs, identify how the design input will be achieved, aligning with 21 CFR 820.30(d) Design Output Controls. Ensure that every output traces to an input, which traces to a need`
                 },
                 {
                     type: "bullet",
@@ -294,7 +315,7 @@ export const projects = [
                     border: "border-r",
                     title: "Market Research",
                     content: 
-                        ``
+                        `Turn an unmet need into an addressable market by identifying a patient and procedure and serve a niche customer and need well first; consider who the user and buyer is, what do they gain, and what is the growth potential. Conduct market research to estimate market size by identifying customer segments, Total Addressable Market (TAM), Servicable Available Market (SAM), and Share of Market/Serviceable and Obtainable Market (SOM)`
                 },
                 {
                     type: "bullet",
@@ -302,12 +323,28 @@ export const projects = [
                     border: "border-r",
                     title: "Agile Workflow",
                     content: 
-                        ``
+                        `Establish a project timeline, identifying Agile sprints for iterative design.`
                 },
                 
 
             ],
             results: [
+                {
+                    type: "text",
+                    content: 
+                        `Device inputs and outputs were determined by research and consultation with physicians. A Requirement Traceability Matrix (RTM) was created to`
+                },
+                {
+                    type: "list",
+                    name: "rtm",
+                    content: 
+                        [
+                            "Translate what the customer needs into what the product must do",
+                            "Document that product meets User needs and Design inputs",
+                            "Links design requirements to the testing methods that will be used to confirm that the product meets those requirements",
+                            "Identify the most critical features of a design required for it to function",
+                        ]
+                },
                 {
                     type: "text",
                     content: 
@@ -317,34 +354,25 @@ export const projects = [
                         
                         A usability test plan will be developed and conducted for human factors validation and usability testing. This includes test objective, participant criteria, test scenarios, and data collection methods. 
                         
-                        Related documents can be found below.`
+                        Formal documents are in progress.`
                 },
             ],
             documents: [
-                {
-                    title: "Requirements Traceability Matrix (RTM)",
-                    document: import.meta.env.BASE_URL + "projects/traction/RTM.pdf"
-                },
+                
             ] 
         },
         {
             title: "DEVELOPMENT:",
-            subtitle: "Engineering Specifications and Design Realization",
-            objective: "Establish engineering specifications, build working prototypes of key components of the engineering solution, incorporate Design for Manufacturing considerations, and develop risk mitigation strategies. Validation testing will be used to evaluate design feasibility.",
+            subtitle: "Design Realization",
+            objective: "Build working prototypes of key components of the engineering solution, incorporate Design for Manufacturing considerations, and develop risk mitigation strategies. Validation testing will be used to evaluate design feasibility.",
             methods: [
-                {
-                    type: "text",
-                    title: "Engineering Requirements",
-                    content: 
-                        ``
-                },
                 {
                     type: "bullet",
                     style: "",
                     border: "border-r",
                     title: "Prototyping",
                     content: 
-                        ``
+                        `Conduct rapid prototyping sessions, 3D modeling, and machining processes to create Looks-Like and Works-Like prototypes.`
                 },
                 {
                     type: "bullet",
@@ -352,7 +380,7 @@ export const projects = [
                     border: "border-r",
                     title: "Validation, Verification, and Testing",
                     content: 
-                        ``
+                        `In Progress`
                 },
                 {
                     type: "bullet",
@@ -360,7 +388,7 @@ export const projects = [
                     border: "border-r",
                     title: "Failure Modes and Effects Analysis (FMEA)",
                     content: 
-                        ``
+                        `In Progress`
                 },
                 {
                     type: "bullet",
@@ -368,7 +396,7 @@ export const projects = [
                     border: "border-r",
                     title: "Quality Management Systems (QMS)",
                     content: 
-                        ``
+                        `In Progress`
                 },
                 {
                     type: "bullet",
@@ -376,7 +404,7 @@ export const projects = [
                     border: "border-r",
                     title: "Design for Manufacturing (DFM)",
                     content: 
-                        ``
+                        `In Progress`
                 },
                 
 
@@ -384,22 +412,38 @@ export const projects = [
             ],
             results: [
                 {
-                    type: "text",
-                    content: 
-                        `In progress`
+                    type: "header",
+                    content: "Physical Prototypes (In Progress)"
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/prototypes.png",
+                    alt: "Progression of prototypes",
+                    caption: "Overall progression of prototypes",
+                    aspect: "auto",
+                    width: "w-2xl"
                 },
                 {
                     type: "header",
-                    content: "Works-Like Prototype"
+                    content: "3D Models (In Progress)"
                 },
-                
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/models.png",
+                    alt: "Progression of prototypes",
+                    caption: "Overall progression of 3D models",
+                    aspect: "auto",
+                    width: "w-2xl"
+                },
+                {
+                    type: "text",
+                    content: 
+                        `V&V, FMEA, QMS, DFM all in progress`
+                },
                 
             ],
             documents: [
-                {
-                    title: "DocTitle",
-                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
-                },
+                
             ],
         },
         {
@@ -408,27 +452,24 @@ export const projects = [
             objective: "Create a full business model canvas for the device and evaluate reimbursement and intellectual property feasibility. The business model analysis will also include manufacturing and E2E supply chain with packaging, labeling, and sterilization considerations.",
             methods: [
                 {
-                    type: "text",
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Business Model Canvas",
                     content: 
-                        `In progress`
+                        `In Progress`
                 },
             ],
             results: [
                 {
                     type: "text",
                     content: 
-                        `In progress`
+                        `Deployment phase to follow Development phase`
                 },
-                {
-                    type: "header",
-                    content: "Is-Like Prototype"
-                },
+
             ],
             documents: [
-                {
-                    title: "DocTitle",
-                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
-                },
+                
             ],
         },
     ],
@@ -447,7 +488,7 @@ export const projects = [
     active: true,
     type: "Product Realization Master's Course",
     teamsize: "4",
-    keywords: ["Manufacturing", "EDM", "EVT", "DVT", "Documentation", "Machining"],
+    keywords: ["Manufacturing", "ECM", "EVT", "DVT", "Documentation", "Machining"],
     context: 
         `The Product Realization Master's course at BU (ME537) focuses on the essential and challenging process of getting a design from the drawing board into the hands of the customer. 
         
@@ -531,7 +572,7 @@ export const projects = [
                 [
                     "DOC01 - Project Requirements",
                     "DOC02 - CAD Drawings",
-                    "DOC03 - Enterprise Data Management (EDM)",
+                    "DOC03 - Enterprise Content Management (ECM)",
                     "DOC04 - Schedule",
                     "DOC05 - RASCI",
                     "DOC06 - Risk Management",
@@ -563,9 +604,12 @@ export const projects = [
             objective: "Generate ideas for projects, propose three (3) ideas with elevator pitches, and downselect to a final project focus. Elevator pitches must include a description of the product, rough sketch and dimensions, possible manufacturing strategy and materials, list of key risks.",
             methods: [
                 {
-                    type: "text",
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Brainstorming Session",
                     content: 
-                        ``
+                        `Each team member contributed at least 3 project ideas.`
                 },
             ],
             results: [
@@ -598,8 +642,9 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        `Documents DOC01 - DOC06 were created (see below).
+                        `My main responsibility was to draft the Enterprise Content Management (ECM) Plan. The plan establishes folder structure, naming conventions, version control standards, change management, and team expectations. I also created automation scripts using Google Apps Script to streamline document formatting and assignment submission.
                         
+                        Initial drafts of DOC01 - DOC06 were also created, which I also contributed to in order to ensure alignment with the ECM plan.
                         `
                 },
             ],

@@ -30,12 +30,13 @@ export default function MultiTypeContent({ content }) {
 
 				{/* Image */}
 				if (section.type === "image") {
+					var className = `rounded-xl mx-auto ${section.width ? section.width : "w-md"}`
 					return (
 					<figure key={section.src} className="my-8 text-center">
 						<img
 							src={section.src}
 							alt={section.alt}
-							className="w-md rounded-xl mx-auto"
+							className={className}
 						/>
 						<figcaption className="text-sm text-neutral-500 mt-2">
 							{section.caption}
@@ -63,7 +64,7 @@ export default function MultiTypeContent({ content }) {
 						<div key={section.title + index} className="flex gap-2 leading-6 mb-4">
 							{/* bullet and bold title */}
 							<div className="mr-1"> {section.style ? section.style : "•"}</div>
-							<div className={section.title? "flex-none w-40 text-neutral-700 font-bold": ""}>{section.title}</div>
+							<div className={section.title? "flex-none w-40 text-neutral-700 font-semibold": ""}>{section.title}</div>
 							<div className={section.border ? section.border : ""}> {section.border ? "" : ":"}</div>
 							
 							{/* content of bullet */}
@@ -99,6 +100,7 @@ export default function MultiTypeContent({ content }) {
 					</h4>
 					);
 				}
+
 				
 				{/* Other */}
 				return null;

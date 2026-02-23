@@ -152,7 +152,7 @@ export default function Project() {
 				<h2 className="text-xl font-semibold mb-3">Components</h2>
 				<ol className="list-decimal list-inside">
 				{project.components.map((component, i) => (
-					<li key={"component-"+i} className="font-semibold">
+					<li key={"component-"+i} className="font-bold">
 						<CollapsibleSection 
 							title={component.title}
 							// title={<h4 className="text-md font-semibold ml-3">{component.title}</h4>}
@@ -181,10 +181,15 @@ export default function Project() {
 										</div>
 										
 										{/* Documents */}
-										<h4 className="text-md mt-3">Relevant Documents</h4>
-										<div className="ml-10 mb-6 font-normal">
-											<MultiTypeContent content={component.documents} />
-										</div>
+										{/* {component.documents.length > 0 && (
+											<div>
+												<h4 className="text-md mt-3">Relevant Documents</h4>
+												<div className="ml-10 mb-6 font-normal">
+													<MultiTypeContent content={component.documents} />
+												</div>
+											</div>
+										)}
+										 */}
 									</div>
 
 

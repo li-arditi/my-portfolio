@@ -94,15 +94,21 @@ export default function Portfolio() {
 
 		{/* Showcased Projects */}
 		<section id="showcase" className="max-w-5xl mx-auto px-6 py-5">
-			<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
+			<div className="mb-10 flex flex-wrap items-end justify-between gap-4">
+				{/* Section Header */}
+				<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
+				{/* Provide page for all projects */}
+				<a href="#allprojects"
+					className="inline-flex items-center rounded-xl border border-neutral-300 px-3 py-2 text-sm text-neutral-500 hover:border-neutral-900 hover:bg-neutral-100 transition">
+					All Projects <ArrowUpRight size={16} />
+				</a>
+
+			</div>
+			
 			<p className="text-md text-neutral-600 mb-5 pl-1"> 
 				These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on my <span className="font-bold"> All Projects</span> page.
 			</p>
-			{/* Provide page for all projects */}
-			<a href="#allprojects"
-				className="inline-flex items-center rounded-xl bg-neutral-900 text-neutral-50 px-3 py-2 text-sm hover:bg-neutral-800 transition">
-				All Projects <ArrowUpRight size={16} />
-			</a>
+			
 
 			<div className="grid gap-8 sm:grid-cols-3 mt-6">
 				{projects.map((p) => (
@@ -182,7 +188,7 @@ export default function Portfolio() {
 		{/* Footer */}
 		<footer className="border-t border-neutral-200 mt-20">
 			<div className="max-w-5xl mx-auto px-6 py-10 text-sm text-neutral-500 flex justify-between">
-			<span> Li Arditi </span>
+			<span> © 2926 Li Arditi </span>
 			<span>Built with React, hosted by Github Pages</span>
 			</div>
 		</footer>
