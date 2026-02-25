@@ -50,7 +50,13 @@ export const projects = [
                 {
                     title: "Method title",
                     subtitle: "",
-                    objective: "",
+                    objective: [
+                        {
+                            type: "text",
+                            content: 
+                                ``
+                        },
+                    ],
                     methods: [
                         {
                             type: "text",
@@ -143,13 +149,13 @@ export const projects = [
         {
             type: "text",
             content: 
-                `Our solution is a self-contained, portable, traction frame.`
+                `(In progress) Our solution is a self-contained, portable, traction frame.`
         },
         {
             type: "image",
-            src: import.meta.env.BASE_URL + "projects/traction/01_thumbnail.png",
+            src: import.meta.env.BASE_URL + "projects/traction/02_initialWorksLike.jpeg",
             alt: "Project final result",
-            caption: "The final prototype for self-contained, portable skeletal traction",
+            caption: "The current prototype for self-contained, portable skeletal traction",
             aspect: "16/9"
         },
         {
@@ -183,14 +189,20 @@ export const projects = [
     ],
     components: [
         {
-            title: "DISCOVERY:",
+            title: "Discovery:",
             subtitle: "Unmet user needs, stakeholder analysis, and value proposition",
-            objective: "Identify technology-related clinical challenges and unmet user needs to select a project focus and clearly defined user needs, supported by stakeholder analysis and a value proposition.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Identify technology-related clinical challenges and unmet user needs to select a project focus and clearly defined user needs, supported by stakeholder analysis and a value proposition.`
+                },
+            ],
             methods: [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r  border-neutral-200",
                     title: "Clinical Observations and Voice of Customer (VOC)",
                     content: 
                         `Conduct clinical observations at Boston Medical Center (BMC) with the support of a clinical advisor to understand voice of customer (VOC). Observe interactions, technology use, and workflows, identifying potential problems or opportunities for improvement that can be translated into unmet user needs. `
@@ -198,7 +210,7 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Stakeholder Analysis",
                     content: 
                         `Understand the process and identify categories of stakeholders and their interests including the initiator, influencer, gatekeeper, decider, purchaser, user, and saboteur. `
@@ -206,7 +218,7 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Value Proposition and Customer Segmentation",
                     content: 
                         `Create a Value Proposition Canvas to map the customers' jobs, pains, and gains to our product. Identify who the customer is and what they need to accomplish to construct a value proposition that demonstrates what our product can offer and how it is better (or different!)`
@@ -217,44 +229,64 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        `I conducted 50+ hours of clinical observations throughout a semester, demonstrating comfort with operating room (OR) protocols and confidence in talking to surgeons.  
+                        `I conducted 50+ hours of clinical observations throughout a semester, working directly with surgeons, nurses, residents, and device representatives, while demonstrating comfort with operating room (OR) protocols and confidence in talking to surgeons. 
                         
-                        Direct observation was critical because as Hentry Ford said,`
+                        I observed a range of surgeries shown below.
+                        `
                 },
                 {
-                    type: "quote",
-                    by: "Henry Ford",
-                    includeBy: false,
-                    content: 
-                        `If I asked my customers what they wanted, they would have said a faster horse.`
-                },
-                {
-                    type: "text",
-                    content: 
-                        `However, challenges arose because as it relates to medical device development, `
-                },
-                {
-                    type: "quote",
-                    by: "Thomas Fogarty, MD; Founder, Fogarty Institute for Innovation",
-                    includeBy: true,
-                    content: 
-                        `When you talk to physicians youʼve got to learn the difference between what they say, what they want, what theyʼll pay for, and what they actually do.`
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/surgeries.png",
+                    alt: "Summary of observed surgeries",
+                    caption: "The range of observed surgeries",
+                    aspect: "auto",
+                    className: "w-2xl"
                 },
                 {
                     type: "text",
                     content: 
-                        `With this in mind, I recorded detailed notes and conducted interviews with diverse medical stakeholders (surgeons, nurses, residents, and device representatives) to understand the Voice of Costumer, identifying pain points and root causes. My team and I also consulted with dedicated industry mentors, who offered insight and challenged us as they would in industry settings.
+                        `Unfortunately, I can't show images of surgeries, but here is a picture of the prepped sterile table for the internal fixation of the right femur.
+                        `
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/steriletable.jpeg",
+                    alt: "Sterile table",
+                    caption: "The prepped sterile table for an internal fixation of a femur fracture.",
+                    aspect: "auto",
+                    className: "w-xl"
+                },
+                {
+                    type: "text",
+                    content: 
+                        `Storyboards were also used to identify important moments throughout a procedure.
+                        `
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/storyboard.jpeg",
+                    alt: "Storyboard example",
+                    caption: "An example of one of my storyboards for trigger finger release surgeries.",
+                    aspect: "auto",
+                    className: "w-xl"
+                },
+                {
+                    type: "text",
+                    content: 
+                        `My interactions with diverse clinical teams enabled me to evaluate real-world product use, identify workflow and usability challenges, and translate clinical feedback into into clear design inputs and product requirements while aligning with medical device standards.
+                        
+                        My team and I also consulted with dedicated industry mentors, who offered insight and challenged us as they would in industry settings.
                         
                         With a combined total of 200 observation hours by the team, the problem and needs statement, along with clinical needs and device requirements for a minimum viable product are outlined below:
                         `
                 },
                 {
                     type: "image",
-                    src: import.meta.env.BASE_URL + "projects/traction/discoveryResults.pdf",
+                    src: import.meta.env.BASE_URL + "projects/traction/discoveryResults.jpg",
                     alt: "Problem and needs statement; clinical requirements",
                     caption: "",
                     aspect: "auto",
-                    width: "w-xl"
+                    className: "w-2xl"
                 },
                 {
                     type: "text",
@@ -265,30 +297,37 @@ export const projects = [
             ],
             documents: [
                 {
+                    type: "pdf",
                     title: "Initial Observations Presentation",
-                    document: import.meta.env.BASE_URL + "projects/traction/initialObservationsPresentation.pdf"
+                    filepath: import.meta.env.BASE_URL + "public/projects/traction/documents/Final  Problems Presentation-2.pdf"
                 },
 
             ]
 
         },
         {
-            title: "DESIGN:",
+            title: "Design:",
             subtitle: "Design Strategy Development",
-            objective: "Propose an optimized solution strategy by exploring and comparing alternative design strategies in the context of Competitive Analysis, IP strategies, preliminary market trends, and economic variables.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Propose an optimized solution strategy by exploring and comparing alternative design strategies in the context of Competitive Analysis, IP strategies, preliminary market trends, and economic variables.`
+                },
+            ],
             methods: [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
-                    title: "Idea Generation",
+                    border: "border-r border-neutral-200",
+                    title: "Ideation",
                     content: 
-                        `Mophological Analysis and SCAMPER design alternatives techniques were conducted to transition from identifying problems into exploring solutions for users.`
+                        `Conduct design alternative techniques to transition from identifying problems into exploring solutions for users.`
                 },
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Design Inputs (Device Requirements)",
                     content: 
                         `Conduct research and consult physicians to identify design inputs, including form, fit, and function. Clearly define what the solution needs to achieve and how well it needs to be done i.e. what is an objective measurable requirement to meet the clinical requirement.`
@@ -296,15 +335,15 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Design Outputs (Device Specifications)",
                     content: 
-                        `Based on the design inputs, identify how the design input will be achieved, aligning with 21 CFR 820.30(d) Design Output Controls. Ensure that every output traces to an input, which traces to a need`
+                        `Based on the design inputs, identify how the design input will be achieved, aligning with 21 CFR 820.30(d) Design Output Controls. Ensure that every output traces to an input, which traces to a need.`
                 },
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Human Factors Analysis",
                     content: 
                         `Usability and human factors (HF) analysis was conducted to consider device users, use environments, and user interfaces according to FDA regulations`
@@ -312,15 +351,15 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r  border-neutral-200",
                     title: "Market Research",
                     content: 
-                        `Turn an unmet need into an addressable market by identifying a patient and procedure and serve a niche customer and need well first; consider who the user and buyer is, what do they gain, and what is the growth potential. Conduct market research to estimate market size by identifying customer segments, Total Addressable Market (TAM), Servicable Available Market (SAM), and Share of Market/Serviceable and Obtainable Market (SOM)`
+                        `Conduct market research to estimate market size by identifying customer segments, Total Addressable Market (TAM), Servicable Available Market (SAM), and Share of Market/Serviceable and Obtainable Market (SOM)`
                 },
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r  border-neutral-200",
                     title: "Agile Workflow",
                     content: 
                         `Establish a project timeline, identifying Agile sprints for iterative design.`
@@ -332,52 +371,72 @@ export const projects = [
                 {
                     type: "text",
                     content: 
-                        `Device inputs and outputs were determined by research and consultation with physicians. A Requirement Traceability Matrix (RTM) was created to`
+                        `Results from this design process were summarized in the following presentation.`
                 },
                 {
-                    type: "list",
-                    name: "rtm",
-                    content: 
-                        [
-                            "Translate what the customer needs into what the product must do",
-                            "Document that product meets User needs and Design inputs",
-                            "Links design requirements to the testing methods that will be used to confirm that the product meets those requirements",
-                            "Identify the most critical features of a design required for it to function",
-                        ]
+                    type: "iframe",
+                    name: "DesignResultsPresentation",
+                    filepath: import.meta.env.BASE_URL + "public/projects/traction/documents/DesignResultsPresentation.pdf",
+                    
                 },
-                {
-                    type: "text",
-                    content: 
-                        `In order to ensure device safety, effectiveness, and usability according to FDA regulations, we conducted a user analysis to identify different user groups, their needs, and potential use errors, along with a risk management plan to address these factors.
+                
+                // {
+                //     type: "text",
+                //     content: 
+                //         `Device inputs and outputs were determined by research and consultation with physicians. A Requirement Traceability Matrix (RTM) was created to`
+                // },
+                // {
+                //     type: "list",
+                //     name: "rtm",
+                //     content: 
+                //         [
+                //             "Translate what the customer needs into what the product must do",
+                //             "Document that product meets User needs and Design inputs",
+                //             "Links design requirements to the testing methods that will be used to confirm that the product meets those requirements",
+                //             "Identify the most critical features of a design required for it to function",
+                //         ]
+                // },
+                // {
+                //     type: "text",
+                //     content: 
+                //         `In order to ensure device safety, effectiveness, and usability according to FDA regulations, we conducted a user analysis to identify different user groups, their needs, and potential use errors, along with a risk management plan to address these factors.
                         
-                        The user interface of the device was designed to consider displays, controls, and labeling, evaluating the design using usability principles.
+                //         The user interface of the device was designed to consider displays, controls, and labeling, evaluating the design using usability principles.
                         
-                        A usability test plan will be developed and conducted for human factors validation and usability testing. This includes test objective, participant criteria, test scenarios, and data collection methods. 
+                //         A usability test plan will be developed and conducted for human factors validation and usability testing. This includes test objective, participant criteria, test scenarios, and data collection methods. 
+
+                //         Turn an unmet need into an addressable market by identifying a patient and procedure and serve a niche customer and need well first; consider who the user and buyer is, what do they gain, and what is the growth potential. 
                         
-                        Formal documents are in progress.`
-                },
+                //         Formal documents are in progress.`
+                // },
             ],
             documents: [
                 
             ] 
         },
         {
-            title: "DEVELOPMENT:",
+            title: "Development:",
             subtitle: "Design Realization",
-            objective: "Build working prototypes of key components of the engineering solution, incorporate Design for Manufacturing considerations, and develop risk mitigation strategies. Validation testing will be used to evaluate design feasibility.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Build working prototypes of key components of the engineering solution, incorporate Design for Manufacturing considerations, and develop risk mitigation strategies. Validation testing will be used to evaluate design feasibility.`
+                },
+            ],
             methods: [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r  border-neutral-200",
                     title: "Prototyping",
                     content: 
-                        `Conduct rapid prototyping sessions, 3D modeling, and machining processes to create Looks-Like and Works-Like prototypes.`
+                        `Conduct rapid prototyping sessions, 3D modeling, and machining processes to create Looks-Like, Works-Like and Is-Like prototypes.`
                 },
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r  border-neutral-200",
                     title: "Validation, Verification, and Testing",
                     content: 
                         `In Progress`
@@ -385,7 +444,7 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Failure Modes and Effects Analysis (FMEA)",
                     content: 
                         `In Progress`
@@ -393,7 +452,7 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Quality Management Systems (QMS)",
                     content: 
                         `In Progress`
@@ -401,7 +460,7 @@ export const projects = [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Design for Manufacturing (DFM)",
                     content: 
                         `In Progress`
@@ -412,6 +471,19 @@ export const projects = [
             ],
             results: [
                 {
+                    type: "text",
+                    content: 
+                        `Here's one of my first mockups!`
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/traction/mockup.png",
+                    alt: "Initial mockup",
+                    caption: "My initial mockup using foil, popsicle sticks, straws, and pipe cleaners",
+                    aspect: "auto",
+                    className: "w-2xl"
+                },
+                {
                     type: "header",
                     content: "Physical Prototypes (In Progress)"
                 },
@@ -421,7 +493,7 @@ export const projects = [
                     alt: "Progression of prototypes",
                     caption: "Overall progression of prototypes",
                     aspect: "auto",
-                    width: "w-2xl"
+                    className: "w-2xl"
                 },
                 {
                     type: "header",
@@ -433,10 +505,13 @@ export const projects = [
                     alt: "Progression of prototypes",
                     caption: "Overall progression of 3D models",
                     aspect: "auto",
-                    width: "w-2xl"
+                    className: "w-2xl"
                 },
                 {
-                    type: "text",
+                    type: "bullet",
+                    style: "",
+                    border: "border-r",
+                    title: "Business Model Canvas",
                     content: 
                         `V&V, FMEA, QMS, DFM all in progress`
                 },
@@ -447,14 +522,20 @@ export const projects = [
             ],
         },
         {
-            title: "DEPLOYMENT:",
+            title: "Deployment:",
             subtitle: "Business model, regulatory strategy, and IP feasibility",
-            objective: "Create a full business model canvas for the device and evaluate reimbursement and intellectual property feasibility. The business model analysis will also include manufacturing and E2E supply chain with packaging, labeling, and sterilization considerations.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Create a full business model canvas for the device and evaluate reimbursement and intellectual property feasibility. The business model analysis will also include manufacturing and E2E supply chain with packaging, labeling, and sterilization considerations.`
+                },
+            ],
             methods: [
                 {
                     type: "bullet",
                     style: "",
-                    border: "border-r",
+                    border: "border-r border-neutral-200",
                     title: "Business Model Canvas",
                     content: 
                         `In Progress`
@@ -488,13 +569,13 @@ export const projects = [
     active: true,
     type: "Product Realization Master's Course",
     teamsize: "4",
-    keywords: ["Manufacturing", "ECM", "EVT", "DVT", "Documentation", "Machining"],
+    keywords: ["Manufacturing", "ECM", "EVT", "DVT", "PVT", "Mass Production", "Documentation", "Machining"],
     context: 
         `The Product Realization Master's course at BU (ME537) focuses on the essential and challenging process of getting a design from the drawing board into the hands of the customer. 
         
-        A semester long project to build and prototype a small production system includes hands-on experience, covering topics such as Design for Manufacturing, validation testing, cash flow modeling, in-house vs outsourcing, setting up a factory, selecting supplier partners, distribution, and ongoing product support.
+        A semester long project to build and prototype a small production system includes hands-on experience covering topics such as Design for Manufacturing, validation testing, cash flow modeling, in-house vs outsourcing, setting up a factory, selecting supplier partners, distribution, and ongoing product support.
         
-        By the end of the semester, each team will have documented, efficient and consistent production of the final 10 units and a mass production plan.
+        By the end of the semester, each team will have documented, efficient and consistent production of the final 10 units and a mass production plan for 100,000 units/year.
         `,
     background: [
         {
@@ -530,7 +611,7 @@ export const projects = [
             content: 
                 `I personally don't drink coffee, however, in order to design a coffee press I needed to do some research about brewing coffee and what makes a good cup of coffee.
 
-                For you non-coffee drinking comrades, coffee is "brewed" by combining ground coffee beans and hot water. After the grounds have been given time to releasing their flavor, they are filtered out creating the revered cup of coffee. The flavor and quality of the cup of coffee can vary based on bean quality, grind size, brewing method, and steep time. The PressMate coffee press uses a "French-press" brewing method, where hot water and grinds are combined, steeped, then separated using a filter that is pressed through the mixture.
+                For you non-coffee drinking comrades, coffee is "brewed" by combining ground coffee beans and hot water. After the grounds have been given time to release their flavor, they are filtered out creating the revered cup of coffee. The flavor and quality of the cup of coffee can vary based on bean quality, grind size, brewing method, and steep time. The PressMate coffee press uses a "French-press" brewing method, where hot water and grinds are combined, steeped, then separated using a filter that is pressed through the mixture.
                 `
         },
         {
@@ -552,7 +633,7 @@ export const projects = [
             type: "image",
             src: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
             alt: "Project final result",
-            caption: "The final prototype for our single-serve coffee press -- PressMate",
+            caption: "The current model for our single-serve coffee press -- PressMate",
             aspect: "16/9"
         },
         {
@@ -601,15 +682,24 @@ export const projects = [
     components: [
         {
             title: "Project Proposal",
-            objective: "Generate ideas for projects, propose three (3) ideas with elevator pitches, and downselect to a final project focus. Elevator pitches must include a description of the product, rough sketch and dimensions, possible manufacturing strategy and materials, list of key risks.",
-            methods: [
+            objective: [
                 {
                     type: "bullet",
                     style: "",
                     border: "border-r",
                     title: "Brainstorming Session",
                     content: 
-                        `Each team member contributed at least 3 project ideas.`
+                        `Generate ideas for projects, propose three (3) ideas with elevator pitches, and downselect to a final project focus. Elevator pitches must include a description of the product, rough sketch and dimensions, possible manufacturing strategy and materials, list of key risks.`
+                },
+            ],
+            methods: [
+                {
+                    type: "bullet",
+                    style: "",
+                    border: "border-r  border-neutral-200",
+                    title: "Brainstorming Session",
+                    content: 
+                        `Each team member contributed at least 3 project ideas. As a team, the top 3 ideas were selected based on interest and feasibility.`
                 },
             ],
             results: [
@@ -618,7 +708,7 @@ export const projects = [
                     content: 
                         `The coffee press idea was decided by a class vote, after which a formal project proposal and project rationale was documented.
                         
-                        The elevator pitches, project proposal, and project rationale can be found below in Relevant Documents.`
+                        The elevator pitches, project proposal, and project rationale will be uploaded soon.`
                 },
             ],
             documents: [
@@ -630,7 +720,13 @@ export const projects = [
         },
         {
             title: "Project Launch and Concept Refinement",
-            objective: "Finalize approach, refine product concept, and set up the project management infrastructure. ",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Finalize approach, refine product concept, and set up the project management infrastructure.`
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -657,7 +753,13 @@ export const projects = [
         },
         {
             title: "Prototyping",
-            objective: "Build one (1) prototype with non-production intent processes.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Build one (1) prototype with non-production intent processes.`
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -681,7 +783,13 @@ export const projects = [
         },
         {
             title: "Engineering Validation Testing",
-            objective: "Build one (1) product with production intent and tooling plans.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Build one (1) product with production intent and tooling plans.`
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -705,7 +813,13 @@ export const projects = [
         },
         {
             title: "Design Validation Testing",
-            objective: "Build three (3) products with all production intent processes and test tooling and fixtures.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Build three (3) products with all production intent processes and test tooling and fixtures.`
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -729,7 +843,13 @@ export const projects = [
         },
         {
             title: "Production Validation Testing",
-            objective: "Build ten (10) product will all production intent processes, fixtures, and tools. ",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Build ten (10) product will all production intent processes, fixtures, and tools.`
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -753,7 +873,13 @@ export const projects = [
         },
         {
             title: "Mass Production",
-            objective: "Produce a mass production plan with forecast, packaging, cost down targets, and production plan.",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `Produce a mass production plan with forecast, packaging, cost down targets, and production plan.`
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -784,6 +910,7 @@ export const projects = [
     thumbnail: import.meta.env.BASE_URL + "projects/stangl/01_thumbnail.png",
     images: [
                 import.meta.env.BASE_URL + "projects/stangl/01_thumbnail.png",
+                "projects/stangl/rns.png"
             ],
     showcased: true,
     start: "May 2025",
@@ -793,40 +920,182 @@ export const projects = [
     teamsize: "2-5",
     keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino"],
     context: 
-        `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior, using multimodal neuroimaging techniques. 
-        
-        More details can be found at {<a href="https://www.linkedin.com/in/li-arditi/">https://www.linkedin.com/in/li-arditi/</a>}`,
+        `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior using multimodal neuroimaging techniques. 
+
+        The ability to record a person’s brain activity in real-world situations is relatively new, so there are no ready-made systems available to record experimental data. Therefore, the Stangl Lab developed a custom mobile platform that allows for data synchronization between a computer running the experimental protocol and sensors the participant is wearing. 
+
+        My role was to improve the current hardware-software integration system to ensure sub-millisecond sychronization precision between the multimodal data. In order to fully understand the system, I was also involved in conducting experiment protocols with the team.
+        `,
     background: [
+        {
+            type: "header",
+            content: "Research Goals"
+        },
         {
             type: "text",
             content: 
-                ``
+                `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior using multimodal neuroimaging techniques. 
+
+                Studying freely moving participants in complex scenarios and real-world settings requires multi-dimensional recordings of numerous variables, in order to be able to include these variables in the study design and analyze their impact on human cognition and behavior.
+
+                The Stangl Lab works with a rare group of individuals who have so-called "closed-loop" neuromodulation devices permanently implanted in their brain, which can record and stimulate brain activity through electrodes implanted in deep brain regions. These signals, along with motion tracking systems based on infrared cameras or inertial measurement units, audio and video recordings, and mobile eye-tracking system are used during freely-moving spatial navigation and memory tasks. 
+                
+                More information about the Stangl Lab can be found at 
+                `
+        },
+        {
+            type: "url",
+            url: "https://www.stangl-lab.com",
+            urlText: null
+        },
+        {
+            type: "header",
+            content: "System Overview"
+        },
+        {
+            type: "text",
+            content: 
+                `The system consists of many components that must communicate with each other in real time. Components include:
+                `
+        },
+        {
+            type: "list",
+            name: "stanglcomponents",
+            content: 
+                [
+                    "Unity computer - the experimental protocol controller",
+                    "Responsive Neurostimulation (RNS) System - the brain implant and data collection accessories",
+                    "Vicon Optical Motion Capture (MoCap) - the motion capture camera system",
+                    "Neon Pupil Glasses - the eye tracking system",
+                    "Arduino Uno - a microcontroller for the MoCap connection",
+                    "Raspbery Pi 4B - a portable microprocessor",
+                    "Functional Near-Infrared Spectroscopy (FNIRS) System - a way to measure brain activity through tracking blood hemodynamics of the cerebral cortex"
+                ]
+        },
+        {
+            type: "text",
+            content: 
+                `Since computer timestamps and device communication have unavoidable delays, data synchronization is done through sending an electrical pulse, magnetic pulse, or serial communication (message) to each of the devices at specific intervals, or important moments during the experiment. These pulses are recorded within the each sensors’ data to allow for alignment of data during analysis. A schematic of the connections is shown below.
+                `
+        },
+        
+    ],
+    conclusion: [
+        {
+            type: "text",
+            content: 
+                `I was able to quickly learn the experiment protocols and underlying code to start integrating a Lab Streaming Layer (LSL) workflow to the existing system. I also created a 30-page report to document my process, results, lessons learned, and future directions to ensure smooth knowledge transfer to technical and non-technical audiences. 
+                
+                The table of contents of the report is provided below for reference. A high level summary and snippets from the report are outlined in the Components section below.`
         },
         {
             type: "image",
-            src: import.meta.env.BASE_URL + "projects/[project]/[image].png",
-            alt: "Alt",
-            caption: "Caption",
-            aspect: "16/9"
-        },
-        {
-            type: "text",
-            content: 
-                `More information about the Stangl Lab can be found at https://www.stangl-lab.com`
-        },
-    ],
-    conclusion: [
+            src: import.meta.env.BASE_URL + "projects/stangl/documents/TOC.png",
+            alt: "Table of Contents for Project Documentation",
+            caption: "Table of Contents for Project Documentation",
+            aspect: "16/9",
+            className: "w-5xl"
 
+        },
+        
     ],
     components: [
         {
-            title: "Unity",
-            objective: "",
-            methods: [
+            title: "Eye Tracking Validation",
+            objective: [
                 {
                     type: "text",
                     content: 
-                        ``
+                        `Verify the time delay between the RaspberyPi and Neon glasses has a linear drift less than 10ms.`
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/connectionVerification.png",
+                    alt: "Connection verifications",
+                    caption: "Most connections were verified by another team member to have a linear drift that was within an acceptable time delay. The timestamp difference for the RaspberryPi-to-Neon connection was not yet verified.",
+                    aspect: "16/9",
+                    className: "w-sm"
+                },
+            ],
+            methods: [
+                {
+                    type: "header",
+                    content: "Understanding Time Delays"
+                },
+                {
+                    type: "text",
+                    className: "pl-5 pt-3",
+                    content: 
+                        `The internal clocks of diﬀerent devices are not perfectly accurate and therefore the timestamps from each device is not perfectly aligned with one another. Over time, the diﬀerence in the internal clocks and the timestamps accumulates, resulting in a “drift”.
+                        
+                        Therefore, we care about the gaps between the marks and making sure that is consistent between data from diﬀerent devices (i.e. the diﬀerence in timestamp drift is linear so it’s easy to use linear regression)`
+                },
+                {
+                    type: "header",
+                    content: "Neon Pupil Glasses"
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/neonglasses.png",
+                    alt: "Neon glasses",
+                    caption: "Overview of the Neon glasses setup",
+                    aspect: "16/9",
+                    className: "w-md"
+                },
+                {
+                    type: "header",
+                    content: "Excel Data Analysis"
+                },
+                {
+                    type: "text",
+                    className: "pl-5 pt-3",
+                    content: 
+                        `Time delays were determined by analyzing the eye tracking recording to find the exact timestamp the LED turned on. This was compared to known timestamps of the LED trigger from the RaspberryPi.`
+                },
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        `The LED-RPi alignment was determined to have 10-20ms delay. However there was an uncertainty of 33ms (30Hz), as the scene environment camera of the Pupil Neon eye tracking video has a frame rate of 30Hz. Since eye movements are much faster than that, in order to capture eye movements the eye cameras need to be used instead since they have a frame rate of 200 Hz.`
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/LEDresults.png",
+                    alt: "LED results",
+                    caption: "Results from timestamp drift analysis. With the LED in the scene camera (left), the timestamp diﬀerence was not linear and too large of a diﬀerence because of the frame rate. The eye camera (right) was used instead.",
+                    aspect: "16/9",
+                    className: "w-2xl"
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Data Synchronization",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `The current system is sufficient in that it records and saves the necessary data from the experiment. However, data analysis and alignment involves tedious manual alignment (mainly because of the timestamp drift). 
+                        
+                        The team wants to implement a system that automatically handles time delays/drift and overall data collection. `
+                },
+            ],
+            methods: [
+                {
+                    type: "header",
+                    content: "Lab Streaming Layer (LSL)"
+                },
+                {
+                    type: "text",
+                    className: "pl-5 pt-3",
+                    content: 
+                        `Lab Streaming Layer (LSL) is a widely used system for the unified collection of measurement time series in research experiments. It handles both the networking, time-synchronization, (near-) real-time access as well as optionally the centralized collection, viewing and disk recording of the data.`
                 },
             ],
             results: [
@@ -834,6 +1103,74 @@ export const projects = [
                     type: "text",
                     content: 
                         ``
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/lsl.png",
+                    alt: "LSL implementation",
+                    caption: "Schematic of implemented LSL workflow",
+                    aspect: "16/9",
+                    className: "w-2xl"
+                },
+            ],
+            documents: [
+                {
+                    title: "DocTitle",
+                    document: import.meta.env.BASE_URL + "projects/[project]/[filename]"
+                },
+            ],
+        },
+        {
+            title: "Inertial Measurement Unit (IMU) Integration",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        `The Vicon motion cameras can track the participant’s location within the experiment room. However, limitations with the system and the fact that the system should eventually be mobile (i.e. run experiments outside of the MoCap room) call for a way to have motion tracking without the cameras.`
+                },
+            ],
+            methods: [
+                {
+                    type: "header",
+                    content: "Boas Lab IMU Crash Course"
+                },
+                {
+                    type: "text",
+                    className: "pl-5 pt-3",
+                    content: 
+                        `The Boas Lab at BU had created custom inertial measurement units (IMUs) that hadn’t been tested yet. I met with creator of the IMUs Professor Eric Hazen for a crash course on the technical details the devices.`
+                },
+                
+            ],
+            results: [
+                {
+                    type: "text",
+                    content: 
+                        `After the crash course with Prof. Hazen, I created a guide for future reference. Below are some summaries of the IMU components.`
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/imuAdaptorCard.png",
+                    alt: "IMU Adaptor Card",
+                    caption: "",
+                    aspect: "16/9",
+                    className: "w-2xl"
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/imuSplitter.png",
+                    alt: "IMU splitter",
+                    caption: "",
+                    aspect: "16/9",
+                    className: "w-2xl"
+                },
+                {
+                    type: "image",
+                    src: import.meta.env.BASE_URL + "projects/stangl/imuCube.png",
+                    alt: "IMU module",
+                    caption: "",
+                    aspect: "16/9",
+                    className: "w-2xl"
                 },
             ],
             documents: [
@@ -889,7 +1226,13 @@ export const projects = [
     components: [
         {
             title: "Contract and Document Standards",
-            objective: "",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -955,7 +1298,13 @@ export const projects = [
     components: [
         {
             title: "Pneumatic Actuation",
-            objective: "",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -1022,7 +1371,13 @@ export const projects = [
     components: [
         {
             title: "Full-Stack Software Developent",
-            objective: "",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -1089,7 +1444,13 @@ export const projects = [
     components: [
         {
             title: "MATLAB Simulations",
-            objective: "",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -1156,7 +1517,13 @@ export const projects = [
     components: [
         {
             title: "Research Methods",
-            objective: "",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
             methods: [
                 {
                     type: "text",
@@ -1223,7 +1590,13 @@ export const projects = [
     components: [
         {
             title: "Component Title",
-            objective: "",
+            objective: [
+                {
+                    type: "text",
+                    content: 
+                        ``
+                },
+            ],
             methods: [
                 {
                     type: "text",

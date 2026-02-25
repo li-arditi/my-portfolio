@@ -13,6 +13,9 @@ export default function Navbar() {
 				Li Arditi
 			</Link>
 			<div className="space-x-6 text-md">
+				<a href="/" className="hover:text-blue-600 transition">
+				Home
+				</a>
 				<a href="#allprojects" className="hover:text-blue-600 transition">
 				Projects
 				</a>

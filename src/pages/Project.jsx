@@ -4,6 +4,9 @@ import { useEffect } from 'react';
 
 import MultiTypeContent from "../components/MultitypeContent"
 import CollapsibleSection from "../components/CollapsibleSection"
+import PDFViewer from "../components/PDFViewer";
+
+// handle 
 
 export default function Project() {
 	// scroll to top when the project is opened
@@ -33,89 +36,59 @@ export default function Project() {
 
 
   return (
-    <article className="max-w-4xl mx-auto py-15 px-5">
+    <article className="max-w-7xl mx-auto py-15 px-15">
 		<button onClick={handleBack} 
 			className="pb-4 cursor-pointer text-gray-500 hover:text-blue-400">
 			← Back
 		</button>
 		{/* Header */}
 		<h1 className="text-4xl font-bold">{project.active ? project.title + "  (In Progress)" : project.title}</h1>
-		<div className="text-sm text-gray-500">
+		<div className="text-neutral-500 text-md mt-2">
 				{project.type} • {project.start} - {project.end}
 		</div>
 		<div className="text-sm text-gray-500">
 				Team of {project.teamsize}
 		</div>
-		<div className="text-md text-neutral-700 pt-5 px-5">
-			{project.summary}
-		</div>
+		
 
 		{/* Images */}
-		{/* <div className="grid grid-flow-col grid-rows-2 gap-4">
-			{project.images.map((image, index) => {
-				if (index == 0){
-					return(
-						<div className="row-span-2 rounded-2xl my-10 w-md">
-							<img 
-								key={"images-" + index}
-								src={image.src} 
-								alt={image.alt}
-								 
-							/>
-						</div>
-					)
-				}
-				else if (index < 2){
-					return (
-						<div className="row-span-1 rounded-2xl my-10 w-sm" >
-							<img 
-								key={"images-" + index}
-								src={image.src} 
-								alt={image.alt}
-								
-							/>
-						</div>
-					)
-				}
-				// else {
-				// 	return (
-				// 		<img 
-				// 			src={image.src} 
-				// 			alt={image.alt}
-				// 			className="row-span-1 rounded-2xl my-10 w-sm" 
-				// 		/>
-				// 	)
-				// }
-				return null
-			})}
-			
-
-		</div>
-       */}
-	   <div className="grid grid-flow-col grid-rows-1 gap-4 ">
-			<img src={project.images[0]} className=" row-span-2 rounded-2xl my-10 w-full aspect-auto"></img>
-			<img src={project.images[1]} className=" row-span-1 rounded-2xl my-10 w-full aspect-auto"></img>
+		<div className="bg-neutral-200 my-10">
+			<img src={project.images[0]} className="max-h-100 w-full rounded-lg object-contain mx-auto shadow-sm ring-1 ring-neutral-200"  />
+	   	{/* <div className="grid md:grid-cols-2 gap-10 items-start my-10">
+			<div className="rounded-2xl bg-white shadow-sm ring-1 ring-neutral-200 p-4">
+				<img src={project.images[0]} className="rounded-xl w-full object-contain"  />
+			</div> */}
+			{/* <div className="rounded-2xl bg-white shadow-sm ring-1 ring-neutral-200 p-4">
+				<img src={project.images[1]} className="rounded-xl w-full object-contain"></img>
+			</div> */}
 	   </div>
 
 
 		{/* Tags (Keywords) */}
-		<div className="flex flex-wrap gap-3 mb-8">
-			{project.keywords.map((keyword,i) => (
-			<span
-				key={"keywords-"+i}
-				className="keyword"
-			>
-				{keyword}
-			</span>
-			))}
+		<div className="rounded-2xl bg-white shadow-sm ring-1 ring-neutral-100 p-8">
+			<h2 className="text-xl font-semibold mb-6">Keywords</h2>
+			<div className="flex flex-wrap gap-3 my-8">
+				{project.keywords.map((keyword,i) => (
+				<span
+					key={"keywords-"+i}
+					className="keyword"
+				>
+					{keyword}
+				</span>
+				))}
+			</div>
 		</div>
+		
 
 		{/* Project Details */}
-		<div className="py-8 max-w-4xl mx-auto">
+		<div className="py-8 mx-auto">
 			{/* Overview */}
-			<section className="mb-12">
+			<section className="mb-12  leading-5">
+				<div className="rounded-2xl bg-white shadow-sm ring-1 ring-neutral-100 p-8">
 				<h2 className="text-xl font-semibold mb-3">Overview</h2>
-
+				<div className="text-neutral-600 text-md mb-10 ml-6 max-w-3xl">
+					{project.summary}
+				</div>
 				{/* Context */}
 				<CollapsibleSection 
 					title="Context"
@@ -125,7 +98,7 @@ export default function Project() {
 						</div>}
 				/>
 				
-				{/* Problem Statement/Goal */}
+				{/* Technical Backgroung */}
 				<CollapsibleSection 
 					title="Technical Background"
 					children={
@@ -145,14 +118,16 @@ export default function Project() {
 					}
 					state={true}
 				/>
+				</div>
 			</section>
 
 			{/* Components */}
 			<section className="mb-12 leading-5">
-				<h2 className="text-xl font-semibold mb-3">Components</h2>
-				<ol className="list-decimal list-inside">
+				<div className="rounded-2xl bg-white shadow-sm ring-1 ring-neutral-100 p-8">
+				<h2 className="text-xl font-semibold mb-6">Components</h2>
+				
 				{project.components.map((component, i) => (
-					<li key={"component-"+i} className="font-bold">
+					<div key={"component-"+i} className="">
 						<CollapsibleSection 
 							title={component.title}
 							// title={<h4 className="text-md font-semibold ml-3">{component.title}</h4>}
@@ -162,21 +137,21 @@ export default function Project() {
 									{/* Componenet content */}
 									<div className="ml-4">
 										{/* Objective */}
-										<h4 className="text-md mt-3">Objective</h4>
-										<div className="ml-10 mb-6 font-normal text-neutral-700">
-											{component.objective}
+										<h4 className="text-md mt-3 font-semibold mb-5">Objective</h4>
+										<div className="ml-10 mb-10 text-neutral-700">
+											<MultiTypeContent content={component.objective} />
 										</div>
 
 										{/* Methods */}
-										<h4 className="text-md mt-3">Methods</h4>
-										<div className="ml-10 mb-6 font-normal">
+										<h4 className="text-md mt-3 font-semibold mb-5">Methods</h4>
+										<div className="ml-10 mb-10">
 											<MultiTypeContent content={component.methods} />
 										</div>
 										
 
 										{/* Results */}
-										<h4 className="text-md mt-3">Results</h4>
-										<div className="ml-10 mb-6 font-normal">
+										<h4 className="text-md mt-3 font-semibold mb-5">Results</h4>
+										<div className="ml-10 mb-10">
 											<MultiTypeContent content={component.results} />
 										</div>
 										
@@ -185,11 +160,12 @@ export default function Project() {
 											<div>
 												<h4 className="text-md mt-3">Relevant Documents</h4>
 												<div className="ml-10 mb-6 font-normal">
-													<MultiTypeContent content={component.documents} />
+													
+													
 												</div>
 											</div>
-										)}
-										 */}
+										)} */}
+										
 									</div>
 
 
@@ -197,14 +173,14 @@ export default function Project() {
 								</div>
 							}
 						/>
-					</li>
+					</div>
 
 					
 					
 						
 				))}
-				</ol>
-
+				
+				</div>
 			</section>
 
 			

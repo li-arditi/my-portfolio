@@ -1,4 +1,5 @@
-export default function MultiTypeContent({ content }) {
+
+export default function MultiTypeContent({ content, className="" }) {
 	/** content is an array of objects where object have structures:
 	 * TEXT 
 	 * {
@@ -17,12 +18,16 @@ export default function MultiTypeContent({ content }) {
         },
 	 * */
 	return (
-		<div>
+		<div className={className}>
 			{content.map((section, index) => {
 				{/* Text Block */}
 				if (section.type === "text") {
+					var className = "text-neutral-700 whitespace-pre-line "
+					if(section.className){
+						className += section.className
+					}
 					return (
-					<p key={"goal-" + index} className="text-neutral-700 whitespace-pre-line">
+					<p key={"goal-" + index} className={className}>
 						{section.content}
 					</p>
 					);
@@ -30,7 +35,7 @@ export default function MultiTypeContent({ content }) {
 
 				{/* Image */}
 				if (section.type === "image") {
-					var className = `rounded-xl mx-auto ${section.width ? section.width : "w-md"}`
+					var className = `rounded-xl mx-auto ${section.className ? section.className : "w-md"}`
 					return (
 					<figure key={section.src} className="my-8 text-center">
 						<img
@@ -61,14 +66,17 @@ export default function MultiTypeContent({ content }) {
 				{/* Bullet */}
 				if (section.type === "bullet") {
 					return (
-						<div key={section.title + index} className="flex gap-2 leading-6 mb-4">
-							{/* bullet and bold title */}
-							<div className="mr-1"> {section.style ? section.style : "•"}</div>
-							<div className={section.title? "flex-none w-40 text-neutral-700 font-semibold": ""}>{section.title}</div>
-							<div className={section.border ? section.border : ""}> {section.border ? "" : ":"}</div>
+						<div key={section.title + index} className="flex leading-5 mb-6 border border-neutral-200 rounded-xl" dir="ltr">
+							{/* bullet and bold title "•" */}
+							<div className={`bg-neutral-50 p-6 rounded-l-xl ${section.border ? section.border : ""}`}>
+								<div className=""> {section.style ? section.style : ""}</div>
+								<div className={section.title? "flex-none w-40 text-neutral-700 font-semibold": ""}>{section.title}</div>
+								
+							</div>
+							
 							
 							{/* content of bullet */}
-							<div  className="text-neutral-700 whitespace-pre-line">
+							<div  className="text-neutral-700 whitespace-pre-line p-6">
 								{section.content}
 							</div>
 							
@@ -80,7 +88,7 @@ export default function MultiTypeContent({ content }) {
 				{/* List */}
 				if (section.type === "list") {
 					return (
-						<ol className="mx-10 mt-3 mb-5 font-light list-decimal">
+						<ol key={section.name + "_list"} className="mx-10 mt-3 mb-5 font-light list-decimal">
 							{section.content.map((item, index) => {
 								return (
 									<li key={section.name + index} className="pl-3 mb-1 leading-5">
@@ -95,12 +103,32 @@ export default function MultiTypeContent({ content }) {
 				{/* Header */}
 				if (section.type === "header") {
 					return (
-					<h4 className="text-md mt-3 font-bold">
+					<h4 key={"header" + index} className="text-md mt-3 font-semibold">
 						{section.content}
 					</h4>
 					);
 				}
+				{/* url */}
+				if (section.type === "url") {
+					return (
+					<a href={section.url} key={"url" + index}
+						target="_blank"
+						className="text-blue-600">
+						{section.urlText ? section.urlText : section.url}
+					</a>
+					);
+				}
 
+				{/* iframe */}
+				if (section.type === "iframe") {
+					return (
+					<iframe
+						key={section.name + index}
+						src={section.filepath + "#toolbar=0"}
+						className="w-3/4 h-100 my-5 border-3 border-neutral-500"
+					/>
+					);
+				}
 				
 				{/* Other */}
 				return null;

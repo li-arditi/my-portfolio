@@ -4,10 +4,10 @@ export default function CollapsibleSection({ title, children,subtitle=null, stat
   const [open, setOpen] = useState(state);
   
   return (
-    <div className="ml-3 border-t py-1 border-neutral-600">
+    <div className="ml-3 border-t py-4 border-neutral-200">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center text-left"
+        className="w-full flex justify-between items-center text-left cursor-pointer"
       >
         <div className="flex">
             <h4 className="flex-none text-md font-semibold ml-3">{title}</h4>
@@ -15,7 +15,7 @@ export default function CollapsibleSection({ title, children,subtitle=null, stat
         </div>
         
         {/* <h4 className="text-md font-semibold ml-3">{title}</h4> */}
-        <span>{open ? "−" : "+"}</span>
+        <span className="text-neutral-400">{open ? "−" : "+"}</span>
       </button>
 
       {open && (

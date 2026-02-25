@@ -94,20 +94,21 @@ export default function Portfolio() {
 
 		{/* Showcased Projects */}
 		<section id="showcase" className="max-w-5xl mx-auto px-6 py-5">
-			<div className="mb-10 flex flex-wrap items-end justify-between gap-4">
-				{/* Section Header */}
-				<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
+			{/* Section Header */}
+			<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
+			<div className="mb-10 flex justify-between items-start gap-4">
+				<p className="max-w-xl text-md text-neutral-600 mb-5 pl-1 "> 
+					These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on my <span className="font-bold"> All Projects</span> page.
+				</p>
 				{/* Provide page for all projects */}
 				<a href="#allprojects"
-					className="inline-flex items-center rounded-xl border border-neutral-300 px-3 py-2 text-sm text-neutral-500 hover:border-neutral-900 hover:bg-neutral-100 transition">
+					className="shrink-0 inline-flex items-center rounded-xl border border-neutral-300 px-3 py-2 text-sm text-neutral-500 hover:border-neutral-900 hover:bg-neutral-100 transition">
 					All Projects <ArrowUpRight size={16} />
 				</a>
 
 			</div>
 			
-			<p className="text-md text-neutral-600 mb-5 pl-1"> 
-				These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on my <span className="font-bold"> All Projects</span> page.
-			</p>
+			
 			
 
 			<div className="grid gap-8 sm:grid-cols-3 mt-6">
@@ -180,7 +181,7 @@ export default function Portfolio() {
 		<section id="contact" className="max-w-5xl mx-auto px-6 py-20">
 			<h2 className="text-3xl font-semibold mb-6">My Goals</h2>
 			<p className="text-neutral-600 max-w-xl mb-10">
-				As I'm entering the medical device industry from the construction industry, I am looking to further my exposure to all aspects of medical device development. One of my favorite aspects of biomedical engineering is the multidisciplinary nature of it. I look forward to using my diverse background while continuously learning and making a positive impact on the world.
+				As I'm entering the medical device industry from the construction industry, I am looking to further my exposure to all aspects of medical device development. One of my favorite aspects of biomedical engineering is the multidisciplinary nature of it, so I hope to find the opportunity to work collaboratively with a high quality team dedicated to excellence. I look forward to using my diverse background while continuously learning and making a positive impact on the world.
 			</p>
 			
 		</section>
@@ -188,7 +189,7 @@ export default function Portfolio() {
 		{/* Footer */}
 		<footer className="border-t border-neutral-200 mt-20">
 			<div className="max-w-5xl mx-auto px-6 py-10 text-sm text-neutral-500 flex justify-between">
-			<span> © 2926 Li Arditi </span>
+			<span> © 2026 Li Arditi </span>
 			<span>Built with React, hosted by Github Pages</span>
 			</div>
 		</footer>
