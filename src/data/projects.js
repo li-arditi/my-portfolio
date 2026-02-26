@@ -376,7 +376,7 @@ export const projects = [
                 {
                     type: "iframe",
                     name: "DesignResultsPresentation",
-                    filepath: import.meta.env.BASE_URL + "public/projects/traction/documents/DesignResultsPresentation.pdf",
+                    filepath: import.meta.env.BASE_URL + "projects/traction/documents/DesignResultsPresentation.pdf",
                     
                 },
                 
