@@ -10,7 +10,7 @@ import "./index.css"
 // }
 import { pdfjs } from 'react-pdf'
 
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HashRouter>

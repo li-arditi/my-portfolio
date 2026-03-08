@@ -8,12 +8,6 @@ export default defineConfig({
   base: '/my-portfolio/',
   optimizeDeps: {
     include: ['react-pdf', 'pdfjs-dist'],
-    exclude: ['canvas']
-  },
-  resolve: {
-    alias: {
-      canvas: '/dev/null', // points to nothing
-    },
   },
   build: {
     rollupOptions: {
