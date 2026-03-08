@@ -16,7 +16,7 @@ export default function Navbar() {
 				<Link to="/" className="hover:text-blue-600 transition">
 				Home
 				</Link>
-				<a href="#allprojects" className="hover:text-blue-600 transition">
+				<a href="#allprojects" className="hover:text-blue-600 transition hidden">
 				Projects
 				</a>
 				<a href="#aboutme" className="hover:text-blue-600 transition">

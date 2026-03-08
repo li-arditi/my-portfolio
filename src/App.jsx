@@ -8,13 +8,13 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return ( //[#f7f5f2] [#f7f5f2] neutral-50
-    <div className="bg-neutral-50 text-neutral-900 font-sans">
+    <div className="text-neutral-900 font-sans">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:slug" element={<Project />} />
         <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/allprojects" element={<AllProjects />} />
+        <Route path="/allprojects" element={<AllProjects className="bg-neutral-50" />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

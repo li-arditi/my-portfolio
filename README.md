@@ -12,4 +12,4 @@ Since Github Pages can only host static webpages, I can't add backend, server si
 
 ## Use of AI Statement
 
-Since I had never used Github Pages before, I used ChatGPT to get me started. I used a React and Vite template, which I adjusted to fit my needs. ChatGPT provided initial layout and coloring suggestions, after which I updated to my preferences. 
+Since I had never used Github Pages before, I used ChatGPT to get me started. I used a React and Vite template, which I adjusted to fit my needs. ChatGPT and Claude provided troubleshooting help and layout/coloring suggestions, after which I updated to my preferences.

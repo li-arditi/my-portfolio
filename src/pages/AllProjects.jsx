@@ -10,7 +10,8 @@ export default function AllProjects() {
         }, []); // Empty dependency array ensures it runs only once on mount
   
   return (
-    <section id="allProjects" className="max-w-5xl mx-auto px-6 py-15">
+    <section id="allProjects" className="bg-neutral-50">
+		<div className="max-w-5xl mx-auto px-6 py-15">
         <h2 className="text-3xl font-semibold mb-12">All Projects</h2>
         
         <div className="grid gap-8 md:grid-cols-3">
@@ -19,6 +20,7 @@ export default function AllProjects() {
             ))}
           
         </div>
+		</div>
 
     </section>
   )

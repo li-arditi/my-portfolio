@@ -44,11 +44,19 @@ export default function Portfolio() {
 		});
 	};
 
-	
+	// projects layout
+	const projectLayout = [ // rows-5 cols-3
+		"row-span-3 col-span-1 row-start-1 col-start-1", // traction
+		"row-span-3 col-span-1 row-start-1 col-start-2", // pressmate
+		
+		"row-span-3 col-span-1 row-start-3 col-start-3", // stangl
+		"row-span-2 col-span-2 row-start-4 col-start-1", // vdcEngineer
+		"row-span-2 col-span-1 row-start-1 col-start-3", // endoscope
+	]
 
 
   	return (
-    <div className="min-h-screen text-neutral-900 font-sans">
+    <div className="bg-neutral-50 min-h-screen text-neutral-900 font-sans">
       	{/* Header / Hero */}
 		<header className="flex max-w-5xl mx-auto px-6 pt-10">
 			<div className="m-5">
@@ -98,27 +106,38 @@ export default function Portfolio() {
 			<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
 			<div className="mb-10 flex justify-between items-start gap-4">
 				<p className="max-w-xl text-md text-neutral-600 mb-5 pl-1 "> 
-					These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on my <span className="font-bold"> All Projects</span> page.
+					These are some examples of my diverse project experience.
+					{/* These are some examples of my diverse project experience. You can explore all my projects -- big and small -- on my <span className="font-bold"> All Projects</span> page. */}
 				</p>
 				{/* Provide page for all projects */}
-				<a href="#allprojects"
+				{/* <a href="#allprojects"
 					className="shrink-0 inline-flex items-center rounded-xl border border-neutral-300 px-3 py-2 text-sm text-neutral-500 hover:border-neutral-900 hover:bg-neutral-100 transition">
 					All Projects <ArrowUpRight size={16} />
-				</a>
+				</a> */}
 
 			</div>
 			
 			
-			
+			<div className="mt-6">
+				<div className="grid grid-rows-5 grid-cols-3 gap-3 h-150">
+					{projects.map((p, i) => (
+						p.showcased && ( // only show showcased projects
+							<div key={i}  className={projectLayout[i] + " relative"}>
+								<ProjectCard key={i} project={p} />
+							</div>
+						)
+					))}
+				</div>
+			</div>
 
-			<div className="grid gap-8 sm:grid-cols-3 mt-6">
+			{/* <div className="grid gap-8 sm:grid-cols-3 mt-6">
 				{projects.map((p) => (
 					p.showcased && ( // only show showcased projects
 						<ProjectCard key={p.slug} project={p} 
 						onClick={() => handleClick(p.slug)}/>
 					)
 				))}
-			</div>
+			</div> */}
 		</section>
 
 		{/* Skills */}

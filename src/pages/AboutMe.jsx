@@ -15,7 +15,8 @@ export default function AboutMe() {
       }, []); // Empty dependency array ensures it runs only once on mount
 
     return (
-    <article className="max-w-3xl mx-auto px-6 py-20">
+    <article className="bg-neutral-50 ">
+        <div className="max-w-3xl mx-auto px-6 py-20">
         <h1 className="text-4xl font-bold">About Me</h1>
 
         <img
@@ -69,13 +70,10 @@ export default function AboutMe() {
             </div>
 
                
-            {/* As an Asian woman and member of the LGBTQ+ community, I bring a
-personal perspective and commitment to addressing barriers that disproportionately affect women. My
-Engineering Women’s Health course exposed me to real-world engineering challenges and solutions in
-this space, further motivating me to apply engineering techniques and procedures to women’s health. */}
+            
         </section>
         
-      
+        </div>
     </article>
   )
 }
