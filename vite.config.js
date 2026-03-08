@@ -10,6 +10,11 @@ export default defineConfig({
     include: ['react-pdf', 'pdfjs-dist'],
     exclude: ['canvas']
   },
+  resolve: {
+    alias: {
+      canvas: '/dev/null', // points to nothing
+    },
+  },
   build: {
     rollupOptions: {
       external: ['canvas'], // pdfjs tries to import canvas in non-browser envs
