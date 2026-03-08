@@ -1,8 +1,34 @@
 import { useState } from 'react';
-import { Document, Page, pdfjs } from "react-pdf";
+
+import { Document, Page } from "react-pdf";
 
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
+
+import { pdfjs } from 'react-pdf';
+
+// Add this at the very top of your entry file
+if (typeof URL.parse === 'undefined') {
+  const originalURL = globalThis.URL;
+  globalThis.URL = class URL extends originalURL {
+    constructor(url, base) {
+      let finalUrl = url;
+      if (typeof url === 'string' && url.startsWith('blob:')) {
+        finalUrl = url;
+      }
+      super(finalUrl, base);
+    }
+    static parse(url, base) {
+      try {
+        return new URL(url, base);
+      } catch {
+        return null;
+      }
+    }
+  };
+}
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
 
 export default function PdfCarousel({ pdfs }) {
 	const [cur, setCur] = useState(0);
