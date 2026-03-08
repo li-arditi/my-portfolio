@@ -155,11 +155,11 @@ export const projects = [
             },
 
         ],
-        videoId: "aqz-KE-bpKQ",
+        videoId: "",
         pdfs: [
             { title: "Initial Proposals", src: import.meta.env.BASE_URL + "projects/traction/documents/ProblemSelectionPresentation.pdf" },
             { title: "Design Results", src: import.meta.env.BASE_URL + "projects/traction/documents/DesignResultsPresentation.pdf" },
-            { title: "Initial Works-Like", src: null },
+            { title: "Initial Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/InitialWorksLikeMEng.pdf"  },
         ],
     },
     { // pressmate
