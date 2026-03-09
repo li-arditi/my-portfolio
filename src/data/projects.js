@@ -364,7 +364,7 @@ export const projects = [
             },
             {
                 title: "Mockups",
-                text: "Mockups were created to test possibility of water jetting when the plunger was pressed and seal requirements.",
+                text: "Mockups were created to test key functionalities. For example, a concern was the possibility of hot water shooting through the holes of the plunger onto the user when they filtered their coffee.",
                 image: import.meta.env.BASE_URL + "projects/pressmate/timeline02.png",
                 layout: "",
                 images: [
