@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home.jsx"
-import Project from "./pages/Project.jsx"
+import Project from "./pages/ProjectV2.jsx"
 import AboutMe from "./pages/AboutMe.jsx"
 import AllProjects from "./pages/AllProjects.jsx"
 import Contact from "./pages/Contact.jsx"

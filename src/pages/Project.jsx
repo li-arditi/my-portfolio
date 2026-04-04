@@ -100,7 +100,7 @@ export default function Project() {
 			{/* Hero */}
 			<div className="relative max-w-6xl h-[550px] overflow-hidden -mx-20 pt-10">
 				{/* Hero Background Image */}
-				<img src={project.heroBgImg} className="opacity-50 absolute inset-0 w-full h-full object-cover" />
+				<img src={project.heroBgImg} className="opacity-30 absolute inset-0 w-full h-full object-cover" />
 				<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-gray/40 to-gray/0" />
 				{/* Hero Content*/}
 				<div className="relative bottom-0 max-w-4xl mx-auto left-0 right-0 px-8 mt-6">
@@ -222,14 +222,7 @@ export default function Project() {
 							
 						</div>
 					</div>
-					{/* <div className={`grid gap-4 ${m.images.length === 3 ? "grid-cols-3" : "grid-cols-2"}`}>
-						{m.images.map((img, j) => (
-						<div key={j} className="flex flex-col gap-2">
-							<img src={img.src} alt={img.caption} className="w-full aspect-[4/3] object-cover rounded-xl shadow-sm" />
-							<span className="text-xs text-neutral-400 leading-snug">{img.caption}</span>
-						</div>
-						))}
-					</div> */}
+					
 					</div>
 				))}
 				</div>
@@ -241,7 +234,7 @@ export default function Project() {
 				<SectionLabel textColor={projectTheme.dk.text}>Results Timeline</SectionLabel>
 				<Timeline entries={project.timeline} theme={projectTheme.dk}/>
 				{project.active && (
-					<img src={import.meta.env.BASE_URL + "projects/MoreComingSoon.png"} alt={"In Progress"} className="mt-20 rounded-xl max-w-100 ring-2 ring-neutral-100 shadow-lg bg-white mx-auto" />
+					<img src={import.meta.env.BASE_URL + "projects/MoreComingSoon.png"} alt={"In Progress"} className="mt-20 rounded-xl max-w-80 mx-auto" />
 				)}
 			</section>
 

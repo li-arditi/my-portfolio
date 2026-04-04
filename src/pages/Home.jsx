@@ -67,7 +67,7 @@ export default function Portfolio() {
 					Hi, I’m Li
 				</h1>
 				<p className="mt-6 text-lg text-neutral-600 max-w-2xl">
-					I'm excited to leverage my neuroscience, computer science, and biomedical engineering experience to solve biomedical challenges and help people live healthier and happier lives.        
+					I'm excited to leverage my neuroscience, computer science, and biomedical engineering with mechnical engineering focus experience to solve biomedical challenges and help people live healthier and happier lives.    
 				</p>
 				<div className="flex gap-4 mt-8">
 					<a href= {import.meta.env.BASE_URL + "LA_resume.pdf"}
