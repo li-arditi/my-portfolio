@@ -50,7 +50,7 @@ export const projects = [
     {
         slug: "masters-project",
         title: "Skeletal Traction for Femoral Shaft Fractures",
-        summary: "A hands-on experience developing an orthopedic medical device through the full product lifecycle",
+        summary: "A hands-on experience developing an orthopedic medical device to improve the inconsistent treatment of femur fractures through the full product lifecycle",
         thumbnail: import.meta.env.BASE_URL + "projects/traction/01_thumbnail.png",
         backgroundImg: import.meta.env.BASE_URL + "projects/traction/backgroundImg.jpg",
         heroBgImg: import.meta.env.BASE_URL + "projects/traction/heroBackground.jpg",
@@ -70,7 +70,7 @@ export const projects = [
         outcome: { src: import.meta.env.BASE_URL + "projects/traction/outcome.png", caption: "Our project results"},
         lessons: [
             {
-                title: "The difference between what people say, what they want, what theyʼll pay for, and what they actually do",
+                title: "Know the difference between what people say, what they want, what theyʼll pay for, and what they actually do.",
                 body: "I gained experience in communicating with diverse clinical stakeholders in regulated environments to evaluate real-world product use, identify workflow and usability challenges, and translate clinical feedback into unmet needs.",
                 keywords: ["OR Protocols","Communication", "User Needs", "Voice of Customer", "Stakeholder Interviews"],
                 images: [
@@ -78,17 +78,17 @@ export const projects = [
                 ]
             },
             {
-                title: "Framing the right problem is the only way to create the right solution",
-                body: "Through mentoring sessions with dedicated industry mentors, our team was pushed to hone our problem and needs statement. ",
+                title: "Framing the right problem is the only way to create the right solution.",
+                body: "Through mentoring sessions with dedicated industry mentors, our team was pushed to hone our problem and needs statement. Initial iterations were too broad without a clear desired outecome, but we learned to make concise statements with a clear problem, population, and desired outcome.",
                 keywords: ["Problem Statement","Needs Statement", "Value Proposition", "Human Factors",],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/traction/lesson_02.png", caption: "A summary of the problem and needs statements, along with user needs." },
                 ],
             },
             {
-                title: "If you didn't document it, it didn't happen",
-                body: "Documentation is key.",
-                keywords: ["Requirement Traceability Matrix (RTM)", "Failure Mode and Effects Analysis (FMEA)", "Validation and Verifcation (V&V)", ],
+                title: "If you didn't document it, it didn't happen.",
+                body: "Without clear documentation on design decisions, the project is dead in the water. Engineering in the medical industry is one of the disciplines where mistakes don't just cost time and money, but they can cost lives.  Even a \"small\" project like this capstone project had some organizational issues that needed to be resolved, so an organized system for documenting early and often is essential.",
+                keywords: ["Version Control", "Change Management", "Organization", ],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/traction/lesson_03.jpg", caption: "" },
                 ],
@@ -143,7 +143,7 @@ export const projects = [
         responsibilities: [
             {
                 title: "OR Observations",
-                body: "I conducted 50+ hourse of OR observations at Boston Medical Center (BMC), recording detailed logs of procedures, opportunities for improvement, and interview notes.",
+                body: "I conducted 50+ hours of OR observations at Boston Medical Center (BMC), recording detailed logs of procedures, opportunities for improvement, and interview notes. The project focus was defined based on these observation logs.",
                 keywords: ["OR Observations", "Stakeholder Interviews"],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/traction/responsibility_01.png", caption: "Unfortunately, I can't show images of surgeries, but these are the different types of orthopedic surgeries I observed." },
@@ -152,27 +152,26 @@ export const projects = [
             },
             {
                 title: "Documentation Sections",
-                body: "While all team members contributed to all design decisions and documentation sections, overall accountability for specific sections was divided among members. My sections included the 4 shown to the right.",
-                keywords: ["Problem Statement", "Design Inputs and Outputs", "RTM", "DFM"],
+                body: "While all team members contributed to all design decisions and documentation sections, overall accountability for specific sections was divided among members. My sections included the 4 shown to the right. I also assisted with Failure Mode and Effects Analysis (FMEA) and Validation and Verfication (V&V)",
+                keywords: ["Problem Statement", "Design Inputs and Outputs", "Requirement Traceability Matrix (RTM)", "FMEA", "V&V",],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/traction/responsibility_02.png", caption: "'Clinical Challenges and User Needs', Device Requirements', 'Engineering Specifications', and 'Design for Manufacturing (DFM)'" },
                 ],
             },
             {
                 title: "Mockups and Prototyping",
-                body: "I love building things with my hands, so I created the initial mockups and physical works-like and is-like prototypes, along with digital 3D models in OnShape.",
-                keywords: ["3D Modeling", "3D Printing", "Manual Mill", "Cold Saw", "Finite Element Analysis (FEA)"],
+                body: "I love building things with my hands, so I crafted initial mockups and built the physical works-like and is-like prototypes, along with digital 3D models in OnShape to conduct stress analysis.",
+                keywords: ["3D Modeling (OnShape)", "3D Printing", "Manual Mill", "Cold Saw", "Finite Element Analysis (FEA)"],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/traction/responsibility_03.png", caption: "Progression of mockups and prototypes" },
                 ],
             },
             {
                 title: "Winch Design",
-                body: "In addition to the overall structure of the device, I designed the custom winch mechanism that the user interacts with to apply a pulling force for skeletal traction while aligning with clinical requirements.",
+                body: "In addition to the overall structure of the device, I designed the custom winch mechanism that the user interacts with to apply a pulling force for skeletal traction. I used 3D printing for rapid prototyping to validate mechanical design and performance aligned with clinical requirements.",
                 keywords: ["3D Modeling", "Torque Reduction (Worm Drive)", "Ratchet and Pawl", "Machining",],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/winch.png", caption: "" },
-
+                    { src: import.meta.env.BASE_URL + "projects/traction/responsibility_04.png", caption: "" },
                 ],
             },
             
@@ -213,9 +212,9 @@ export const projects = [
                 image: import.meta.env.BASE_URL + "projects/traction/timeline04.png",
             },
             {
-                title: "Advanced Works-Like/Is-Like Prototyping",
+                title: "Advanced Works-Like/Is-Like Prototyping (In Progress)",
                 text: "After team design reviews, I modeled the device in OnShape to conduct FEA, then built an aluminum prototype using machining equipment including the cold saw and manual mill.",
-                image: import.meta.env.BASE_URL + "projects/traction/timeline06.jpeg",
+                image: import.meta.env.BASE_URL + "projects/traction/timeline06.png",
             },
 
         ],
@@ -249,30 +248,79 @@ export const projects = [
         problem: { src: import.meta.env.BASE_URL + "projects/pressmate/problem.png", caption: "Problem"},
         outcome: { src: import.meta.env.BASE_URL + "projects/pressmate/outcome.png", caption: "Our project results"},
         lessons: [
+            
             {
-                title: "Measure thrice, cut once",
-                body: "From my industry experience in construction and volunteer work with Habitat for Humanity building houses, I had already learned \"Measure twice, cut once\". However, with a limited budget, extremely tight schedule, and long lead time and machining times, it was essential that process plans were meticulously recorded, communicated to the whole team, and followed exactly.",
+                title: "Teamwork really does make the dream work",
+                body:"Working on a team is a life-long learning opportunity. Team work can make or break your project, and this team has been making it. An organized workflow, clear communication, and a desire to meaningfully contribute to the project have been some factors of our success, which I look forward to experiencing in industry as well.",
+                keywords: ["Teamwork","Communication", "RASCI",],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/lesson_02.png", caption: "The team!" },
+                ],
+            },
+            {
+                title: "Machining parts is so fun!",
+                body: "I have always loved tinkering and building things. Since I studied neuroscience and computer science during my undergraduate degree, I never had to machine anything. But now BU's machine shop is my second home where I'm having a lot of fun learning all the machines such as the manual and CNC lathe and mills, wire EDM, waterjet, lasercutter, and TIG welding.",
+                keywords: ["Machining","Process Control","Standard Operating Procedures"],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/lesson_03.png", caption: "" },
+                ],
+            },
+            {
+                title: "Think twice, cut once",
+                body: "From my industry experience in construction and volunteer work with Habitat for Humanity building houses, I had already learned \"Measure twice, cut once\". However, with a limited budget, extremely tight schedule, and long lead time and machining times, it was essential that process plans were carefully engineered, meticulously recorded, and communicated to the whole team.",
                 keywords: ["Manufacturing Schedule","Detail Oriented", "Process Plans", "Standard Operating Procedures (SOPs)", "Communication", "Teamwork"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/lesson_01.png", caption: "“If there is any one secret of success, it lies in the ability to get the other person’s point of view and see things from that person’s angle as well as from your own” - Henry Ford" },
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/lesson_01.png", caption: "Measure thrice, cut once" },
                 ]
             },
+        ],
+        responsibilities: [ //pressmate
             {
-                title: "Framing the right problem is the only way to create the right solution",
-                body: "Through mentoring sessions with dedicated industry mentors, our team was pushed to hone our problem and needs statement. ",
-                keywords: ["Problem Statement","Needs Statement", "Value Proposition", "Human Factors",],
+                title: "Enterprise Data/Content Management (EDM/ECM) Plan",
+                body: "I established folder structure, naming conventions, version control standards, change management, and team expectations. I also created automation scripts using Google Apps Script to streamline document formatting and assignment submission.",
+                keywords: ["Elevator Pitches", "Enterprise Data/Content Management", "Schedule", "RASCI"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/responsibility_01.png", caption: "Enterprise data management plan cover page" },
+                ],
+
+            },
+            {
+                title: "Spec Doc and Standard Operating Procedures (SOPs)",
+                body: "In addition to the ECM, I was mainly responsible for maintaining the product specifications document and standard operating procedures documents.",
+                keywords: ["Product Brief", "Voice of Customer", "Product Specifications", "Regulatory Requirements", "Usage Conditions", "Aesthetics", "SOPs"],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/DVTmethods.jpeg", caption: "" },
+
                 ],
             },
             {
-                title: "If you didn't document it, it didn't happen",
-                body: "Documentation is key.",
-                keywords: ["Requirement Traceability Matrix (RTM)", "Failure Mode and Effects Analysis (FMEA)", "Validation and Verifcation (V&V)", ],
+                title: "Mockups",
+                body: "Since I like visualizing things with physical models, I created simple mockups to test specific functions for feasibility. This included testing for water jetting while pressing and sealing for directly drinking from the cup.",
+                keywords: ["Mockups", "Product Concept"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/lesson_03.jpg", caption: "" },
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/responsibility_02.png", caption: "The initial mockups to test various functions and design concepts." },
+
                 ],
             },
+            {
+                title: "Waterjet, Welding, and Wire EDM, Oh My!",
+                body: "I love hands-on activities, so I basically lived at BU's machine shop EPIC. It was a lot of fun learning how to use different manufacturing equipment such as the waterjet, TIG welding tools, wire EDM, lathe, and mills.",
+                keywords: ["MAchine Shop","Waterjet", "Lathe", "TIG Welding", "Wire EDM"],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/responsibility_04.png", caption: "Waterjet, welding, and the wire EDM" },
+
+                ],
+            },
+            {
+                title: "Coozies!",
+                body: "Our product is a steel cup with the intention of hold boiling water, so we needed a sleeve to protect the user from the hot surface. In addition to other machining tasks listed above, I created coozies with the sewing machine!",
+                keywords: ["Sewing", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/responsibility_05.png", caption: "" },
+
+                ],
+            },
+            
         ],
         context2:
             `The Product Realization Master's course at BU (ME537) focuses on the essential and challenging process of getting a design from the drawing board into the hands of the customer. 
@@ -383,72 +431,14 @@ export const projects = [
             },
 
         ],
-        methods: [ //pressmate
-            {
-                title: "Project Proposal and Launch",
-                body: "Propose a project focus, finalize the approach, refine product concept, and set up the project management infrastructure.",
-                keywords: ["Elevator Pitches", "Enterprise Data/Content Management", "Schedule", "RASCI"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/pressmate/productIdeas.png", caption: "The initial proposed ideas" },
-
-                ],
-
-            },
-            {
-                title: "Mockups and Prototyping",
-                body: "Build one (1) prototype with non-production intent processes.",
-                keywords: ["Mockups", "Product Concept"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/pressmate/mockups.png", caption: "The initial mockups to test various functions and design concepts." },
-
-                ],
-            },
-            {
-                title: "Engineering Validation Testing (EVT)",
-                body: "Build one (1) product with production intent and tooling plans.",
-                keywords: ["Waterjet", "Lathe", "TIG Welding", "Wire EDM", "Sewing", "BOM", "Spec Document", "Quality Test Plan"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/pressmate/EVTcomponents.jpeg", caption: "The final EVT prototype." },
-
-                ],
-
-            },
-            {
-                title: "Design Validation Testing (DVT)",
-                body: "Build three (3) products with all production intent processes and test tooling and fixtures.",
-                keywords: ["Process Plan", "Control Plan", "SOPs","Packaging"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/pressmate/DVTmethods.jpeg", caption: "" },
-
-                ],
-            },
-            {
-                title: "Production Validation Testing (PVT)",
-                body: "Build ten (10) product will all production intent processes, fixtures, and tools.",
-                keywords: [""],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/InProgress.png", caption: "" },
-
-                ],
-            },
-            {
-                title: "Mass Production (MP)",
-                body: "Produce a mass production plan with forecast, packaging, cost down targets, and production plan for production of 100,000 units/year.",
-                keywords: ["Mass Production"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/InProgress.png", caption: "" },
-
-                ],
-            },
-        ],
         results: [
             { src: import.meta.env.BASE_URL + "projects/pressmate/DVT.jpeg", caption: "The current DVT prototype" },
             // { src: import.meta.env.BASE_URL + "projects/pressmate/DVTcomponents.jpeg", caption: "The current components of the DVT prototype" },
         ],
         timeline: [
-            {
+            { // 01 Project launch
                 title: "Project Launch",
-                text: "I established folder structure, naming conventions, version control standards, change management, and team expectations. I also created automation scripts using Google Apps Script to streamline document formatting and assignment submission.",
+                text: "Propose a project focus, finalize the approach, refine product concept, and set up the project management infrastructure.",
                 image: import.meta.env.BASE_URL + "projects/pressmate/timeline01.png",
                 images: [
                     {src: import.meta.env.BASE_URL + "projects/pressmate/EDM.png", dim: "1x2"},
@@ -456,18 +446,18 @@ export const projects = [
                     {src: import.meta.env.BASE_URL + "projects/pressmate/initialDwg.png", dim: "1x2"},
                 ]
             },
-            {
-                title: "Mockups",
-                text: "Mockups were created to test key functionalities. For example, a concern was the possibility of hot water shooting through the holes of the plunger onto the user when they filtered their coffee.",
-                image: import.meta.env.BASE_URL + "projects/pressmate/timeline02.png",
-                layout: "",
-                images: [
-                    {src: import.meta.env.BASE_URL + "projects/pressmate/timelinemockups.png", dim: "2x1"},
-                ]
-            },
-            {
-                title: "Machining for EVT Prototype",
-                text: "Processes included using the waterjet, wire EDM, manual lathe, CNC mill, and sewing machine",
+            // { // 02 mockups/prototype
+            //     title: "Mockups and Prototyping",
+            //     text: "Build one (1) prototype with non-production intent processes. Mockups were created to test key functionalities. For example, a concern was the possibility of hot water shooting through the holes of the plunger onto the user when they filtered their coffee.",
+            //     image: import.meta.env.BASE_URL + "projects/pressmate/timeline02.png",
+            //     layout: "",
+            //     images: [
+            //         {src: import.meta.env.BASE_URL + "projects/pressmate/timelinemockups.png", dim: "2x1"},
+            //     ]
+            // },
+            { // 03 EVT
+                title: "Engineering Validation Testing (EVT)",
+                text: "Build one (1) product with production intent and tooling plans. Processes included using the waterjet, wire EDM, manual lathe, CNC mill, and sewing machine",
                 image: import.meta.env.BASE_URL + "projects/pressmate/timeline03.png",
                 layout: "three1",
                 images: [
@@ -476,23 +466,36 @@ export const projects = [
                     {src: import.meta.env.BASE_URL + "projects/pressmate/EVTcomponents.jpeg", dim: "4x3"},
                 ]
             },
-            {
-                title: "EVT Prototype",
-                text: "After long hours machining our product, this is the EVT prototype and tooling we were able to produce.",
+            { // 04 EVT result
+                title: "EVT Result",
+                text: "After a getting over the steep learning curve, high scrap rate, and long hours, this is the EVT prototype and tooling we produced.",
                 image: import.meta.env.BASE_URL + "projects/pressmate/timeline04.png",
             },
-            {
-                title: "Manufacturing for DVT Prototype",
-                text: "My main responsibilities included cutting steel tube stock to length with the Wire EDM, creating the protective sleeves (coozies), assisting with TIG welding, and adding the silicone lip to the plunger.",
-                image: import.meta.env.BASE_URL + "projects/pressmate/timeline03.png",
+            { // 05 DVT and results
+                title: "Design Validation Testing (DVT)",
+                text: "Build three (3) products with all production intent processes and test tooling and fixtures. Processes were similar to EVT but now with seasoning for rust resistance, a silicone lip and no lid.",
+                image: import.meta.env.BASE_URL + "projects/pressmate/timeline05.png",
                 
             },
-            {
-                title: "DVT Prototypes",
-                text: "The DVT prototypes",
-                image: import.meta.env.BASE_URL + "projects/pressmate/timeline04.png",
+            { // 06 PVT
+                title: "Production Validation Testing (DVT) Prototype",
+                text: "Build ten (10) product will all production intent processes, fixtures, and tools. Processes were the same as DVT but scaled up to increase efficiency and decrease scrap.",
+                image: import.meta.env.BASE_URL + "projects/InProgress.png",
                 
             },
+            // { // 07 PVT result
+            //     title: "PVT Result",
+            //     text: "In Progress",
+            //     image: import.meta.env.BASE_URL + "projects/InProgress.png",
+                
+            // },
+            { // 08 MP
+                title: "Mass Production (MP) Plan",
+                text: "Produce a mass production plan with forecast, packaging, cost down targets, and production plan for production of 100,000 units/year.",
+                image: import.meta.env.BASE_URL + "projects/InProgress.png",
+                
+            },
+            
             
         ],
         videoId: "",
@@ -522,7 +525,36 @@ export const projects = [
         keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino"],
         objective:
             `Improve the current hardware-software integration system of the Stangl Lab at BU to ensure sub-millisecond sychronization precision between the multimodal data.`,
-        context:
+        context: { src: import.meta.env.BASE_URL + "projects/stangl/context.png", caption: "Product realization" },
+        problem: { src: import.meta.env.BASE_URL + "projects/stangl/problem.png", caption: "Problem"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/stangl/outcome.png", caption: "Our project results"},
+        lessons: [
+            {
+                title: "Even if something *should* behave a certain way, never assume...verify everything",
+                body: "As the saying goes: never assume because it makes an a** of u and me. ",
+                keywords: ["Verification and Validation",],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/stangl/lesson_01.png", caption: "" },
+                ]
+            },
+            // {
+            //     title: "Computers are not instantaneous",
+            //     body: "Although computers do a good job at making ",
+            //     keywords: ["Problem Statement","Needs Statement", "Value Proposition", "Human Factors",],
+            //     images: [
+            //         { src: import.meta.env.BASE_URL + "projects/stangl/lesson_02.png", caption: "Lesson 2" },
+            //     ],
+            // },
+            {
+                title: "Detailed notes make documentation easy",
+                body: "Every day I wrote down what I did, what errors I ran into, and how I solved them. Even if it was something I would only do or run into once, I wrote it down (and usually I did run into it again...). This made writing a detailed document of my process very easy while being very thorough. The lab still uses the document as an onboarding and reference document.",
+                keywords: ["Note Taking", "Documentation", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/stangl/lesson_03.jpg", caption: "" },
+                ],
+            },
+        ],
+        context2:
             `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior using multimodal neuroimaging techniques. 
 
             The ability to record a person’s brain activity in real-world situations is relatively new, so there are no ready-made systems available to record experimental data. Therefore, the Stangl Lab developed a custom mobile platform that allows for data synchronization between a computer running the experimental protocol and sensors the participant is wearing. 
@@ -583,39 +615,39 @@ export const projects = [
             },
 
         ],
-        methods: [
+        responsibilities: [
             {
                 title: "Experiment Protocols",
-                body: "Conduct spatial navigation and memory research protocols with freely moving human participants, collecting data through a RaspberyPi from systems for motion capture, eye tracking, and brain activity (EEG).",
+                body: "In order to fully understand the current system, I assisted in conducting spatial navigation and memory research protocols with freely moving human participants, collecting data through a RaspberyPi from systems for motion capture, eye tracking, and brain activity (EEG).",
                 keywords: ["Vicon Motion Capture", "Eye Tracking", "RaspberryPi", "Responsive Neurostimulation (RNS)"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/stangl/experiment.png", caption: "The RNS device implant and setup with experiment equipment" },
+                    { src: import.meta.env.BASE_URL + "projects/stangl/responsibility_01.png", caption: "The RNS device implant and setup with experiment equipment" },
 
                 ],
             },
             {
                 title: "Eye Tracking Validation",
-                body: "Verify the time delay between the RaspberyPi and Neon glasses has a linear drift less than 10ms, ensuring eye movements can be aligned with other data streams.",
+                body: "Verify the time delay between the RaspberyPi and Neon glasses has a linear drift less than 10ms, ensuring eye movements can be aligned with other data streams. I found that the current method of synchronizing data was not meeting the requirements, so I implemented an alternative solution.",
                 keywords: ["Neon Pupil Labs Glasses", "Time Synchronization"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/stangl/neonglasses.png", caption: "Neon Pupil Labs eye tracking glasses worn by the participant" },
+                    { src: import.meta.env.BASE_URL + "projects/stangl/responsibility_02.png", caption: "Neon Pupil Labs eye tracking glasses worn by the participant" },
 
                 ],
             },
             {
-                title: "Data Synchronization",
+                title: "Hardware-Software Integration for Data Synchronization",
                 body: "Implement an Lab Streaming Layer (LSL) workflow to provide more consistent, easily analyzable data and remove the need to manually align data from the timestamp drift.",
                 keywords: ["Python", "C++","LSL", "Sub-millisecond Time Sychronization", "Serial Communication"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/stangl/lsl.png", caption: "LSL workflow to synchronize data streams" },
+                    { src: import.meta.env.BASE_URL + "projects/stangl/responsibility_03.png", caption: "LSL workflow to synchronize data streams" },
                 ],
             },
             {
                 title: "Inertial Measurement Unit (IMU) Integration",
-                body: "Compare two inertial measurement unit (IMU) systems to report usability and integration with the current system. Implement the Boas Lab IMUs into the lab system.",
+                body: "Compare two inertial measurement unit (IMU) systems to report usability and integration with the current system. One of the systems was a custom system created by another BU lab the Boas Lab. I was tasked to assess the system, document how it works, and provide feedback on usability in our workflow.",
                 keywords: ["IMU", "GPIO", "UART"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/stangl/imu.png", caption: "An IMU is a sensor that measures an object's angular rate using accelerometers, gyroscopes, and magnetometers." },
+                    { src: import.meta.env.BASE_URL + "projects/stangl/responsibility_04.png", caption: "An IMU is a sensor that measures an object's angular rate using accelerometers, gyroscopes, and magnetometers." },
 
                 ],
                 
@@ -679,10 +711,39 @@ export const projects = [
         type: "Turner Construction",
         teamsize: "5-10",
         keywords: ["Project Management", "HVAC Systems", "Communication", "Detail-oriented", "Cross-functional Teamwork"],
-        objective: `Coordinate the virtual construction of mechanical systems to ensure design documents were feasible i.e. identify virtual problems before they became real-world problems. 
+        objective: `Coordinate the virtual construction of mechanical, electrical, and plumbing (MEP) systems to ensure design documents were feasible. 
         
-        Experience the process with the intention of developing a web application for future Virtual Design and Construction (VDC) Coordination projects.`,
-        methods: [
+        Experience the coordination process with the intention of developing a web application for future Virtual Design and Construction (VDC) Coordination projects.`,
+        context: { src: import.meta.env.BASE_URL + "projects/vdcEngineer/context.png", caption: "Product realization" },
+        problem: { src: import.meta.env.BASE_URL + "projects/vdcEngineer/problem.png", caption: "Problem"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/vdcEngineer/outcome.png", caption: "Our project results"},
+        lessons: [
+            {
+                title: "Proactive communication is necessary for addressing potential issues before they happen",
+                body: "The purpose of my role was to identify virtual problems before they became real-world problems. Proactive instead of reactive efforts were essential to addressing potential issues before they become real issues in the field.",
+                keywords: ["Communication", "Problem Solving", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/lesson_01.png", caption: "Proactive communication" },
+                ]
+            },
+            {
+                title: "Collaborative problem solving with a diverse team allows for creative solutions to complex problems",
+                body: "The most productive design reviews where when ",
+                keywords: ["Collaboration","Problem Solving", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                ],
+            },
+            {
+                title: "There is a balance between what the client wants, what's feasible, and what they are willing to pay for",
+                body: "Many times I found myself bending over backwards trying to find a better solution that would satisfy ALL the . The Project Manager would remind me that it's not about what I want, it's about what the client wants (and is willing to pay for). We presented the options and our insight and even if it's not the outcome we want, he client is okay with a solution ",
+                keywords: ["Constraints", "Time Management", "", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/lesson_03.jpg", caption: "" },
+                ],
+            },
+        ],
+        responsibilities: [
             {
                 title: "Contract and Document Standards",
                 body: "Understand contract documents and requirements. Establish project standards for naming conventions, workflows, and software, and communicate them to the team. ",
@@ -746,31 +807,60 @@ export const projects = [
         teammembers: "Chae Woo Lim, Riku Ito, Megha Venkatesam, Suzuka Kojima",
         keywords: ["NIH grant materials", "Pneumatic Actuation", "Arduino"],
         objective: `Design and develop a medical robotic device and write a NIH-proposal-style report.`,
-        methods: [
+        context: { src: import.meta.env.BASE_URL + "projects/endoscope/context.png", caption: "Product realization" },
+        problem: { src: import.meta.env.BASE_URL + "projects/endoscope/problem.png", caption: "Problem"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/endoscope/outcome.png", caption: "Our project results"},
+        lessons: [
             {
-                title: "Problem Identification",
-                body: "Identify a medical challenge that can be solved by building a robotic platform",
-                keywords: ["Significance", "Innovation", "Endoscope Stabilization"],
+                title: "Always have a Plan B, and don't be afraid to pivot",
+                body: "The initial proposal was to use Thermoplastic Elastomers (TPE) to create angular bellows for pneumatic actuation. However, repeated attempts failed to produce functioning bellows, so as a last resort heat-weldable fabric pouches were used instead.",
+                keywords: [],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/endoscope/colonoscopy.jpg", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/endoscope/lesson_01.png", caption: "“If there is any one secret of success, it lies in the ability to get the other person’s point of view and see things from that person’s angle as well as from your own” - Henry Ford" },
+                ]
+            },
+            {
+                title: "Holding the end of a flexible tube steady is tiring",
+                body: "Although it may not seem hard to hold a flexible tube steady for 10 minutes, it gets tiring, both physically and mentally. (And that doesn't include performing a surgery at the same time). It was a good reminder of the importance of trying to experience what the user will experience in order to design a useful product. ",
+                keywords: ["User Testing", "Voice of Customer", "NASA Task Load"],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/endoscope/lesson_02.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                ],
+            },
+            // {
+            //     title: "So many references",
+            //     body: "Documentation is key.",
+            //     keywords: ["Requirement Traceability Matrix (RTM)", "Failure Mode and Effects Analysis (FMEA)", "Validation and Verifcation (V&V)", ],
+            //     images: [
+            //         { src: import.meta.env.BASE_URL + "projects/endoscope/lesson_03.jpg", caption: "" },
+            //     ],
+            // },
+        ],
+        responsibilities: [
+            {
+                title: "Circuit Design and Arduino Code",
+                body: "My role was to design, assemble, and test the circuit board by writing the code for the sensor integration and control system.",
+                keywords: ["Arduino", "Circuits", "Pressure Sensing","Pneumatic Actuation", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/endoscope/responsibility_01.png", caption: "MethodImage" },
 
                 ]
             },
             {
-                title: "Build a Robotic System",
-                body: "Build a full robotic system using actuation and sensing components, robotic mechanisms, and control and software components",
-                keywords: ["Arduino", "Pneumatic Actuation", "Pressure Sensing"],
+                title: "Heat-Weldable Fabric Pouches",
+                body: "As a backup plan, I designed, manufactured, and tested pouches with heat-weldable fabric and plastic tubing. Since the initial TPE bellows ended up not working, these other pouches were used instead.",
+                keywords: [ ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/endoscope/roboticsystem.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/endoscope/responsibility_02.png", caption: "MethodImage" },
 
                 ]
             },
             {
                 title: "Validate the Robotic System",
-                body: "Perform testing with the NASA Task Load Protocol to support device functionality and usability.",
+                body: "Another team member and I tested the system with the NASA Task Load Protocol to validate device functionality and usability.",
                 keywords: ["NASA Task Load", "Testing", "MATLAB Image Detection"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/endoscope/TLX.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/endoscope/responsibility_03.png", caption: "MethodImage" },
 
                 ]
             },
@@ -831,6 +921,35 @@ export const projects = [
         teamsize: "1-5",
         keywords: ["KPI Dashboards", "UI", "Full-Stack", "PHP", "Python", "Javascript", "Unity"],
         objective: `Develop custom web applications for my team to help them better visualize and manage company and project specific resources.`,
+        context: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/context.png", caption: "Product realization" },
+        problem: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/problem.png", caption: "Problem"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/outcome.png", caption: "Our project results"},
+        lessons: [
+            {
+                title: "The difference between what people say, what they want, what theyʼll pay for, and what they actually do",
+                body: "I gained experience in communicating with diverse clinical stakeholders in regulated environments to evaluate real-world product use, identify workflow and usability challenges, and translate clinical feedback into unmet needs.",
+                keywords: ["OR Protocols","Communication", "User Needs", "Voice of Customer", "Stakeholder Interviews"],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_01.png", caption: "“If there is any one secret of success, it lies in the ability to get the other person’s point of view and see things from that person’s angle as well as from your own” - Henry Ford" },
+                ]
+            },
+            {
+                title: "Framing the right problem is the only way to create the right solution",
+                body: "Through mentoring sessions with dedicated industry mentors, our team was pushed to hone our problem and needs statement. ",
+                keywords: ["Problem Statement","Needs Statement", "Value Proposition", "Human Factors",],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                ],
+            },
+            {
+                title: "If you didn't document it, it didn't happen",
+                body: "Documentation is key.",
+                keywords: ["Requirement Traceability Matrix (RTM)", "Failure Mode and Effects Analysis (FMEA)", "Validation and Verifcation (V&V)", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_03.jpg", caption: "" },
+                ],
+            },
+        ],
         methods: [
             {
                 title: "Full-Stack Software Developent",
@@ -838,7 +957,6 @@ export const projects = [
                 keywords: ["MethodKeywords"],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/project/filename.png", caption: "MethodImage" },
-
                 ]
             },
         ],

@@ -93,11 +93,11 @@ export const skills = {
 		evidence: `With my neuroscience background, I have experience in wet lab environments conducting tasks with cell cultures, spectroscopy, microscopy, and 3D bioprinting.`,
 		keywords:["Microscopy", "Spectroscopy", "3D Bioprinting"]
 	},
-	"problemsolving": {
-		title: "Problem Solving",
-		evidence: ``,
-		keywords:["Puzzles", "Outside-of-the-box Thinking"]
-	},
+	// "problemsolving": {
+	// 	title: "Problem Solving",
+	// 	evidence: ``,
+	// 	keywords:["Puzzles", "Outside-of-the-box Thinking"]
+	// },
 	"curiosity": {
 		title: "Curiosity",
 		evidence: `Part of my love of puzzles comes from my desire to learn about and understand the world and people around me. I’m a very active listener, and listen with curiosity. I enjoy and find value in learning about other peoples’ experience and perspectives, and I believe this curiosity helps me be a better person and problem-solver.`,

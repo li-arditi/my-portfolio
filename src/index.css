@@ -9,6 +9,7 @@
   background-color: #f3f4f6;
   color: #374151;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .tag:hover {

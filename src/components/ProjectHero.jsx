@@ -20,8 +20,8 @@ export default function ProjectHero({project}) {
 	return (
     <div className="relative p-10">
 		{/* Hero Background Image */}
-		<img src={project.heroBgImg} className="opacity-30 absolute inset-0 w-full h-full object-cover" />
-		<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-gray/40 to-gray/0" />
+		<img src={project.heroBgImg} className="opacity-20 absolute inset-0 w-full h-full object-cover" />
+		<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-white/40 to-white/0" />
 		{/* Hero Content*/}
 		<div className="relative bottom-0 max-w-6xl m-auto left-0 right-0 px-8 mt-6">
 			{/* Back */}
