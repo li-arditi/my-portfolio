@@ -85,8 +85,8 @@ export const skills = {
 	},
 	"machining": {
 		title: "Machining",
-		evidence: `Through personal projects and my Product Realization course, I am gaining significant experience in using all the resources in a machine shop including CNC mills, various power saws, and welding tools.`,
-		keywords:["3D printing", "Milling", "Lathe", "Lasercutting", "Water Jet", "Welding"]
+		evidence: `Through personal projects and my Product Realization course, I am gaining significant experience in using all the resources in a machine shop including CNC mills, various power saws, welding tools, waterjets, lasercutters, wire EDM.`,
+		keywords:["3D printing", "Milling", "Lathe", "Lasercutting", "Water Jet", "Welding", "Wire EDM"]
 	},
 	"wetlab": {
 		title: "Wet Lab",

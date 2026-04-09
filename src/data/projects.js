@@ -550,7 +550,7 @@ export const projects = [
                 body: "Every day I wrote down what I did, what errors I ran into, and how I solved them. Even if it was something I would only do or run into once, I wrote it down (and usually I did run into it again...). This made writing a detailed document of my process very easy while being very thorough. The lab still uses the document as an onboarding and reference document.",
                 keywords: ["Note Taking", "Documentation", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/stangl/lesson_03.jpg", caption: "" },
+                    { src: import.meta.env.BASE_URL + "projects/stangl/lesson_03.png", caption: "" },
                 ],
             },
         ],

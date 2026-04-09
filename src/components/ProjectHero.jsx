@@ -26,7 +26,7 @@ export default function ProjectHero({project}) {
 		<div className="relative bottom-0 max-w-6xl m-auto left-0 right-0 px-8 mt-6">
 			{/* Back */}
 			<button onClick={handleBack}
-				className="relative text-sm text-neutral-700 font-medium hover:text-neutral-900 transition-colors mb-8">
+				className="relative text-sm text-neutral-700 font-medium hover:text-neutral-900 transition-colors mb-8 cursor-pointer">
 				← Back
 			</button>
 			{/* Title/Summary */}
