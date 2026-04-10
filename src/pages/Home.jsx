@@ -46,12 +46,14 @@ export default function Portfolio() {
 
 	// projects layout
 	const projectLayout = [ // rows-5 cols-3
-		"row-span-3 col-span-1 row-start-1 col-start-1", // traction
-		"row-span-3 col-span-1 row-start-1 col-start-2", // pressmate
+		"row-span-3 col-span-1 row-start-1 col-start-1", // traction top left
+		"row-span-3 col-span-1 row-start-1 col-start-2", // pressmate top middle
 		
-		"row-span-3 col-span-1 row-start-3 col-start-3", // stangl
-		"row-span-2 col-span-2 row-start-4 col-start-1", // vdcEngineer
-		"row-span-2 col-span-1 row-start-1 col-start-3", // endoscope
+		"row-span-3 col-span-1 row-start-3 col-start-3", // stangl bottom right
+		"row-span-2 col-span-1 row-start-4 col-start-1", // vdcEngineer bottom left
+		
+		"row-span-2 col-span-1 row-start-1 col-start-3", // endoscope top right
+		"row-span-2 col-span-1 row-start-4 col-start-2", // software 
 	]
 
 

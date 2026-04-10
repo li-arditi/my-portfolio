@@ -728,7 +728,7 @@ export const projects = [
             },
             {
                 title: "Collaborative problem solving with a diverse team allows for creative solutions to complex problems",
-                body: "The most productive design reviews where when ",
+                body: "The most productive design reviews where when all the stakeholders were in the room. Not only did it open channels of respectful communication, but it also provided a space for creative solutions to blossom as people with diverse backgrounds and experiences worked together to accomplish the same goal.",
                 keywords: ["Collaboration","Problem Solving", ],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/vdcEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
@@ -736,8 +736,8 @@ export const projects = [
             },
             {
                 title: "There is a balance between what the client wants, what's feasible, and what they are willing to pay for",
-                body: "Many times I found myself bending over backwards trying to find a better solution that would satisfy ALL the . The Project Manager would remind me that it's not about what I want, it's about what the client wants (and is willing to pay for). We presented the options and our insight and even if it's not the outcome we want, he client is okay with a solution ",
-                keywords: ["Constraints", "Time Management", "", ],
+                body: "Many times I found myself bending over backwards trying to find a better solution that would satisfy ALL the . The Project Manager would remind me that it's not about what I want, it's about what the client wants (and is willing to pay for). We presented the options and our insight and even if it's not an outcome we fully agree with, it's the client's choice and we will fully support it and make it happen.",
+                keywords: ["Constraints", "Time Management", "User Requirements", ],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/vdcEngineer/lesson_03.jpg", caption: "" },
                 ],
@@ -908,74 +908,137 @@ export const projects = [
     { // softwareEngineer
         slug: "software-engineer",
         title: "Software Engineer",
-        summary: "Develop web applications for project management",
-        thumbnail: import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.png",
-        backgroundImg: import.meta.env.BASE_URL + "projects/softwareEngineer/backgroundImg.png",
+        summary: "Develop full-stack web applications for project management at one of the top global construction management companies Turner Construction.  Please note, this page is still in development",
+        thumbnail: import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.jpg",
+        backgroundImg: import.meta.env.BASE_URL + "projects/softwareEngineer/backgroundImg.jpg",
         heroBgImg: import.meta.env.BASE_URL + "projects/softwareEngineer/heroBackground.jpg",
         theme: "",
-        showcased: false,
+        showcased: true,
         start: "Aug 2021",
         end: "June 2024",
         active: false,
         type: "Lead Software Engineer",
         teamsize: "1-5",
         keywords: ["KPI Dashboards", "UI", "Full-Stack", "PHP", "Python", "Javascript", "Unity"],
-        objective: `Develop custom web applications for my team to help them better visualize and manage company and project specific resources.`,
+        objective: `Develop custom web applications for my team to help them better visualize and manage company and project specific resources. 
+        
+        Please note, this page is still in development`,
         context: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/context.png", caption: "Product realization" },
         problem: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/problem.png", caption: "Problem"},
         outcome: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/outcome.png", caption: "Our project results"},
         lessons: [
             {
-                title: "The difference between what people say, what they want, what theyʼll pay for, and what they actually do",
-                body: "I gained experience in communicating with diverse clinical stakeholders in regulated environments to evaluate real-world product use, identify workflow and usability challenges, and translate clinical feedback into unmet needs.",
-                keywords: ["OR Protocols","Communication", "User Needs", "Voice of Customer", "Stakeholder Interviews"],
+                title: "Software development cannot happen in a silo",
+                body: "I was the first dedicated software developer hired at Turner. Most construction management software is created by developers who have never stepped foot on a jobsite. As a result, there has been a major disconnect between what developers *think* is needed and what is *actually* needed. With my previous engineering intern experience at Turner and my computer science experience, I had the unique background to develop web applications that aligned with the real needs of users.",
+                keywords: ["User Needs",],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_01.png", caption: "“If there is any one secret of success, it lies in the ability to get the other person’s point of view and see things from that person’s angle as well as from your own” - Henry Ford" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_01.png", caption: "" },
                 ]
             },
             {
-                title: "Framing the right problem is the only way to create the right solution",
-                body: "Through mentoring sessions with dedicated industry mentors, our team was pushed to hone our problem and needs statement. ",
-                keywords: ["Problem Statement","Needs Statement", "Value Proposition", "Human Factors",],
+                title: "Comment your code, you'll thank yourself later. And so will everyone else.",
+                body: "Code readability is an art that may be underappreciated until you revisit code written year, months, weeks, or even just days ago. Especially when working with a team, it is essential for code to be organized and well ommented in order to allow others and your future self to quickly and easily understand your code.",
+                keywords: ["Code Readability","Organization", "Documentation"],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_01.png", caption: "" },
+                ]
+            },
+            {
+                title: "Give someone your application, and ask them to try to break it.",
+                body: "Watching someone navigate your application is an eye-opening experience. Even if you try to distance yourself from the work and imagine how the user experiences your application, you can never know how a user may interact with your interface without watching them. On many occassions I asked a co-worker to test my work and they would do something that I didn't account for that would break the software, and each time I would learn something new.",
+                keywords: ["User Testing",],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/softwareEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
                 ],
             },
             {
-                title: "If you didn't document it, it didn't happen",
-                body: "Documentation is key.",
-                keywords: ["Requirement Traceability Matrix (RTM)", "Failure Mode and Effects Analysis (FMEA)", "Validation and Verifcation (V&V)", ],
+                title: "Advocating for your team goes a long way",
+                body: "My supervisor and I were able to prove my work was useful and innovative, so my team was given the budget to hire more software developers. I am a strong advocate for my teammate for any team I'm on, and explicitly recognize their efforts. I never considered this to be anything special because I value giving credit where credit is due. I only realized my impact on others during my farewell department meeting, when my peers voiced their appreciation of my unwavering support and willingness to advocate for them.",
+                keywords: ["team Dynamics", "Leadership", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_03.jpg", caption: "" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
                 ],
             },
+            // {
+            //     title: "Under promise, over deliver",
+            //     body: "I was the first ",
+            //     keywords: ["Time Management", "Managing Expectations", "Schedule", ],
+            //     images: [
+            //         { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_03.jpg", caption: "" },
+            //     ],
+            // },
         ],
-        methods: [
+        responsibilities: [
+            
             {
-                title: "Full-Stack Software Developent",
-                body: "MethodBody",
-                keywords: ["MethodKeywords"],
+                title: "Interactive 3D Model Risk Management Application",
+                body: "I researched the best 3D software development application for the project's purpose, eventually deciding on Unity - a common video game development software. After quickly learning Unity, I developed a web application that could be used for risk management purposes. Unfortunately due to confidentiality reasons, I can't provide more details on the exact purpose of the application.",
+                keywords: ["Risk Management", "Unity", "Custom 3D Model Application", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/project/filename.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+
+                ]
+            },
+            {
+                title: "Team Bonding Polls",
+                body: "As a fun way to get to know people, I would write polls on my desk's whiteboard and people would walk by to tally their answer. Questions included: Would you rather be a spider or caterpillar (that turns into a butterfly)? or Is a hotdog a sandwich? It became a popular team bonding activity brought up during team meetings, so I created a web page with a weekly poll where results were available at the end of the week.",
+                keywords: ["Team Bonding",],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/filename.png", caption: "MethodImage" },
+                ]
+            },
+            {
+                title: "Internal Resource Management App",
+                body: "I developed several connected web pages for upper management to manage and plan employee project assignments. The app was so successful that two other departments also wanted to use it, and it is still used today.",
+                keywords: ["Resource Management", "Staff Assignments", "Project Management" ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+                ]
+            },
+            {
+                title: "Hybrid Work Calendar and Desk Reservation App",
+                body: "With the hybrid work calendar, upper management wanted a way to track whether employees were in the office, remote, or on a job site. I created a custom hybrid/remote calendar and integrated a desk assignment feature as people started going into the office more and not having enough available desks. This app was also so successful that two other departments also wanted to use it, and it is still used today.",
+                keywords: ["Organization", "Management", "Hybrid Work","Calendar", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+
+                ]
+            },
+            {
+                title: "Project Job Site Work In Progress Tracking",
+                body: "This was one of my larger projects where I created a custom web app for on-site project management using the three.js library. ",
+                keywords: ["Schedule", "Live Data", "Project Health Tracking","three.js library", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+
+                ]
+            },
+            {
+                title: "Interviewing and Onboarding",
+                body: "I quickly gained more responsibilities including interviewing candidates for the team and onboarding interns and new hires.",
+                keywords: ["Schedule", "Live Data", "Project Health Tracking","three.js library", ],
+                images: [
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+
                 ]
             },
         ],
         results: `Throughout my 3 years I developed various web applications that have been deployed to numerous departments and project job sites and are still used today.`,
         timeline: [
-            {
-                title: "PhotoTitle",
-                text: "PhotoText",
-                image: import.meta.env.BASE_URL + "projects/softwareEngineer/timeline01.png",
-                layout: "",
-                images: [
-                    {src: import.meta.env.BASE_URL + "projects/softwareEngineer/filename.jpeg", dim: "h-48"},
-                ]
-            },
+            // {
+            //     title: "PhotoTitle",
+            //     text: "PhotoText",
+            //     image: import.meta.env.BASE_URL + "projects/softwareEngineer/timeline01.png",
+            //     layout: "",
+            //     images: [
+            //         {src: import.meta.env.BASE_URL + "projects/softwareEngineer/filename.jpeg", dim: "h-48"},
+            //     ]
+            // },
 
         ],
         videoId: "",
         pdfs: [
-            { title: "PdfTabTitle", src: import.meta.env.BASE_URL + "projects/traction/documents/ProblemSelectionPresentation.pdf" },
+            
 
         ],
     },

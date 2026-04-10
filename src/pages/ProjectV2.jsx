@@ -358,7 +358,7 @@ export default function Project() {
 					<hr className="border-neutral-200 mb-14" /> */}
 
 					{/* References */}
-					<section className="my-14 scroll-mt-20" 
+					<section className="my-14 scroll-mt-20 px-5" 
 						ref={el => sectionRefs.current[4] = el}
 						id={sectionHeaders[4]}>
 						<SectionLabel textColor={projectTheme.dk.text}>{sectionHeaders[4]}</SectionLabel>
