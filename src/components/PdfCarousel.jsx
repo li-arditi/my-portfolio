@@ -55,7 +55,7 @@ export default function PdfCarousel({ pdfs }) {
 
 		},
 		{ 
-			threshold: 0, rootMargin: "0px 0px -600px 0px"}
+			threshold: 0, rootMargin: "0px 0px -80% 0px"}
 		);
 
 		const el = document.getElementById("presentations-section");

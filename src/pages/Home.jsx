@@ -190,7 +190,7 @@ export default function Portfolio() {
 		<section id="aboutme" className="max-w-5xl mx-auto px-6 py-20">
 			<h2 className="text-3xl font-semibold mb-6">Get to Know Me</h2>
 			<p className="text-neutral-600 max-w-xl mb-4">
-				I'm much more than just my "marketable" skills and professional and academic experiences. I value supportive, collaborative work environments and I believe part of fostering one is getting to know your team as people. You can learn more about me on a personal level on my <span className="font-bold"> About Me</span> page
+				I'm much more than just my "marketable" skills and professional and academic experiences. I value supportive, collaborative work environments and I believe part of fostering one is getting to know your team as people. You can learn more about me on a personal level on my <a href="#aboutme" className="cursor-pointer font-bold"> About Me</a> page
 			</p>
 			<a href="#aboutme"
 				className="inline-flex items-center rounded-xl bg-neutral-900 text-neutral-50 px-6 py-3 text-sm hover:bg-neutral-800 transition">

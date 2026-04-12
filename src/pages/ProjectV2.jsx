@@ -362,13 +362,45 @@ export default function Project() {
 						ref={el => sectionRefs.current[4] = el}
 						id={sectionHeaders[4]}>
 						<SectionLabel textColor={projectTheme.dk.text}>{sectionHeaders[4]}</SectionLabel>
+
+						
+
 						{/* PDF Carousel */}
-					
 						{project.pdfs.length > 0 && (
 							<div id="presentations-section" className="">
 								<div className={`text-md font-bold uppercase tracking-widest  whitespace-nowrap text-neutral-500`}>Presentations</div>
 								<PdfCarousel pdfs={project.pdfs} />
 							</div>
+						)}
+
+						{/* Sources */}
+						{project.sources.length > 0 && (
+							<div className="pt-10">
+								<div className={`text-md font-bold uppercase whitespace-nowrap text-neutral-500`}>Sources</div>
+								<ol className="list-decimal ml-10 text-neutral-400">
+								{/* Numbered list of sources */}
+								{project.sources.map((source, i) => {
+									// check if source is a string or not, if not, it's an object with keys 'content' and 'url'
+									if (typeof source == "string"){
+										return (
+											<li key={"source_" + i} className="">
+												{source}
+											</li>
+										)
+									} else {
+										// include url that opens a new page
+										return (
+											<li key={"source_" + i} className="">
+												<span>{source.content}</span>
+												<a href={source.url} target="_blank" rel="noopener noreferrer" className="text-blue-600">{source.url} </a>
+											</li>
+										)
+									}
+									}
+								)}
+								</ol>
+							</div>
+							
 						)}
 						
 					</section>

@@ -47,7 +47,7 @@ export const projects = [
         ],
     },
      */
-    {
+    { // masters project traction
         slug: "masters-project",
         title: "Skeletal Traction for Femoral Shaft Fractures",
         summary: "A hands-on experience developing an orthopedic medical device to improve the inconsistent treatment of femur fractures through the full product lifecycle",
@@ -102,44 +102,7 @@ export const projects = [
             //     ],
             // },
         ],
-        methods: [
-            {
-                title: "Operating Room (OR) Observations",
-                body: "Identify technology-related clinical challenges and unmet user needs through clinical observations at Boston Medical Center (BMC) to understand the Voice of Customer (VOC) and select a project focus.",
-                keywords: ["OR Protocols", "User Needs", "Voice of Customer", "Stakeholder Interviews"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/surgeries.png", caption: "The different types of orthopedic surgeries I observed." },
-
-                ]
-            },
-            {
-                title: "Problem Definition & Design Rationalization",
-                body: "Create problem and needs statements with clearly defined user needs and device requirements. Support these statements by conducting storyboarding sessions, stakeholder analysis, human factors analysis, and value proposition",
-                keywords: ["Storyboards", "Stakeholder Analysis", "Human Factors Analysis", "Value Proposition", "RTM"],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
-
-
-                ],
-            },
-            {
-                title: "Prototyping and Testing (In Progress)",
-                body: "Create Works-Like and Is-Like prototypes and assess them based on verification and validation protocols. This included mockup sessions, 3D modeling, machining processes, verification and validation testing, and failure modes and effects analysis (FMEA).",
-                keywords: ["Prototyping", "3D Modeling", "Machining", "Validation and Verifcation", "FMEA",],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/01_thumbnail.png", caption: "" },
-
-                ],
-            },
-            {
-                title: "Manufacturing and Commercialization (In Progress)",
-                body: "This phase is still in progress, but it will include developing the Design for Manufacturing (DFM) plan, Quality Management Systems (QMS), and a business model canvas.",
-                keywords: ["DFM", "QMS", "Business Model", "Packaging", "FDA and Regulatory Pathway",],
-                images: [
-                    { src: import.meta.env.BASE_URL + "projects/traction/aluminumTube.png", caption: "Overall progression of 3D models" },
-                ],
-            },
-        ],
+        
         responsibilities: [
             {
                 title: "OR Observations",
@@ -175,10 +138,6 @@ export const projects = [
                 ],
             },
             
-        ],
-        results: [
-            { src: import.meta.env.BASE_URL + "projects/traction/02_initialWorksLike.jpeg", caption: "The current initial works-like prototype" },
-
         ],
         timeline: [
             {
@@ -225,6 +184,7 @@ export const projects = [
             { title: "Initial Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/InitialWorksLikeMEng.pdf"  },
             { title: "Advanced Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/AdvancedWorksLikeMEng.pdf"  },
         ],
+        sources: [],
     },
     { // pressmate
         slug: "coffee-press",
@@ -322,119 +282,6 @@ export const projects = [
             },
             
         ],
-        context2:
-            `The Product Realization Master's course at BU (ME537) focuses on the essential and challenging process of getting a design from the drawing board into the hands of the customer. 
-            
-            A semester long project to build and prototype a small production system includes hands-on experience covering topics such as Design for Manufacturing, validation testing, cash flow modeling, in-house vs outsourcing, setting up a factory, selecting supplier partners, distribution, and ongoing product support.
-            
-            By the end of the semester, each team will have documented, efficient and consistent production of the final 10 units and a mass production plan for 100,000 units/year.
-            `,
-        background: [
-            {
-                type: "header",
-                content: "Project Requirements"
-            },
-            {
-                type: "text",
-                content:
-                    `The product must meet the following project requirements:
-                    `
-            },
-            {
-                type: "list",
-                name: "requirements",
-                content:
-                    [
-                        "Consist of three (3) or more parts made from two (2) or more manufacturing processes",
-                        "Require dimensional fit between parts",
-                        "Require tool and/or fixture to make or assemble (ex. mold, machining tool, etc.)",
-                        "Be small enough to keep parts for 10+ units in 1 x 1.5 x 2 ft container",
-                        "<$10 per unit to product all mockups, models, and prototypes",
-                        "Use at most one (1) purchased part",
-                        "Cannot use additive manufacturing for final parts (patterns/fixtures ok)"
-                    ]
-            },
-            {
-                type: "header",
-                content: "Coffee Presses"
-            },
-            {
-                type: "text",
-                content:
-                    `I personally don't drink coffee, however, in order to design a coffee press I needed to do some research about brewing coffee and what makes a good cup of coffee.
-
-                    For you non-coffee drinking comrades, coffee is "brewed" by combining ground coffee beans and hot water. After the grounds have been given time to release their flavor, they are filtered out creating the revered cup of coffee. The flavor and quality of the cup of coffee can vary based on bean quality, grind size, brewing method, and steep time. The PressMate coffee press uses a "French-press" brewing method, where hot water and grinds are combined, steeped, then separated using a filter that is pressed through the mixture.
-                    `
-            },
-            {
-                type: "image",
-                src: import.meta.env.BASE_URL + "projects/pressmate/frenchpress.png",
-                alt: "Steps for the French Press",
-                caption: "Steps for brewing coffee with the French Press method. Source: https://voltagecoffee.com/how-to-french-press/",
-                aspect: "16/9"
-            },
-
-        ],
-        conclusion: [
-            {
-                type: "text",
-                content:
-                    `My team "Bob the Builders" present The PressMate.  `
-            },
-            {
-                type: "image",
-                src: import.meta.env.BASE_URL + "projects/pressmate/01_thumbnail.png",
-                alt: "Project final result",
-                caption: "The current model for our single-serve coffee press -- PressMate",
-                aspect: "16/9"
-            },
-            {
-                type: "header",
-                content: "Documents"
-            },
-            {
-                type: "text",
-                content:
-                    `Throughout the life of the project, the following documents will be created:
-                    `
-            },
-            {
-                type: "list",
-                name: "documents",
-                content:
-                    [
-                        "DOC01 - Project Requirements",
-                        "DOC02 - CAD Drawings",
-                        "DOC03 - Enterprise Content Management (ECM)",
-                        "DOC04 - Schedule",
-                        "DOC05 - RASCI",
-                        "DOC06 - Risk Management",
-                        "DOC07 - Specifications Document",
-                        "DOC08 - Bill of Materials (BOM)",
-                        "DOC09 - Cost Model",
-                        "DOC010 - Tooling",
-                        "DOC011 - Quality Test Plan (QTP)",
-                        "DOC012 - Design Failure Modes and Effects Analysis (DFMEA)",
-                        "DOC013 - Process Plan",
-                        "DOC014 - Control Plan",
-                        "DOC015 - Standard Operating Procedures (SOP)",
-                        "DOC016 - Packaging",
-                        "DOC017 - Flexism",
-                        "DOC018 - Cashflow",
-                        "DOC019 - Apriori",
-                    ]
-            },
-            {
-                type: "text",
-                content:
-                    `Note on document ownership: All team members remained informed about each document. The Project Manager (PM) for each assignment rotated and therefore the name of the Document Approver rotated (and may not be mine). I will highlight my major contributions below but can speak to all aspects of the project.`
-            },
-
-        ],
-        results: [
-            { src: import.meta.env.BASE_URL + "projects/pressmate/DVT.jpeg", caption: "The current DVT prototype" },
-            // { src: import.meta.env.BASE_URL + "projects/pressmate/DVTcomponents.jpeg", caption: "The current components of the DVT prototype" },
-        ],
         timeline: [
             { // 01 Project launch
                 title: "Project Launch",
@@ -506,6 +353,7 @@ export const projects = [
             { title: "EVT Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/04EVTReport.pdf" },
             { title: "DVT Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/05DVTReport.pdf" },
         ],
+        sources: [],
     },
     { // stangl
         slug: "stangl-lab",
@@ -531,7 +379,7 @@ export const projects = [
         lessons: [
             {
                 title: "Even if something *should* behave a certain way, never assume...verify everything",
-                body: "As the saying goes: never assume because it makes an a** of u and me. ",
+                body: "As the saying goes: never assume because it makes an 🫏 of u and me. One case this arose was for eye tracking data synchronization, where we assumed sychronization would be the same as the other devices. However, after I conducted verification and validation experiments, I found that the current method was not meeting experimental requirements, so I implemented a new solution.",
                 keywords: ["Verification and Validation",],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/stangl/lesson_01.png", caption: "" },
@@ -547,74 +395,14 @@ export const projects = [
             // },
             {
                 title: "Detailed notes make documentation easy",
-                body: "Every day I wrote down what I did, what errors I ran into, and how I solved them. Even if it was something I would only do or run into once, I wrote it down (and usually I did run into it again...). This made writing a detailed document of my process very easy while being very thorough. The lab still uses the document as an onboarding and reference document.",
+                body: "Every day I wrote down what I did, errors I ran into, and how I solved them. Even if it was something I thought I would only do or run into once, I wrote it down (and usually I did run into it again...). This made writing a detailed document of my process very easy while also being thorough that the lab still uses the document as an onboarding and reference document.",
                 keywords: ["Note Taking", "Documentation", ],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/stangl/lesson_03.png", caption: "" },
                 ],
             },
         ],
-        context2:
-            `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior using multimodal neuroimaging techniques. 
-
-            The ability to record a person’s brain activity in real-world situations is relatively new, so there are no ready-made systems available to record experimental data. Therefore, the Stangl Lab developed a custom mobile platform that allows for data synchronization between a computer running the experimental protocol and sensors the participant is wearing. 
-
-            In order to fully understand the system, I was also involved in conducting experiment protocols with the team.
-            `,
-        background: [
-            {
-                type: "header",
-                content: "Research Goals"
-            },
-            {
-                type: "text",
-                content:
-                    `The Stangl Lab conducts human clinical studies for studying the neural basis of human cognition and behavior using multimodal neuroimaging techniques. 
-
-                    Studying freely moving participants in complex scenarios and real-world settings requires multi-dimensional recordings of numerous variables, in order to be able to include these variables in the study design and analyze their impact on human cognition and behavior.
-
-                    The Stangl Lab works with a rare group of individuals who have so-called "closed-loop" neuromodulation devices permanently implanted in their brain, which can record and stimulate brain activity through electrodes implanted in deep brain regions. These signals, along with motion tracking systems based on infrared cameras or inertial measurement units, audio and video recordings, and mobile eye-tracking system are used during freely-moving spatial navigation and memory tasks. 
-                    
-                    More information about the Stangl Lab can be found at 
-                    `
-            },
-            {
-                type: "url",
-                url: "https://www.stangl-lab.com",
-                urlText: null
-            },
-            {
-                type: "header",
-                content: "System Overview"
-            },
-            {
-                type: "text",
-                content:
-                    `The system consists of many components that must communicate with each other in real time. Components include:
-                    `
-            },
-            {
-                type: "list",
-                name: "stanglcomponents",
-                content:
-                    [
-                        "Unity computer - the experimental protocol controller",
-                        "Responsive Neurostimulation (RNS) System - the brain implant and data collection accessories",
-                        "Vicon Optical Motion Capture (MoCap) - the motion capture camera system",
-                        "Neon Pupil Glasses - the eye tracking system",
-                        "Arduino Uno - a microcontroller for the MoCap connection",
-                        "Raspbery Pi 4B - a portable microprocessor",
-                        "Functional Near-Infrared Spectroscopy (FNIRS) System - a way to measure brain activity through tracking blood hemodynamics of the cerebral cortex"
-                    ]
-            },
-            {
-                type: "text",
-                content:
-                    `Since computer timestamps and device communication have unavoidable delays, data synchronization is done through sending an electrical pulse, magnetic pulse, or serial communication (message) to each of the devices at specific intervals, or important moments during the experiment. These pulses are recorded within the each sensors’ data to allow for alignment of data during analysis. A schematic of the connections is shown below.
-                    `
-            },
-
-        ],
+        
         responsibilities: [
             {
                 title: "Experiment Protocols",
@@ -653,9 +441,6 @@ export const projects = [
                 
             },
         ],
-        results: `I was able to quickly learn the experiment protocols and underlying code to start integrating a Lab Streaming Layer (LSL) workflow to the existing system. 
-        
-        I also created a 30-page report to document my process, results, lessons learned, and future directions to ensure smooth knowledge transfer to technical and non-technical audiences. `,
         timeline: [
             {
                 title: "Experimental Protocol Assistance",
@@ -694,6 +479,13 @@ export const projects = [
             { title: "Progress Update (Informal)", src: import.meta.env.BASE_URL + "projects/stangl/documents/20250718_LA_WeeklyMtgPresentation.pdf" },
 
         ],
+        sources: [
+            {content: "More information on the Stangl Lab can be found here: ", url: "https://www.stangl-lab.com"},
+            {content: "Stangl, M., Maoz, S.L. & Suthana, N. Mobile cognition: imaging the human brain in the ‘real world’. Nat Rev Neurosci 24, 347–362 (2023). ", url: "https://doi.org/10.1038/s41583-023-00692-y"},
+            {content: "Topalovic et al., 2020, Neuron 108, 322–334 October 28, 2020 a 2020 Elsevier Inc. ", url: "https://doi.org/10.1016/j.neuron.2020.08.021"},
+
+            
+        ],
 
     },
     { // vdcEngineer
@@ -731,7 +523,7 @@ export const projects = [
                 body: "The most productive design reviews where when all the stakeholders were in the room. Not only did it open channels of respectful communication, but it also provided a space for creative solutions to blossom as people with diverse backgrounds and experiences worked together to accomplish the same goal.",
                 keywords: ["Collaboration","Problem Solving", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/lesson_02.png", caption: "A summary of the problem and needs statements, along with user needs." },
                 ],
             },
             {
@@ -739,7 +531,7 @@ export const projects = [
                 body: "Many times I found myself bending over backwards trying to find a better solution that would satisfy ALL the . The Project Manager would remind me that it's not about what I want, it's about what the client wants (and is willing to pay for). We presented the options and our insight and even if it's not an outcome we fully agree with, it's the client's choice and we will fully support it and make it happen.",
                 keywords: ["Constraints", "Time Management", "User Requirements", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/lesson_03.jpg", caption: "" },
+                    { src: import.meta.env.BASE_URL + "projects/vdcEngineer/lesson_03.png", caption: "" },
                 ],
             },
         ],
@@ -789,6 +581,10 @@ export const projects = [
         ],
         videoId: "",
         pdfs: [],
+        sources: [
+            "Lessons learned images were created with Google Gemini",
+            {content: "Images of the MakerLab space are from Cornell Tech's website: ", url: "https://tech.cornell.edu/research/makerlab/"},
+        ]
     },
     { // endoscope
         slug: "endoscope-stabilization",
@@ -865,10 +661,6 @@ export const projects = [
                 ]
             },
         ],
-        results: [
-            { src: import.meta.env.BASE_URL + "projects/endoscope/result.png", caption: "The final device prototype, which was accompanied by an NIH-style project proposal outlining significance, innovation, and approach." },
-
-        ],
         timeline: [
             {
                 title: "Pre-Proposal",
@@ -903,6 +695,9 @@ export const projects = [
         pdfs: [
             { title: "Final Presentation", src: import.meta.env.BASE_URL + "projects/endoscope/documents/ME571_FinalPresentation.pdf" },
 
+        ],
+        sources: [
+            {content: "A. Loeve, P. Breedveld, and J. Dankelman, “Scopes Too Flexible...and Too Stiff,” IEEE Pulse, vol. 1, no. 3, pp. 26–41, Nov. 2010, ", url: "https://doi.org/10.1109/MPUL.2010.939176"},
         ],
     },
     { // softwareEngineer
@@ -1021,7 +816,6 @@ export const projects = [
                 ]
             },
         ],
-        results: `Throughout my 3 years I developed various web applications that have been deployed to numerous departments and project job sites and are still used today.`,
         timeline: [
             // {
             //     title: "PhotoTitle",
@@ -1035,12 +829,13 @@ export const projects = [
 
         ],
         videoId: "",
-        pdfs: [
-            
-
+        pdfs: [],
+        sources: [
+            "Images are from various online sources.",
+            {content: "Turner construction is a top global construction management (general contractor) company for commercial buildings. You can find more information and projects Turner has worked on here: ", url: "https://www.turnerconstruction.com/projects"}
         ],
     },
-    {
+    { // truss
         slug: "truss",
         title: "Acrylic Truss Design",
         summary: "Design a simple truss with given requirements and calculate member loads, critical load, etc.",
@@ -1088,7 +883,7 @@ export const projects = [
 
         ],
     },
-    {
+    { // dysmenorrhea
         slug: "dysmenorrhea",
         title: "Mock Proposal for Dysmenorrhea Research",
         summary: "Summary",
@@ -1135,7 +930,7 @@ export const projects = [
 
         ],
     },
-    {
+    { // template (old)
         slug: "slug",
         title: "Title",
         summary: "Summary",
