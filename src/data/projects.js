@@ -907,12 +907,12 @@ export const projects = [
     },
     { // softwareEngineer
         slug: "software-engineer",
-        title: "Software Engineer",
-        summary: "Develop full-stack web applications for project management at one of the top global construction management companies Turner Construction.  Please note, this page is still in development",
+        title: "Software Engineer (Full-Stack)",
+        summary: "Develop full-stack web applications for project management at one of the top global construction management companies Turner Construction.",
         thumbnail: import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.jpg",
         backgroundImg: import.meta.env.BASE_URL + "projects/softwareEngineer/backgroundImg.jpg",
         heroBgImg: import.meta.env.BASE_URL + "projects/softwareEngineer/heroBackground.jpg",
-        theme: "",
+        theme: "sky",
         showcased: true,
         start: "Aug 2021",
         end: "June 2024",
@@ -920,9 +920,7 @@ export const projects = [
         type: "Lead Software Engineer",
         teamsize: "1-5",
         keywords: ["KPI Dashboards", "UI", "Full-Stack", "PHP", "Python", "Javascript", "Unity"],
-        objective: `Develop custom web applications for my team to help them better visualize and manage company and project specific resources. 
-        
-        Please note, this page is still in development`,
+        objective: `Develop custom web applications for my team to help them better visualize and manage company and project specific resources.`,
         context: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/context.png", caption: "Product realization" },
         problem: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/problem.png", caption: "Problem"},
         outcome: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/outcome.png", caption: "Our project results"},
@@ -937,10 +935,10 @@ export const projects = [
             },
             {
                 title: "Comment your code, you'll thank yourself later. And so will everyone else.",
-                body: "Code readability is an art that may be underappreciated until you revisit code written year, months, weeks, or even just days ago. Especially when working with a team, it is essential for code to be organized and well ommented in order to allow others and your future self to quickly and easily understand your code.",
+                body: "Code readability is an art that may be underappreciated until you revisit code written year, months, weeks, or even just days ago. Especially when working with a team, it is essential for code to be organized and well commented in order to allow others and your future self to quickly and easily understand your code.",
                 keywords: ["Code Readability","Organization", "Documentation"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_01.png", caption: "" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_02.png", caption: "" },
                 ]
             },
             {
@@ -948,15 +946,15 @@ export const projects = [
                 body: "Watching someone navigate your application is an eye-opening experience. Even if you try to distance yourself from the work and imagine how the user experiences your application, you can never know how a user may interact with your interface without watching them. On many occassions I asked a co-worker to test my work and they would do something that I didn't account for that would break the software, and each time I would learn something new.",
                 keywords: ["User Testing",],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_03.png", caption: "A summary of the problem and needs statements, along with user needs." },
                 ],
             },
             {
                 title: "Advocating for your team goes a long way",
                 body: "My supervisor and I were able to prove my work was useful and innovative, so my team was given the budget to hire more software developers. I am a strong advocate for my teammate for any team I'm on, and explicitly recognize their efforts. I never considered this to be anything special because I value giving credit where credit is due. I only realized my impact on others during my farewell department meeting, when my peers voiced their appreciation of my unwavering support and willingness to advocate for them.",
-                keywords: ["team Dynamics", "Leadership", ],
+                keywords: ["Team Dynamics", "Leadership", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/statements.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_04.png", caption: "A summary of the problem and needs statements, along with user needs." },
                 ],
             },
             // {
@@ -984,7 +982,7 @@ export const projects = [
                 body: "As a fun way to get to know people, I would write polls on my desk's whiteboard and people would walk by to tally their answer. Questions included: Would you rather be a spider or caterpillar (that turns into a butterfly)? or Is a hotdog a sandwich? It became a popular team bonding activity brought up during team meetings, so I created a web page with a weekly poll where results were available at the end of the week.",
                 keywords: ["Team Bonding",],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/filename.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_02.png", caption: "MethodImage" },
                 ]
             },
             {
@@ -992,7 +990,7 @@ export const projects = [
                 body: "I developed several connected web pages for upper management to manage and plan employee project assignments. The app was so successful that two other departments also wanted to use it, and it is still used today.",
                 keywords: ["Resource Management", "Staff Assignments", "Project Management" ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_03.png", caption: "MethodImage" },
                 ]
             },
             {
@@ -1000,25 +998,25 @@ export const projects = [
                 body: "With the hybrid work calendar, upper management wanted a way to track whether employees were in the office, remote, or on a job site. I created a custom hybrid/remote calendar and integrated a desk assignment feature as people started going into the office more and not having enough available desks. This app was also so successful that two other departments also wanted to use it, and it is still used today.",
                 keywords: ["Organization", "Management", "Hybrid Work","Calendar", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_04.png", caption: "MethodImage" },
 
                 ]
             },
             {
                 title: "Project Job Site Work In Progress Tracking",
-                body: "This was one of my larger projects where I created a custom web app for on-site project management using the three.js library. ",
+                body: "This was one of my larger projects where I created a custom web app for on-site project management using the three.js library. It had been deployed on 5 job sites during my time developing it, and it continues to be used today.",
                 keywords: ["Schedule", "Live Data", "Project Health Tracking","three.js library", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_05.png", caption: "MethodImage" },
 
                 ]
             },
             {
                 title: "Interviewing and Onboarding",
                 body: "I quickly gained more responsibilities including interviewing candidates for the team and onboarding interns and new hires.",
-                keywords: ["Schedule", "Live Data", "Project Health Tracking","three.js library", ],
+                keywords: ["Leadership", "Mentoring" ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_01.png", caption: "MethodImage" },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/responsibility_06.png", caption: "MethodImage" },
 
                 ]
             },

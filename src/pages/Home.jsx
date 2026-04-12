@@ -45,15 +45,16 @@ export default function Portfolio() {
 	};
 
 	// projects layout
-	const projectLayout = [ // rows-5 cols-3
-		"row-span-3 col-span-1 row-start-1 col-start-1", // traction top left
-		"row-span-3 col-span-1 row-start-1 col-start-2", // pressmate top middle
+	const projectLayout = [ // rows-7 cols-3
+		// traction, pressmate, stangl, vdc, endoscope, software
+		"row-span-4 col-span-1 row-start-1 col-start-1", // traction top left
+		"row-span-4 col-span-1 row-start-4 col-start-2", // pressmate top middle
 		
-		"row-span-3 col-span-1 row-start-3 col-start-3", // stangl bottom right
-		"row-span-2 col-span-1 row-start-4 col-start-1", // vdcEngineer bottom left
+		"row-span-4 col-span-1 row-start-1 col-start-3", // stangl top right
+		"row-span-3 col-span-1 row-start-5 col-start-1", // vdcEngineer bottom left
 		
-		"row-span-2 col-span-1 row-start-1 col-start-3", // endoscope top right
-		"row-span-2 col-span-1 row-start-4 col-start-2", // software 
+		"row-span-3 col-span-1 row-start-5 col-start-3", // endoscope bottom right
+		"row-span-3 col-span-1 row-start-1 col-start-2", // software top middle
 	]
 
 
@@ -69,7 +70,7 @@ export default function Portfolio() {
 					Hi, I’m Li
 				</h1>
 				<p className="mt-6 text-lg text-neutral-600 max-w-2xl">
-					I'm excited to leverage my neuroscience, computer science, and biomedical engineering with mechnical engineering focus experience to solve biomedical challenges and help people live healthier and happier lives.    
+					I'm excited to leverage my neuroscience, computer science, and biomedical engineering with mechnical engineering focus experience to solve complex problems and help people live healthier and happier lives.    
 				</p>
 				<div className="flex gap-4 mt-8">
 					<a href= {import.meta.env.BASE_URL + "LA_resume.pdf"}
@@ -121,7 +122,7 @@ export default function Portfolio() {
 			
 			
 			<div className="mt-6">
-				<div className="grid grid-rows-5 grid-cols-3 gap-3 h-150">
+				<div className="grid grid-rows-7 grid-cols-3 gap-3 h-150">
 					{projects.map((p, i) => (
 						p.showcased && ( // only show showcased projects
 							<div key={i}  className={projectLayout[i] + " relative"}>

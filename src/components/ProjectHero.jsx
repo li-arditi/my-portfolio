@@ -39,7 +39,15 @@ export default function ProjectHero({project}) {
 					{/* Team # */}
 					<p className="text-sm text-neutral-800 leading-6">Team of {project.teamsize}</p>
 					{/* Summary */}
-					<p className="text-base text-neutral-900 leading-relaxed">{project.summary}</p>
+					<p className="pt-3 text-base text-neutral-900 leading-relaxed">{project.summary}</p>
+					{/* Tags — scrollable row below hero */}
+					<section className="mt-10 flex flex-wrap gap-2">
+						{project.keywords.map(tag => (
+						<span key={tag} className={`text-xs text-neutral-900 font-medium border rounded-full px-3 py-1`}>
+							{tag}
+						</span>
+						))}
+					</section>
 				</div>
 				<img
 					src={project.thumbnail}
@@ -48,14 +56,7 @@ export default function ProjectHero({project}) {
 				/>
 			</section>
 
-			{/* Tags — scrollable row below hero */}
-			<section className="flex flex-wrap gap-2">
-				{project.keywords.map(tag => (
-				<span key={tag} className={`text-xs text-neutral-300 border rounded-full px-3 py-1`}>
-					{tag}
-				</span>
-				))}
-			</section>
+			
 		</div>
 	</div>
   );

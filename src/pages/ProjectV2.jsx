@@ -12,11 +12,11 @@ import ProjectHero from "../components/ProjectHero.jsx"
 
 // store theme colors
 const themes = {
-	blue: { 
-		default: {text: "text-blue-900", border: "border-blue-200", background: "bg-blue-400"},  
-		lt: {text: "text-blue-500", border: "border-blue-400", background: "bg-blue-400"},
-		md: {text: "text-blue-500", border: "border-blue-400", background: "bg-blue-400"},  
-		dk:  {text: "text-blue-500", border: "border-blue-400", background: "bg-blue-400"},
+	sky: { 
+		default: {text: "text-sky-800", border: "border-sky-800", background: "bg-sky-400"},  
+		lt: {text: "text-sky-500", border: "border-sky-400", background: "bg-sky-400"},
+		md: {text: "text-sky-600", border: "border-sky-600", background: "bg-sky-600"},  
+		dk:  {text: "text-sky-900", border: "border-sky-900", background: "bg-sky-900"},
 	},
 	violet: { 
 		default: {text: "text-violet-900", border: "border-violet-200", background: "bg-violet-400"},  

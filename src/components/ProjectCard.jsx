@@ -15,10 +15,10 @@ export default function ProjectCard({ project }) {
 		/>
 
 		{/* Default overlay — always visible, fades out on hover */}
-		<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent transition-opacity duration-300 group-hover:opacity-0  rounded-xl" />
+		<div className="absolute inset-0 bg-gradient-to-t from-black/90 from-25% via-black/20 to-transparent transition-opacity duration-300 group-hover:opacity-0  rounded-xl" />
 
 		{/* Hover overlay — slides up on hover */}
-		<div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+		<div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
 
 		{/* Default state — title + tags pinned to bottom */}
 		<div className="absolute bottom-0 left-0 right-0 p-4 transition-all duration-300 group-hover:opacity-0 group-hover:translate-y-2 rounded-xl">

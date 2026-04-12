@@ -19,7 +19,7 @@ export default function Contact() {
             You can also find me on LinkedIn at 
             <a href="https://www.linkedin.com/in/li-arditi/"
                 target="_blank"
-                className="hover:curser-pointer hover:text-blue-600"> https://www.linkedin.com/in/li-arditi/</a>
+                className="curser-pointer text-blue-600"> https://www.linkedin.com/in/li-arditi/</a>
         </div>
         <p className="flex justify-center "> I look forward to hearing from you!</p>
 

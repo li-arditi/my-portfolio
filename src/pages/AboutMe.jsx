@@ -30,7 +30,7 @@ export default function AboutMe() {
             <br></br><br></br>
             I'm a Biomedical Engineering Master's student with 3 years of industry experience as a software developer in a quality driven environment. I love puzzles and problem solving and look forward to using my skills to help others.
             <br></br><br></br>
-            I value supportive, collaborative work environments and I believe part of fostering one is getting to know your team as people. Below I've listed some of my interests to learn more about me on a personal level.
+            I value supportive, collaborative work environments and I believe part of fostering one is getting to know your team as people. Below I've listed some of my interests so you can learn more about me on a personal level.
         </p>
 
 
@@ -41,7 +41,7 @@ export default function AboutMe() {
             <h4 className="font-semibold mb-4">Puzzles</h4>
             <div className="text-neutral-600 flex gap-4 pl-4 mb-5">
                 <p>
-                    I could spend hours on any type of puzzle. I love crosswords (and all the other NYT and LinkedIn mini games), jigsaw puzzles, riddles, sudoku ... the list goes on. The largest jigsaw puzzle I completed was a 5,000 piece puzzle of the ceiling of the Sistine Chapel. Here's the completed puzzle!
+                    I could spend hours on any type of puzzle. I love crosswords (and all the other NYT and LinkedIn mini games), jigsaw puzzles, riddles, sudoku ... the list goes on. The largest jigsaw puzzle I completed was a 5,000 piece puzzle of the ceiling of the Sistine Chapel. Here's the completed puzzle! (It's 40 in x 60 in)
                 </p>
                 <img src={jigsawPuzzleImg} className="object-scale-down w-xs rounded-xl"/>
             </div>
