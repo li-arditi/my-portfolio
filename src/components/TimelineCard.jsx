@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import ImageEnlarge from "../components/ImageEnlarge.jsx"
 
 export default function TimelineCard({ theme, entry, index, align }) {
 	return (
@@ -12,11 +14,12 @@ export default function TimelineCard({ theme, entry, index, align }) {
 				{/* Text */}
 				<p className="text-sm text-neutral-500 leading-relaxed">{entry.text}</p>
 			</div>
-			<img
-				src={entry.image}
-				alt={entry.title}
-				className="w-full object-contain max-h-100"
-			/>
+
+			{/* Image */}
+			<ImageEnlarge src={entry.image} alt={entry.title}/>
+			
+			
 		</div>
 	);
 }
+

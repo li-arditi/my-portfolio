@@ -7,14 +7,15 @@ import ProcessCard from "../components/ProcessCard.jsx"
 import PdfCarousel from "../components/PdfCarousel.jsx"
 import Timeline from "../components/Timeline.jsx"
 import ProjectHero from "../components/ProjectHero.jsx"
-
+import ImageEnlarge from "../components/ImageEnlarge.jsx"
+import { Image } from "lucide-react";
 
 
 // store theme colors
 const themes = {
 	sky: { 
 		default: {text: "text-sky-800", border: "border-sky-800", background: "bg-sky-400"},  
-		lt: {text: "text-sky-500", border: "border-sky-400", background: "bg-sky-400"},
+		lt: {text: "text-sky-500", border: "border-sky-500", background: "bg-sky-500"},
 		md: {text: "text-sky-600", border: "border-sky-600", background: "bg-sky-600"},  
 		dk:  {text: "text-sky-900", border: "border-sky-900", background: "bg-sky-900"},
 	},
@@ -147,7 +148,7 @@ export default function Project() {
 						<button
 							key={"section_" + i}
 							onClick={e => { e.preventDefault(); document.getElementById(section).scrollIntoView({ behavior: 'smooth' }) }}
-							className={`flex justify-between items-center cursor-pointer hover:bg-stone-200 hover:text-neutral-600 transition-colors px-3 py-2 text-sm font-medium text-neutral-400 text-left ${active == section ? "bg-neutral-200 text-neutral-600": "bg-neutral-600 text-neutral-400"}`}>
+							className={`flex justify-between items-center cursor-pointer hover:bg-neutral-200 hover:text-neutral-600 transition-colors px-3 py-2 text-sm font-medium text-neutral-400 text-left ${active == section ? "bg-neutral-200 text-neutral-600": "bg-neutral-600 text-neutral-400"}`}>
 						<span>{section}</span>
 						</button>
 					))}
@@ -159,19 +160,19 @@ export default function Project() {
 			{/* Scrollable content */}
 			<main className="">  
 				{/* Page Content */}
-				<div className="font-sans bg-neutral-50 min-h-screen px-5 pt-14 text-neutral-900 ">
+				<div className="font-sans bg-neutral-50 pt-14 px-5 text-neutral-900 ">
 
 					{/* Overview */}
 					<section className="scroll-mt-20 px-5" 
 						ref={el => sectionRefs.current[0] = el}
 						id={sectionHeaders[0]}>
-						<SectionLabel>{sectionHeaders[0]}</SectionLabel>
+						<SectionLabel textColor={projectTheme.dk.text}>{sectionHeaders[0]}</SectionLabel>
 						{/* <div className={`bg-stone-200 -mx-5 px-5 mb-7 ${active == sectionHeaders[0] ? "sticky top-14 py-5 ": ""}`}>
 							<SectionLabel>{sectionHeaders[0]}</SectionLabel>
 						</div> */}
 						
 						{/* Goal */}
-						<div className="mb-10">
+						<div className="mb-10 pt-5 ">
 							<ProcessCard label="Goal" color={[projectTheme.default.text, projectTheme.default.border]}>
 								<p className="text-sm text-neutral-500 leading-relaxed px-10 pb-5">{project.objective}</p>
 							</ProcessCard>
@@ -179,17 +180,17 @@ export default function Project() {
 						<div className="grid grid-cols-3 gap-6">
 						{/* Context */}
 						<ProcessCard label="Context" color={[projectTheme.lt.text, projectTheme.lt.border]}>
-							<img src={project.context.src} alt={project.context.caption} className="aspect-auto mx-auto max-h-sm" />
+							<ImageEnlarge src={project.context.src} alt={project.context.caption} className="aspect-auto mx-auto max-h-sm" />
 						</ProcessCard>
 
 						{/* Problem */}
 						<ProcessCard label="Problem" color={[projectTheme.md.text, projectTheme.md.border]}>
-							<img src={project.problem.src} alt={project.problem.caption} className="aspect-auto mx-auto" />
+							<ImageEnlarge src={project.problem.src} alt={project.problem.caption} className="aspect-auto mx-auto"/>
 						</ProcessCard>
 
 						{/* Outcome */}
 						<ProcessCard label="Outcome" color={[projectTheme.dk.text, projectTheme.dk.border]}>
-							<img src={project.outcome.src} alt={project.outcome.caption} className="aspect-auto mx-auto" />
+							<ImageEnlarge src={project.outcome.src} alt={project.outcome.caption} className="aspect-auto mx-auto"/>
 						</ProcessCard>
 						</div>
 
@@ -202,11 +203,11 @@ export default function Project() {
 
 					
 					{/* Lessons Learned */}
-					<section className="my-14 scroll-mt-20 px-5" 
+					<section className="scroll-mt-20 px-5 my-14" 
 						ref={el => sectionRefs.current[1] = el}
 						id={sectionHeaders[1]}>
 						{/* Section Header */}
-						<SectionLabel textColor={projectTheme.md.text}>{sectionHeaders[1]}</SectionLabel>
+						<SectionLabel textColor={projectTheme.dk.text}>{sectionHeaders[1]}</SectionLabel>
 						{/* <div className={`${active == sectionHeaders[0] ? "sticky top-14 bg-white": ""}`}>
 							<SectionLabel textColor={projectTheme.md.text}>{sectionHeaders[1]}</SectionLabel>
 						</div> */}
@@ -214,8 +215,8 @@ export default function Project() {
 						<div className="flex flex-col divide-y divide-neutral-200 ">
 						{project.lessons.map((m, i) => (
 							<div
-							key={i}
-							className="grid grid-cols-[1fr_1.3fr] gap-10 items-center pb-10 pt-5 h-md"
+								key={i}
+								className="grid grid-cols-[1.1fr_1fr] gap-20 items-center pb-10 pt-5 h-md"
 							>
 							<div className="flex flex-col gap-3">
 								{/* Number */}
@@ -236,12 +237,12 @@ export default function Project() {
 								</div>
 							</div>
 							{/* Lesson Image */}
-							<div className="">
-								<div className="flex ">
-									<img src={m.images[0].src} alt={m.images[0].caption} className={`max-h-70 aspect-auto  rounded-xl ring-2 ring-neutral-100 shadow-lg/70 bg-white mx-auto`} />
-									
-								</div>
+							
+							<div className="flex justify-self-center">
+								<ImageEnlarge src={m.images[0].src} alt={m.images[0].caption} className={`max-h-70 aspect-auto  rounded-xl shadow-lg/70 bg-white `} />
+								
 							</div>
+							
 							
 							</div>
 						))}
@@ -252,7 +253,7 @@ export default function Project() {
 					<section className="my-14 scroll-mt-20 px-5" 
 						ref={el => sectionRefs.current[2] = el}
 						id={sectionHeaders[2]}>
-						<SectionLabel textColor={projectTheme.md.text}>{sectionHeaders[2]}</SectionLabel>
+						<SectionLabel textColor={projectTheme.dk.text}>{sectionHeaders[2]}</SectionLabel>
 						<div className="flex flex-col divide-y divide-neutral-200">
 						{project.responsibilities.map((m, i) => (
 							<div
@@ -277,11 +278,11 @@ export default function Project() {
 									))}
 								</div>
 							</div>
-							{/* Methods Image */}
-								<div className="flex ">
-									<img src={m.images[0].src} alt={m.images[0].caption} className={`mt-10 max-h-80 aspect-auto  rounded-xl ring-2 ring-neutral-100 shadow-lg/70 bg-white mx-auto`} />
-									
-								</div>
+							{/* Responsibility Image */}
+							<div className="flex justify-self-center">
+								<ImageEnlarge src={m.images[0].src} alt={m.images[0].caption} className={`mt-10 max-h-80 aspect-auto  rounded-xl shadow-lg/70 bg-white mx-auto`} />
+								
+							</div>
 							
 							</div>
 						))}
@@ -293,9 +294,9 @@ export default function Project() {
 						ref={el => sectionRefs.current[3] = el}
 						id={sectionHeaders[3]}>
 						<SectionLabel textColor={projectTheme.dk.text}>{sectionHeaders[3]}</SectionLabel>
-						<Timeline entries={project.timeline} theme={projectTheme.dk}/>
+						<Timeline entries={project.timeline} theme={projectTheme.md}/>
 						{project.active && (
-							<img src={import.meta.env.BASE_URL + "projects/MoreComingSoon.png"} alt={"In Progress"} className="mt-20 rounded-xl max-w-80 mx-auto" />
+							<img src={import.meta.env.BASE_URL + "projects/MoreComingSoon.png"} alt={"In Progress"} className="mt-20 rounded-xl max-w-50 mx-auto" />
 						)}
 					</section>
 
@@ -341,21 +342,7 @@ export default function Project() {
 						</div>
 					</section>
 
-					{/* Video */}
-					{/* <section className="mb-14">
-						<SectionLabel>Video</SectionLabel>
-						<div className="rounded-2xl overflow-hidden shadow-md bg-black">
-						<iframe
-							className="w-full aspect-video border-none block"
-							src={`https://www.youtube.com/embed/${project.videoId}`}
-							title="Project video"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowFullScreen
-						/>
-						</div>
-					</section> 
-
-					<hr className="border-neutral-200 mb-14" /> */}
+					
 
 					{/* References */}
 					<section className="my-14 scroll-mt-20 px-5" 

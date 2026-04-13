@@ -249,7 +249,7 @@ export const projects = [
                 body: "In addition to the ECM, I was mainly responsible for maintaining the product specifications document and standard operating procedures documents.",
                 keywords: ["Product Brief", "Voice of Customer", "Product Specifications", "Regulatory Requirements", "Usage Conditions", "Aesthetics", "SOPs"],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/pressmate/DVTmethods.jpeg", caption: "" },
+                    { src: import.meta.env.BASE_URL + "projects/pressmate/responsibility_03.png", caption: "" },
 
                 ],
             },
@@ -318,14 +318,20 @@ export const projects = [
                 text: "After a getting over the steep learning curve, high scrap rate, and long hours, this is the EVT prototype and tooling we produced.",
                 image: import.meta.env.BASE_URL + "projects/pressmate/timeline04.png",
             },
-            { // 05 DVT and results
+            { // 05 DVT 
                 title: "Design Validation Testing (DVT)",
-                text: "Build three (3) products with all production intent processes and test tooling and fixtures. Processes were similar to EVT but now with seasoning for rust resistance, a silicone lip and no lid.",
+                text: "Build three (3) products with all production intent processes and test tooling and fixtures.",
                 image: import.meta.env.BASE_URL + "projects/pressmate/timeline05.png",
                 
             },
-            { // 06 PVT
-                title: "Production Validation Testing (DVT) Prototype",
+            { // 06 DVT results
+                title: "DVT Results",
+                text: "Processes were similar to EVT but now with seasoning for rust resistance, a silicone lip and no lid.",
+                image: import.meta.env.BASE_URL + "projects/pressmate/timeline06.png",
+                
+            },
+            { // 07 PVT
+                title: "Production Validation Testing (PVT) Prototype",
                 text: "Build ten (10) product will all production intent processes, fixtures, and tools. Processes were the same as DVT but scaled up to increase efficiency and decrease scrap.",
                 image: import.meta.env.BASE_URL + "projects/InProgress.png",
                 
@@ -445,32 +451,32 @@ export const projects = [
             {
                 title: "Experimental Protocol Assistance",
                 text: "In order to understand the experiment protocol workflow and requirements, I assisted in conducting research experiments for spatial navigation and memory tasks with freely-moving human participants.",
-                image: import.meta.env.BASE_URL + "projects/stangl/timeline01.png",
+                image: import.meta.env.BASE_URL + "projects/stangl/timeline_01.png",
             },
             {
                 title: "Eye Tracking Time Sychronization",
                 text: "Time delays were determined by analyzing the eye tracking recording to find the exact timestamp the LED turned on. This was compared to known timestamps of the LED trigger from the RaspberryPi.",
-                image: import.meta.env.BASE_URL + "projects/stangl/timeline02.png",
+                image: import.meta.env.BASE_URL + "projects/stangl/timeline_02.png",
             },
             {
                 title: "Eye Tracking Results",
                 text: "The LED-RPi alignment had a 10-20ms delay, however, the environment/scene camera video had a frame rate of 30Hz, contributing to an uncertainty of 33ms. With the LED in the scene camera (left), the timestamp diﬀerence was not linear and too large of a diﬀerence because of the frame rate. The eye camera (right) was used instead becuase of its 200Hz frame rate.",
-                image: import.meta.env.BASE_URL + "projects/stangl/timeline03.png",
+                image: import.meta.env.BASE_URL + "projects/stangl/timeline_03.png",
             },
             {
                 title: "Lab Streaming Layer (LSL)",
                 text: "I learned and started implementing an LSL workflow. Lab Streaming Layer (LSL) is a widely used system for the unified collection of measurement time series in research experiments. It handles both the networking, time-synchronization, (near-) real-time access as well as optionally the centralized collection, viewing and disk recording of the data.",
-                image: import.meta.env.BASE_URL + "projects/stangl/timeline04.png",
+                image: import.meta.env.BASE_URL + "projects/stangl/timeline_04.png",
             },
             {
                 title: "Boas Lab IMU Crash Course",
                 text: "The Boas Lab at BU had created custom inertial measurement units (IMUs) that hadn’t been tested yet. I met with creator of the IMUs Professor Eric Hazen for a crash course on the technical details the devices, after which I created a guide for future reference.",
-                image: import.meta.env.BASE_URL + "projects/stangl/timeline05.png",
+                image: import.meta.env.BASE_URL + "projects/stangl/timeline_05.png",
             },
             {
                 title: "Documentation",
                 text: "I created a 30-page report to document my process, results, lessons learned, and future directions to ensure smooth knowledge transfer to technical and non-technical audiences.",
-                image: import.meta.env.BASE_URL + "projects/stangl/timeline06.png",
+                image: import.meta.env.BASE_URL + "projects/stangl/timeline_06.png",
             },
 
         ],
@@ -616,8 +622,8 @@ export const projects = [
                 ]
             },
             {
-                title: "Holding the end of a flexible tube steady is tiring",
-                body: "Although it may not seem hard to hold a flexible tube steady for 10 minutes, it gets tiring, both physically and mentally. (And that doesn't include performing a surgery at the same time). It was a good reminder of the importance of trying to experience what the user will experience in order to design a useful product. ",
+                title: "Holding the end of a flexible tube steady is harder than it sounds",
+                body: "Although it may not seem hard to hold a flexible tube steady, it gets tiring, both physically and mentally. (And that doesn't include performing a surgery at the same time). It was a good reminder of the importance of trying to experience what the user will experience in order to design a useful product. ",
                 keywords: ["User Testing", "Voice of Customer", "NASA Task Load"],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/endoscope/lesson_02.png", caption: "A summary of the problem and needs statements, along with user needs." },
@@ -706,7 +712,7 @@ export const projects = [
         summary: "Develop full-stack web applications for project management at one of the top global construction management companies Turner Construction.",
         thumbnail: import.meta.env.BASE_URL + "projects/softwareEngineer/01_thumbnail.jpg",
         backgroundImg: import.meta.env.BASE_URL + "projects/softwareEngineer/backgroundImg.jpg",
-        heroBgImg: import.meta.env.BASE_URL + "projects/softwareEngineer/heroBackground.jpg",
+        heroBgImg: import.meta.env.BASE_URL + "projects/softwareEngineer/heroBackground.png",
         theme: "sky",
         showcased: true,
         start: "Aug 2021",
@@ -715,22 +721,22 @@ export const projects = [
         type: "Lead Software Engineer",
         teamsize: "1-5",
         keywords: ["KPI Dashboards", "UI", "Full-Stack", "PHP", "Python", "Javascript", "Unity"],
-        objective: `Develop custom web applications for my team to help them better visualize and manage company and project specific resources.`,
-        context: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/context.png", caption: "Product realization" },
+        objective: `Develop custom web applications for the Virtual Design and Construction (VDC) department to standardize, visualize, and manage company- and project-specific resources.`,
+        context: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/context.png", caption: "Software engineer" },
         problem: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/problem.png", caption: "Problem"},
-        outcome: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/outcome.png", caption: "Our project results"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/softwareEngineer/outcome.png", caption: "Outcome"},
         lessons: [
             {
                 title: "Software development cannot happen in a silo",
                 body: "I was the first dedicated software developer hired at Turner. Most construction management software is created by developers who have never stepped foot on a jobsite. As a result, there has been a major disconnect between what developers *think* is needed and what is *actually* needed. With my previous engineering intern experience at Turner and my computer science experience, I had the unique background to develop web applications that aligned with the real needs of users.",
-                keywords: ["User Needs",],
+                keywords: ["User Needs","Voice of Customer"],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_01.png", caption: "" },
                 ]
             },
             {
                 title: "Comment your code, you'll thank yourself later. And so will everyone else.",
-                body: "Code readability is an art that may be underappreciated until you revisit code written year, months, weeks, or even just days ago. Especially when working with a team, it is essential for code to be organized and well commented in order to allow others and your future self to quickly and easily understand your code.",
+                body: "Code readability is an art that may be underappreciated until you revisit code written years, months, weeks, or even just days ago. Especially when working with a team, it is essential for code to be organized and well commented in order to allow others and your future self to quickly and easily understand your code.",
                 keywords: ["Code Readability","Organization", "Documentation"],
                 images: [
                     { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_02.png", caption: "" },
@@ -741,15 +747,15 @@ export const projects = [
                 body: "Watching someone navigate your application is an eye-opening experience. Even if you try to distance yourself from the work and imagine how the user experiences your application, you can never know how a user may interact with your interface without watching them. On many occassions I asked a co-worker to test my work and they would do something that I didn't account for that would break the software, and each time I would learn something new.",
                 keywords: ["User Testing",],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_03.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_03.png", caption: "" },
                 ],
             },
             {
                 title: "Advocating for your team goes a long way",
-                body: "My supervisor and I were able to prove my work was useful and innovative, so my team was given the budget to hire more software developers. I am a strong advocate for my teammate for any team I'm on, and explicitly recognize their efforts. I never considered this to be anything special because I value giving credit where credit is due. I only realized my impact on others during my farewell department meeting, when my peers voiced their appreciation of my unwavering support and willingness to advocate for them.",
+                body: "My supervisor and I proved my work was impactful and innovative, so our team was given the budget to hire additional software developers. I'm a strong advocate for my teammates for any team I'm on, explicitly recognizing their efforts and achievements, and this was no different. Ironically, I only realized my positive impact during my farewell department meeting when my peers voiced their appreciation for my unwavering support and willingness to advocate for them.",
                 keywords: ["Team Dynamics", "Leadership", ],
                 images: [
-                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_04.png", caption: "A summary of the problem and needs statements, along with user needs." },
+                    { src: import.meta.env.BASE_URL + "projects/softwareEngineer/lesson_04.png", caption: "" },
                 ],
             },
             // {
@@ -817,15 +823,21 @@ export const projects = [
             },
         ],
         timeline: [
-            // {
-            //     title: "PhotoTitle",
-            //     text: "PhotoText",
-            //     image: import.meta.env.BASE_URL + "projects/softwareEngineer/timeline01.png",
-            //     layout: "",
-            //     images: [
-            //         {src: import.meta.env.BASE_URL + "projects/softwareEngineer/filename.jpeg", dim: "h-48"},
-            //     ]
-            // },
+            {
+                title: "Software Development Tools Research",
+                text: "Many of my projects involved navigating in and interacting with a 3D model. Unity and Unreal Engine are two popular video game development tools that were options for achieving project goals. After research on usability, graphics, and hardware requirments I decided to use Unity.",
+                image: import.meta.env.BASE_URL + "projects/softwareEngineer/timeline_01.png",
+            },
+            {
+                title: "Custom 3D Environment",
+                text: "Although Unity is a powerful development tool, due to information security concerns and need for more control and customization over the application, we eventually ended up using the three.js library to create a custom model viewer.",
+                image: import.meta.env.BASE_URL + "projects/softwareEngineer/timeline_02.png",
+            },
+            {
+                title: "Framework and Workflow",
+                text: "Initial system setup was done in PHP and MySQL. Eventually, a Node.js framework was implemented, along with GitHub version control and application deployment.",
+                image: import.meta.env.BASE_URL + "projects/softwareEngineer/timeline_03.png",
+            },
 
         ],
         videoId: "",
