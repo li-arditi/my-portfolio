@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { ArrowUpRight } from "lucide-react"
 
 export default function ProjectCard({ project }) {
   return (
@@ -11,7 +10,7 @@ export default function ProjectCard({ project }) {
 		<img
 			src={project.thumbnail}
 			alt={project.title}
-			className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 rounded-xl border border-neutral-300"
+			className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 rounded-xl border border-neutral-300 `}
 		/>
 
 		{/* Default overlay — always visible, fades out on hover */}

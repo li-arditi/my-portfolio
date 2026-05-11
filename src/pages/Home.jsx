@@ -5,6 +5,7 @@ import { skills } from "../data/skills"
 
 // COMPONENTS
 import ProjectCard from "../components/ProjectCard.jsx"
+import MobileProjectCard from "../components/MobileProjectCard.jsx"
 import HomeImg from "../assets/personal/LiArditiHeadshotSquare.jpeg"
 
 // REACT
@@ -21,9 +22,6 @@ export default function Portfolio() {
 	// handle skill selection and details
     const [selectedSkill, setSelectedSkill] = useState(null); 
 
-	// handle project quick view selection
-    const [quickViewProject, setQuickViewProject] = useState(null); 
-
 	// handle copying email
 	const [contactCount, setContactCount] = useState(0);
 	const [copied, setCopied] = useState(false);
@@ -36,17 +34,10 @@ export default function Portfolio() {
 		}
 	};
 
-	// handle navigating to project page
-	const navigate = useNavigate();
-	const handleNaviagte = (slug) => {
-		navigate(`/project/${slug}`, {
-			state: { scrollY: window.scrollY }
-		});
-	};
-
 	// projects layout
 	const projectLayout = [ // rows-7 cols-3
-		// traction, pressmate, stangl, vdc, endoscope, software
+		// **** currently just goes in order of projects.js json -- want to change to be more dynamic
+		// traction, pressmate, stangl, vdc, endoscope, software 
 		"row-span-4 col-span-1 row-start-1 col-start-1", // traction top left
 		"row-span-4 col-span-1 row-start-4 col-start-2", // pressmate top middle
 		
@@ -63,6 +54,7 @@ export default function Portfolio() {
       	{/* Header / Hero */}
 		<header className="flex max-w-5xl mx-auto px-6 pt-10">
 			<div className="m-5">
+				{/* Summary */}
 				<span className="inline-block mb-4 rounded-full bg-neutral-900 text-neutral-50 px-4 py-1 text-sm">
 					Available for work
 				</span>
@@ -72,15 +64,19 @@ export default function Portfolio() {
 				<p className="mt-6 text-lg text-neutral-600 max-w-2xl">
 					I'm excited to leverage my neuroscience, computer science, and biomedical engineering with mechnical engineering focus experience to solve complex problems and help people live healthier and happier lives.    
 				</p>
-				<div className="flex gap-4 mt-8">
+
+				{/* Resume/Contact */}
+				<div className="flex gap-4 mt-8 sm:flex-row">
+					{/* Resume */}
 					<a href= {import.meta.env.BASE_URL + "LA_resume.pdf"}
   						target="_blank"
   						rel="noopener noreferrer"
 						className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-neutral-50 px-6 py-3 text-sm hover:bg-neutral-800 transition">
 						View Resume <ArrowUpRight size={16} />
 					</a>
+					{/* Contact (copy email) */}
 					<button onClick={handleCopy}
-						className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-6 py-3 text-sm hover:border-neutral-900 transition">
+						className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-6 py-3 text-sm hover:border-neutral-900 transition cursor-copy">
 						<Mail size={16} />
 						{copied ? "Email Copied!" : "Contact Me"} 
 					</button>
@@ -101,11 +97,10 @@ export default function Portfolio() {
 			</div>
 		</header>
 
-		
 
 		{/* Showcased Projects */}
 		<section id="showcase" className="max-w-5xl mx-auto px-6 py-5">
-			{/* Section Header */}
+			{/* Projects Header */}
 			<h2 className="text-3xl font-semibold mb-2"> Project Showcase</h2>
 			<div className="mb-10 flex justify-between items-start gap-4">
 				<p className="max-w-xl text-md text-neutral-600 mb-5 pl-1 "> 
@@ -117,12 +112,26 @@ export default function Portfolio() {
 					className="shrink-0 inline-flex items-center rounded-xl border border-neutral-300 px-3 py-2 text-sm text-neutral-500 hover:border-neutral-900 hover:bg-neutral-100 transition">
 					All Projects <ArrowUpRight size={16} />
 				</a> */}
-
 			</div>
 			
-			
+			{/* Projects Content default is mobile version */}
+			{/* Mobile version */}
 			<div className="mt-6">
-				<div className="grid grid-rows-7 grid-cols-3 gap-3 h-150">
+				<div className="grid align-items: stretch grid-cols-1 sm:grid-cols-2 gap-3 md:hidden">
+					{projects.map((p, i) => (
+						p.showcased && ( // only show showcased projects
+							<div key={i} className="relative">
+								<MobileProjectCard project={p} />
+							</div>
+						)
+					))}
+  				</div>
+			</div>
+
+			{/* Desktop version */}
+			<div className="mt-6">
+				<div className="hidden 
+					md:grid grid-rows-7 grid-cols-3 gap-3 h-150">
 					{projects.map((p, i) => (
 						p.showcased && ( // only show showcased projects
 							<div key={i}  className={projectLayout[i] + " relative"}>
@@ -132,21 +141,15 @@ export default function Portfolio() {
 					))}
 				</div>
 			</div>
-
-			{/* <div className="grid gap-8 sm:grid-cols-3 mt-6">
-				{projects.map((p) => (
-					p.showcased && ( // only show showcased projects
-						<ProjectCard key={p.slug} project={p} 
-						onClick={() => handleClick(p.slug)}/>
-					)
-				))}
-			</div> */}
 		</section>
 
 		{/* Skills */}
 		<section id="skills" className="max-w-5xl mx-auto px-6 py-10">
+			{/* Skills Header */}
 			<h2 className="text-3xl font-semibold mb-2">Skills</h2>
 			<p className="text-sm text-neutral-600 mb-2 pl-1"> Click a Tag to see more details!</p>
+
+			{/* Skills Pills */}
 			<div className="flex flex-wrap gap-3 mb-5">
 				{Object.entries(skills).map(([tag,info]) => (
 					<button
@@ -165,7 +168,7 @@ export default function Portfolio() {
 			{/* Skill More Info */}
 			<div>
 				{selectedSkill && skills[selectedSkill] && ( // only show if a skill is selected and have data for it
-				<div className="h-100 overflow-y-auto mt-1 p-8 border border-gray-200 rounded-xl bg-gray-50">
+				<div className="max-h-100 overflow-y-auto mt-1 p-8 border border-gray-200 rounded-xl bg-gray-50">
 					<h2 className="text-2xl font-semibold mb-4">{skills[selectedSkill].title}</h2>
 
 					{/* Skill Keywords */}
@@ -179,8 +182,8 @@ export default function Portfolio() {
 						)}
 					</div>
 					{/* Skill Experience/Evidence */}
+					{/* **** will want to add connection to projects */}
 					<p className="whitespace-pre-line text-gray-700 m-6">{skills[selectedSkill].evidence}</p>
-					
 				</div>
 				)}
 			</div>
@@ -188,10 +191,14 @@ export default function Portfolio() {
 
 		{/* About me */}
 		<section id="aboutme" className="max-w-5xl mx-auto px-6 py-20">
+			{/* About me header */}
 			<h2 className="text-3xl font-semibold mb-6">Get to Know Me</h2>
+
+			{/* About me content */}
 			<p className="text-neutral-600 max-w-xl mb-4">
 				I'm much more than just my "marketable" skills and professional and academic experiences. I value supportive, collaborative work environments and I believe part of fostering one is getting to know your team as people. You can learn more about me on a personal level on my <a href="#aboutme" className="cursor-pointer font-bold"> About Me</a> page
 			</p>
+			{/* About me page button link */}
 			<a href="#aboutme"
 				className="inline-flex items-center rounded-xl bg-neutral-900 text-neutral-50 px-6 py-3 text-sm hover:bg-neutral-800 transition">
 				About Me <ArrowUpRight size={16} />
@@ -203,9 +210,8 @@ export default function Portfolio() {
 		<section id="contact" className="max-w-5xl mx-auto px-6 py-20">
 			<h2 className="text-3xl font-semibold mb-6">My Goals</h2>
 			<p className="text-neutral-600 max-w-xl mb-10">
-				As I'm entering the medical device industry from the construction industry, I am looking to further my exposure to all aspects of medical device development. One of the greal appeals of biomedical engineering is the multidisciplinary nature of it, as well as the opportunity to work collaboratively with a high quality team dedicated to excellence. I look forward to using my diverse background while continuously learning and making a positive impact on the medical and greater community.
+				As I'm entering the medical device industry from the construction industry, I am looking to further my exposure to all aspects of medical device development. One of the great appeals of biomedical engineering is the multidisciplinary nature of it, as well as the opportunity to work collaboratively with a high quality team dedicated to excellence. I look forward to using my diverse background while continuously learning and making a positive impact on the medical and greater community.
 			</p>
-			
 		</section>
 
 		{/* Footer */}

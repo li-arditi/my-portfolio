@@ -56,9 +56,10 @@ export const projects = [
         heroBgImg: import.meta.env.BASE_URL + "projects/traction/heroBackground.jpg",
         theme: "teal",
         showcased: true,
+        favorite: true,
         start: "Sept 2025",
-        end: "[May 2026]",
-        active: true,
+        end: "May 2026",
+        active: false,
         type: "Master's Program",
         teamsize: "4",
         teammembers: "Jonathan Lee, Bianca Rodriguez, Braxton Ersoy",
@@ -149,14 +150,6 @@ export const projects = [
                 ]
             },
             {
-                title: "Storyboards",
-                text: "An example of one of my storyboards for trigger finger release surgeries.",
-                image: import.meta.env.BASE_URL + "projects/traction/timeline02.png",
-                images: [
-                    {src: import.meta.env.BASE_URL + "projects/traction/storyboard.jpeg", dim: "1x1"},
-                ]
-            },
-            {
                 title: "Mockups",
                 text: "My initial mockup using foil, popsicle sticks, straws, and pipe cleaners.",
                 image: import.meta.env.BASE_URL + "projects/traction/timeline03.png",
@@ -171,18 +164,35 @@ export const projects = [
                 image: import.meta.env.BASE_URL + "projects/traction/timeline04.png",
             },
             {
-                title: "Advanced Works-Like/Is-Like Prototyping (In Progress)",
-                text: "After team design reviews, I modeled the device in OnShape to conduct FEA, then built an aluminum prototype using machining equipment including the cold saw and manual mill.",
+                title: "Custom Winch Design",
+                text: "I designed, 3D printed, and tested various winch designs, taking into account ease of use, torque reduction, and safety mechanisms to align with user needs and device requirements.",
+                image: import.meta.env.BASE_URL + "projects/traction/timeline05.png",
+            },
+            {
+                title: "Advanced Works-Like Protyping",
+                text: "I modeled the device in OnShape to conduct FEA, then built an aluminum prototype using machining equipment including the cold saw and manual mill.",
                 image: import.meta.env.BASE_URL + "projects/traction/timeline06.png",
             },
+            {
+                title: "Is-Like Prototype",
+                text: "I modeled the device in OnShape to conduct FEA, then built an aluminum prototype using machining equipment including the cold saw and manual mill.",
+                image: import.meta.env.BASE_URL + "projects/traction/timeline07.png",
+            },
+            {
+                title: "Design History File",
+                text: "In order to produce an organized, comprehensive design history file, I established version history standards and compiled all materials into a 655-page document with an easy navigation structure.",
+                image: import.meta.env.BASE_URL + "projects/traction/timeline08.png",
+            },
+            
 
         ],
         videoId: "",
         pdfs: [
-            { title: "Initial Proposals", src: import.meta.env.BASE_URL + "projects/traction/documents/ProblemSelectionPresentation.pdf" },
-            { title: "Design Results", src: import.meta.env.BASE_URL + "projects/traction/documents/DesignResultsPresentation.pdf" },
-            { title: "Initial Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/InitialWorksLikeMEng.pdf"  },
-            { title: "Advanced Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/AdvancedWorksLikeMEng.pdf"  },
+            { title: "Initial Proposals", src: import.meta.env.BASE_URL + "projects/traction/documents/2025-11-03_ProblemSelectionPresentation.pdf" },
+            { title: "Design Results", src: import.meta.env.BASE_URL + "projects/traction/documents/2025-12-01_DesignResultsPresentation.pdf" },
+            { title: "Initial Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/2026-02-17_InitialWorksLikeMEng.pdf"  },
+            { title: "Advanced Works-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/2026-03-23_AdvancedWorksLikeMEng.pdf"  },
+            { title: "Is-Like", src: import.meta.env.BASE_URL + "projects/traction/documents/2026-04-29_Is Like Presentation.pdf"  },
         ],
         sources: [],
     },
@@ -195,9 +205,10 @@ export const projects = [
         heroBgImg: import.meta.env.BASE_URL + "projects/pressmate/heroBackground.jpg",
         theme: "coffee",
         showcased: true,
+        favorite: true,
         start: "Jan 2026",
-        end: "[May 2026]",
-        active: true,
+        end: "May 2026",
+        active: false,
         type: "Product Realization Master's Course",
         teamsize: "4",
         teammembers: "Jos Moresi, Sam Eppley, William Castro",
@@ -332,20 +343,20 @@ export const projects = [
             },
             { // 07 PVT
                 title: "Production Validation Testing (PVT) Prototype",
-                text: "Build ten (10) product will all production intent processes, fixtures, and tools. Processes were the same as DVT but scaled up to increase efficiency and decrease scrap.",
-                image: import.meta.env.BASE_URL + "projects/InProgress.png",
+                text: "Build ten (10) products with all production intent processes, fixtures, and tools. Processes were the same as DVT but scaled up to increase efficiency and decrease scrap.",
+                image: import.meta.env.BASE_URL + "projects/pressmate/timeline07.png",
                 
             },
-            // { // 07 PVT result
-            //     title: "PVT Result",
-            //     text: "In Progress",
-            //     image: import.meta.env.BASE_URL + "projects/InProgress.png",
+            { // 08 PVT result
+                title: "PVT Results",
+                text: "After many unexpected roadblocks and early mornings in the machine shop, we successfully produced our 10 PVT products!",
+                image: import.meta.env.BASE_URL + "projects/pressmate/timeline08.png",
                 
-            // },
-            { // 08 MP
+            },
+            { // 09 MP
                 title: "Mass Production (MP) Plan",
                 text: "Produce a mass production plan with forecast, packaging, cost down targets, and production plan for production of 100,000 units/year.",
-                image: import.meta.env.BASE_URL + "projects/InProgress.png",
+                image: import.meta.env.BASE_URL + "projects/pressmate/timeline09.png",
                 
             },
             
@@ -358,6 +369,9 @@ export const projects = [
             { title: "Concept Refinement", src: import.meta.env.BASE_URL + "projects/pressmate/documents/03MockupIterations.pdf" },
             { title: "EVT Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/04EVTReport.pdf" },
             { title: "DVT Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/05DVTReport.pdf" },
+            { title: "PVT Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/06PVTSummary.pdf" },
+            { title: "MP Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/07MPReport.pdf" },
+            { title: "Final Report", src: import.meta.env.BASE_URL + "projects/pressmate/documents/08FinalReport.pdf" },
         ],
         sources: [],
     },
@@ -370,13 +384,14 @@ export const projects = [
         heroBgImg: import.meta.env.BASE_URL + "projects/stangl/heroBackground.jpg",
         theme: "violet", 
         showcased: true,
+        favorite: true,
         start: "May 2025",
         end: "Sept 2025",
         active: false,
         type: "Research Assistant",
         teamsize: "2-3",
         teammembers: "Sung Ahn, [Elizabeth Wang]",
-        keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino"],
+        keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino", "Serial Communication"],
         objective:
             `Improve the current hardware-software integration system of the Stangl Lab at BU to ensure sub-millisecond sychronization precision between the multimodal data.`,
         context: { src: import.meta.env.BASE_URL + "projects/stangl/context.png", caption: "Product realization" },
