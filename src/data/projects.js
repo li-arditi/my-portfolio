@@ -65,10 +65,10 @@ export const projects = [
         teammembers: "Jonathan Lee, Bianca Rodriguez, Braxton Ersoy",
         keywords: ["Medical Device Product Development", "Clinical Observations", "Documentation", "Full Product Lifecycle"],
         objective:
-            "Identify technology-related clinical challenges and unmet user needs through clinical observations to design, develop, and document a medical device from concept to commercialization according to medical industry standards.",
-        context: { src: import.meta.env.BASE_URL + "projects/traction/context.png", caption: "Femoral shaft fracture displacement and skeletal traction" },
-        problem: { src: import.meta.env.BASE_URL + "projects/traction/problem.png", caption: "Key limitations of current standard of care"},
-        outcome: { src: import.meta.env.BASE_URL + "projects/traction/outcome.png", caption: "Our project results"},
+            "Identify technology-related clinical challenges and unmet user needs through <b>clinical observations</b> to <b>design</b>, <b>develop</b>, and <b>document a medical device</b> from concept to commercialization according to <b>medical industry standards</b>.",
+        context: { src: import.meta.env.BASE_URL + "projects/traction/context.png", heading: "11.5M femoral shaft fratures globally in 2021", caption: "Femoral shaft fracture displacement and skeletal traction"},
+        problem: { src: import.meta.env.BASE_URL + "projects/traction/problem.png", heading: "Variable traction, variable outcomes", caption: "Key limitations of current standard of care"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/traction/outcome.png", heading: "A fully self-contained, portable, weight-free skeletal traction device", caption: "Our project results"},
         lessons: [
             {
                 title: "Know the difference between what people say, what they want, what theyʼll pay for, and what they actually do.",
@@ -214,10 +214,10 @@ export const projects = [
         teammembers: "Jos Moresi, Sam Eppley, William Castro",
         keywords: ["Manufacturing", "Mass Production", "Documentation", "Machining"],
         objective:
-            "Build and prototype a small production system for a coffee press from concept to mass production plan, including documentation for all design development phases.",
-        context: { src: import.meta.env.BASE_URL + "projects/pressmate/context.png", caption: "Product realization" },
-        problem: { src: import.meta.env.BASE_URL + "projects/pressmate/problem.png", caption: "Problem"},
-        outcome: { src: import.meta.env.BASE_URL + "projects/pressmate/outcome.png", caption: "Our project results"},
+            "<b>Build</b> and <b>prototype</b> a small production system for a coffee press from <b>concept to mass production</b>, including <b>documentation</b> for all design development phases.",
+        context: { src: import.meta.env.BASE_URL + "projects/pressmate/context.png", caption: "Product realization", heading: "Getting a design from the drawing board into the hands of a customer is an essential and challenging process" },
+        problem: { src: import.meta.env.BASE_URL + "projects/pressmate/problem.png", caption: "Problem", heading: "Drawbacks of a competitor's single-serving coffee press, the Aeropress"},
+        outcome: { src: import.meta.env.BASE_URL + "projects/pressmate/outcome.png", caption: "Our project results", heading: "The PressMate, a steel, all-in-one single-serve coffee press"},
         lessons: [
             
             {

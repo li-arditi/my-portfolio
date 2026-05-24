@@ -173,25 +173,28 @@ export default function Project() {
 						
 						{/* Goal */}
 						<div className="mb-10 pt-5 ">
-							<ProcessCard label="Goal" color={[projectTheme.default.text, projectTheme.default.border]}>
-								<p className="text-sm text-neutral-500 leading-relaxed px-10 pb-5">{project.objective}</p>
+							<ProcessCard label="GOAL" color={[projectTheme.default.text, projectTheme.default.border]}>
+								<p dangerouslySetInnerHTML={{ __html: project.objective }} className="text-sm text-neutral-500 leading-relaxed px-10 pb-5"></p>
 							</ProcessCard>
 						</div>
-						<div className="grid grid-cols-3 gap-6">
-						{/* Context */}
-						<ProcessCard label="Context" color={[projectTheme.lt.text, projectTheme.lt.border]}>
-							<ImageEnlarge src={project.context.src} alt={project.context.caption} className="aspect-auto mx-auto max-h-sm" />
-						</ProcessCard>
+						<div className="grid grid-cols-3 gap-3">
+							{/* Context */}
+							<ProcessCard label="CONTEXT" color={[projectTheme.lt.text, projectTheme.lt.border]}>
+								<div className="mx-5 pb-3 font-semibold">{project.context.heading}</div>
+								<ImageEnlarge src={project.context.src} alt={project.context.caption} className="aspect-auto mx-auto max-h-sm" />
+							</ProcessCard>
 
-						{/* Problem */}
-						<ProcessCard label="Problem" color={[projectTheme.md.text, projectTheme.md.border]}>
-							<ImageEnlarge src={project.problem.src} alt={project.problem.caption} className="aspect-auto mx-auto"/>
-						</ProcessCard>
+							{/* Problem */}
+							<ProcessCard label="PROBLEM" color={[projectTheme.md.text, projectTheme.md.border]}>
+								<div className="mx-5 pb-3 font-semibold">{project.problem.heading}</div>
+								<ImageEnlarge src={project.problem.src} alt={project.problem.caption} className="aspect-auto mx-auto"/>
+							</ProcessCard>
 
-						{/* Outcome */}
-						<ProcessCard label="Outcome" color={[projectTheme.dk.text, projectTheme.dk.border]}>
-							<ImageEnlarge src={project.outcome.src} alt={project.outcome.caption} className="aspect-auto mx-auto"/>
-						</ProcessCard>
+							{/* Outcome */}
+							<ProcessCard label="OUTCOME" color={[projectTheme.dk.text, projectTheme.dk.border]}>
+								<div className="mx-5 pb-3 font-semibold">{project.outcome.heading}</div>
+								<ImageEnlarge src={project.outcome.src} alt={project.outcome.caption} className="aspect-auto mx-auto"/>
+							</ProcessCard>
 						</div>
 
 						{/* List of Team Members */}
