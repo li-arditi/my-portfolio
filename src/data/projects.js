@@ -393,7 +393,7 @@ export const projects = [
         teammembers: "Sung Ahn, [Elizabeth Wang]",
         keywords: ["Hardware Software Integration", "EEG", "Motion Capture", "Eye Tracking", "IMUs", "Arduino", "Serial Communication"],
         objective:
-            `Improve the current hardware-software integration system of the Stangl Lab at BU to ensure sub-millisecond sychronization precision between the multimodal data.`,
+            `Improve the current hardware-software integration system of the Stangl Lab at BU to ensure sub-millisecond synchronization precision between the multimodal data.`,
         context: { src: import.meta.env.BASE_URL + "projects/stangl/context.png", caption: "Product realization" },
         problem: { src: import.meta.env.BASE_URL + "projects/stangl/problem.png", caption: "Problem"},
         outcome: { src: import.meta.env.BASE_URL + "projects/stangl/outcome.png", caption: "Our project results"},
